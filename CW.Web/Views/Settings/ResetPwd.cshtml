@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "修改密码";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="layui-larry-box">
+	<div class="larry-personal">
+		<header class="larry-personal-tit">
+			<span>修改密码</span>
+		</header><!-- /header -->
+		<div class="larry-personal-body clearfix changepwd">
+			<form class="layui-form col-lg-4" method="post" action="">
+				<div class="layui-form-item">
+					<label class="layui-form-label">旧密码</label>
+					<div class="layui-input-inline">  
+					  	<input type="password" id="oldpwd" name="oldpwd"  autocomplete="off"  class="layui-input" value="">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">新密码</label>
+					<div class="layui-input-inline">  
+					  	<input type="password" id="newpwd" name="newpwd"  autocomplete="off"  class="layui-input" value="">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">确认新密码</label>
+					<div class="layui-input-inline">  
+					  	<input type="password" id="cnewpwd" name="cnewpwd"  autocomplete="off"  class="layui-input" value="">
+					</div>
+				</div>
+				<div class="layui-form-item change-submit">
+					<div class="layui-input-block">
+						<a class="layui-btn" lay-submit="" lay-filter="submit" id="submit">提交</a>
+						
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<script>
+    $(function() {
+        $("#submit").on("click",function(e) {
+            saveInfo();
+        });
+    });
+
+    function saveInfo() {
+        var errstr = '';
+        var oldpwd = $("#oldpwd").val();
+        if (oldpwd.replace(/(^s*)|(s*$)/g, "").length == 0) {
+            errstr += '旧密码不能为空<br/>';
+        }
+        var newpwd = $("#newpwd").val();
+        if (newpwd.replace(/(^s*)|(s*$)/g, "").length == 0) {
+            errstr += '新密码不能为空<br/>';
+        }
+        if (!/^[a-zA-Z0-9]{6,20}$/.test(oldpwd)) {
+            errstr += '旧密码由字母或数字组成，长度6~20位<br/>';
+        }
+        if (!/^[a-zA-Z0-9]{6,20}$/.test(newpwd)) {
+            errstr += '新密码由字母或数字组成，长度6~20位<br/>';
+        }
+        if (oldpwd == newpwd) {
+            errstr += '新密码和旧密码不能相同<br/>';
+        }
+        var cnewpwd = $("#cnewpwd").val();
+        if (newpwd != cnewpwd) {
+            errstr += '确认密码和新密码不一致<br/>';
+        }
+        if (errstr != "") {
+            layer.msg(errstr, { icon: 8, time: 3000 });
+            return false;
+        }
+        $.post("@Url.Action("ChangePwd", "Settings", new {area="Admin" })", {
+                oldpwd: $("#oldpwd").val(),
+                newpwd: $("#newpwd").val()
+            },
+            function(data) {
+                if (data.state == "true") {
+                    layer.msg(data.content, { icon: 1, time: 2000 });
+                } else {
+                    layer.msg(data.content, { icon: 2, time: 3000 });
+                }
+            }, "json");
+    }
+</script>

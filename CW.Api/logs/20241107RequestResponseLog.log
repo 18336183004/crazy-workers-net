@@ -1,0 +1,99 @@
+--------------------------------
+2024/11/7 9:20:11|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "0f30g00000r18T15wu2005KCk000gp0M",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/11/7 9:20:12|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-07T09:20:12.6538724+08:00"}
+--------------------------------
+2024/11/7 9:20:45|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "0f30g00000r18T15wu2005KCk000gp0M",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/11/7 9:21:32|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-07T09:21:32.0778899+08:00"}
+--------------------------------
+2024/11/7 9:24:38|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "0e3oic000Kk19T1cnF200WJdR43oic0q",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/11/7 9:24:58|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-07T09:24:58.6152076+08:00"}
+--------------------------------
+2024/11/7 9:52:52|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/11/7 9:52:54|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDggMDk6NTI6NTQiLCJleHAiOjE3MzEwMzA4MzQsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.0gfQEEGDK4T9U6de58AzaLCziZYle_ax19hjAeqf_1M","Day":1,"OpenId":"123456"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-07T09:52:54.8026654+08:00"}
+--------------------------------
+2024/11/7 9:53:21|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/11/7 9:53:23|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDggMDk6NTM6MjMiLCJleHAiOjE3MzEwMzA4NjMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.KPlsPrcyoNhjhd6FT-4EHTOzbh275QDQgnjxvz6MCqA","Day":0,"OpenId":"123456"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-07T09:53:23.1699201+08:00"}
+--------------------------------
+2024/11/7 16:26:08|
+Request Data:
+QueryData:/api/tokenpass/Login/Get?latitude=113%2C36%2C10&longitude=34%2C53%2C28
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Get?latitude=113%2C36%2C10&longitude=34%2C53%2C28
+
+--------------------------------
+2024/11/7 16:26:42|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 [::ffff:142.251.215.238]:80 (maps.google.com:80)","Data":"at System.Net.HttpWebRequest.GetResponse()\r\n   at System.Net.WebClient.GetWebResponse(WebRequest request)\r\n   at System.Net.WebClient.DownloadBits(WebRequest request, Stream writeStream)\r\n   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)\r\n   at System.Net.WebClient.DownloadString(Uri address)\r\n   at System.Net.WebClient.DownloadString(String address)\r\n   at CW.Api.Controllers.LoginController.Get(String latitude, String longitude) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 148\r\n   at lambda_method491(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-07T16:26:37.9265675+08:00"}
+--------------------------------
+2024/11/7 16:28:25|
+Request Data:
+QueryData:/api/tokenpass/Login/Get?latitude=113%2C36%2C10&longitude=34%2C53%2C28
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Get?latitude=113%2C36%2C10&longitude=34%2C53%2C28
+
+--------------------------------
+2024/11/7 16:28:51|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 [::ffff:142.251.215.238]:80 (maps.google.com:80)","Data":"at System.Net.HttpWebRequest.GetResponse()\r\n   at System.Net.WebClient.GetWebResponse(WebRequest request)\r\n   at System.Net.WebClient.DownloadBits(WebRequest request, Stream writeStream)\r\n   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)\r\n   at System.Net.WebClient.DownloadString(Uri address)\r\n   at System.Net.WebClient.DownloadString(String address)\r\n   at CW.Api.Controllers.LoginController.Get(String latitude, String longitude) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 148\r\n   at lambda_method491(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-07T16:28:51.6964269+08:00"}

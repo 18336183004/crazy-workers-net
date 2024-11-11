@@ -1,0 +1,109 @@
+--------------------------------
+2024/10/8 10:35:12|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId":null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/10/8 10:35:14|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTAtMDkgMTA6MzU6MTQiLCJleHAiOjE3Mjg0NDEzNzQsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.UgMBT8VJf1oiUYV9kWk-an2pzhuNjpspKh4nNtCjRBM"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-08T10:35:14.9175523+08:00"}
+--------------------------------
+2024/10/8 14:18:27|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/10/8 14:18:28|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTAtMDkgMTQ6MTg6MjgiLCJleHAiOjE3Mjg0NTQ3NjgsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.VeevqWC6OfyCKfie17nZ6iRmrlU3f9w3hA_DUBXSvqs"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-08T14:18:28.751237+08:00"}
+--------------------------------
+2024/10/8 14:18:40|
+Request Data:
+QueryData:/api/User/GetToBenotifiedList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetToBenotifiedList
+
+--------------------------------
+2024/10/8 14:18:40|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"State":0,"Type":0,"Data":"{\"Id\":1,\"Name\":\"实习生\",\"Picture\":\"图片\"}"},{"State":1,"Type":2,"Data":"[{\"Id\":305,\"Name\":\"病假王\",\"Picture\":\"照片\"},{\"Id\":306,\"Name\":\"公司蛀虫\",\"Picture\":\"照片\"}]"}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-08T14:18:40.715752+08:00"}
+--------------------------------
+2024/10/8 14:26:44|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/10/8 14:26:45|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTAtMDkgMTQ6MjY6NDUiLCJleHAiOjE3Mjg0NTUyNjUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.sZryLls1RYoYTJUGv-LKBghtHFR7Zf6QzYmdkUdTWZk"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-08T14:26:45.6352595+08:00"}
+--------------------------------
+2024/10/8 14:26:58|
+Request Data:
+QueryData:/api/User/GetToBenotifiedList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetToBenotifiedList
+
+--------------------------------
+2024/10/8 14:26:58|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":1,"State":0,"Type":0,"Data":"{\"Id\":1,\"Name\":\"实习生\",\"Picture\":\"图片\"}"},{"Id":2,"State":1,"Type":2,"Data":"[{\"Id\":305,\"Name\":\"病假王\",\"Picture\":\"照片\"},{\"Id\":306,\"Name\":\"公司蛀虫\",\"Picture\":\"照片\"}]"}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-08T14:26:58.8477433+08:00"}
+--------------------------------
+2024/10/8 14:27:05|
+Request Data:
+QueryData:/api/User/EditToBenotified
+BodyData:{
+  "Id": 1
+}
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/EditToBenotified
+
+--------------------------------
+2024/10/8 14:27:05|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-08T14:27:05.6621014+08:00"}
+--------------------------------
+2024/10/8 14:27:10|
+Request Data:
+QueryData:/api/User/EditToBenotified
+BodyData:{
+  "Id": 2
+}
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/EditToBenotified
+
+--------------------------------
+2024/10/8 14:27:10|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-08T14:27:10.8125421+08:00"}
+--------------------------------
+2024/10/8 14:27:19|
+Request Data:
+QueryData:/api/User/GetToBenotifiedList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetToBenotifiedList
+
+--------------------------------
+2024/10/8 14:27:19|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-08T14:27:19.3545141+08:00"}

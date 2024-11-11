@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocketClient</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="../../jquery-1.12.1.min.js"></script>
+    <script src="../../utils.js"></script>
+</head>
+<body>
+    <div>
+        <h1>主页</h1>
+        <br />
+        <input name="url" id="url" />
+        <div id="contentId" style="width: 500px;height: 300px"></div>
+        <br />
+        <br />
+        接收人：<input name="message" id="personId" /><br />
+        消息：<input name="message" id="messageId" />
+        <button id="sendButton" onclick="sendMsg();">Send</button>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+            //验证浏览器是否支持WebSocket协议
+            $(function () {
+                if (!window.WebSocket) {
+                    alert("WebSocket not supported by this browser!");
+                }
+                $("#url").attr("readonly", "readonly");
+                var id = GetGuid();
+                $("#url").val("ws://127.0.0.1:3996/SysAdmin_" + id);
+                ToggleConnectionClicked();
+            });
+
+            var ws;
+            function ToggleConnectionClicked() {
+                $("#contentId").html("");
+                try {
+                    var msg = "";
+                    var url = $("#url").val();
+                    ws = new WebSocket(url);
+                    // 打开WebSocket
+                    ws.onopen = function () {
+                        //WebSocket Status:: Socket Open
+                        //// 发送一个初始化消息
+                        //$("#contentId").html("已经与服务端握手");
+                        ws.send("Login");
+                        //document.getElementById("contentId").innerHTML += "Client connected" + "\r\n";
+                    };
+                    //监听消息
+                    ws.onmessage = function (event) {
+                        msg = $("#contentId").html() + "<br/>" + event.data + "<br/>";
+                        $("#contentId").html(msg);
+                    };
+                    // 打开WebSocket
+                    ws.onclose = function (event) {
+                        //WebSocket Status:: Socket Closed
+                        msg = $("#contentId").html() + "<br/>" + event.data + "<br/>";
+                        $("#contentId").html(msg);
+                    };
+                    ws.onerror = function (event) {
+                        //WebSocket Status:: Error was reported
+                        msg = $("#contentId").html() + "<br/>" + event.data + "<br/>";
+                        $("#contentId").html(msg);
+                    };
+                } catch (ex) {
+                    msg = $("#contentId").html() + "<br/>" + ex.message + "<br/>";
+                    $("#contentId").html(msg);
+                }
+            };
+
+            function sendMsg() {
+                var msg = "Message ";
+                try {
+                    msg += $("#personId").val();
+                    msg += ",";
+                    msg += $("#messageId").val();
+                    ws.send(msg);
+                } catch (ex) {
+                    msg = $("#contentId").html() + "<br/>" + ex.message + "<br/>";
+                    $("#contentId").html(msg);
+                }
+            }
+</script>
+
+

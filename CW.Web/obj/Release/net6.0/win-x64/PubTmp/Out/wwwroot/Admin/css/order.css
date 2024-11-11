@@ -1,0 +1,58 @@
+﻿/* 订单框架 */
+body {background-color:#fafafa;}
+.order_main {width:100%;}
+.order_main .content {}
+/* 主体内容 */
+.order_main .data-info {margin-left:20px;margin-right:20px;}
+.order_main .data-info .data-list  a { cursor: pointer; }
+.order_main .data-info .data-search { width: 100%}
+.order_main .data-info .data-search .data-search-area { background-color:#ffffff;float: left; width: 100% }
+.order_main .data-info .data-search .sa-ele {float: left; margin-left: 10px;margin-top: 10px;margin-bottom: 10px;}
+.order_main .data-info .data-search .se-title {margin-top: 10px;}
+.order_main .data-info .data-header {float: left; width: 100%;line-height: 30px;}
+.order_main .data-info .data-header .data-header-table {width:100%;margin:10px 0;background-color:#ececec;border:1px solid #e8e8e8;text-align:center;}
+.order_main .data-info .data-header .data-header-table td {padding-top: 5px;padding-bottom: 5px;}
+.order_main .data-info .data-list { float: left; width: 100%;}
+.order_main .data-info .data-list .data-list-item {background-color:#ffffff;width:100%;border:1px solid #ececec;width:100%;border-collapse:collapse;border-spacing:0;color:#3c3c3c;table-layout:fixed;margin-bottom: 10px;}
+.order_main .data-info .data-list .data-list-item:hover { border: 1px solid #cccccc;}
+.order_main .data-info .data-list .data-list-item .item-title {background: #f1f1f1;width: 100%;line-height: 40px;}
+.order_main .data-info .data-list .data-list-item .item-title .o-date { font-weight: bold;margin-left: 40px; }
+.order_main .data-info .data-list .data-list-item .item-title span {background: #f1f1f1;margin-left: 20px; }
+.order_main .data-info .data-list .data-list-item .item-title .o-del { float: right; margin-right: 20px;}
+.order_main .data-info .data-list .data-list-item .item-title .o-del i {color: #c0c0c0; font-size: 24px;}
+.order_main .data-info .data-list .data-table {width:100%;text-align:center;margin-top: 10px;margin-bottom: 10px;}
+.order_main .data-info .data-list .data-list-item .item-title a { color: #fd8f68; }
+.order_main .data-info .data-list .data-list-item .item-title a:hover {color:#fd8f68;}
+.order_main .data-info .data-list .data-list-item .good-img { float: left;margin-left: 20px; }
+.order_main .data-info .data-list .data-list-item .good-img img{ width: 60px;height: 60px;}
+.order_main .data-info .data-list .data-list-item .good-name { float: left;margin-left: 10px; text-align: left;}
+.order_main .data-info .data-list .data-list-item .data-table a { color: #000000; }
+.order_main .data-info .data-list .data-list-item .data-table a:hover {color:#fd8f68;}
+.order_main .data-info .data-list .data-list-item .data-table span { color: #777;}
+/* 分页 */
+.order-page { float: right;margin-right: 20px;}
+/* 导入订单 */
+
+/* 详情页 */
+.order_detail .data-info {margin-left:20px;margin-right: 20px;margin-top:10px;}
+.order_detail .data-info a { cursor: pointer; }
+.order_detail .data-info .data-header {float: left; width: 100%;line-height: 30px;}
+.order_detail .data-info .data-header .data-header-table {width:100%;margin:10px 0;background-color:#ececec;border:1px solid #e8e8e8;text-align:center;}
+.order_detail .data-info .data-header .data-header-table td {padding-top: 5px;padding-bottom: 5px;}
+.order_detail .data-info .data-list { float: left; width: 100%;}
+.order_detail .data-info .data-list .data-list-item {background-color:#ffffff;width:100%;border:1px solid #ececec;width:100%;border-collapse:collapse;border-spacing:0;color:#3c3c3c;table-layout:fixed;margin-bottom: 10px;}
+.order_detail .data-info .data-list .data-list-item:hover { border: 1px solid #cccccc;}
+.order_detail .data-info .data-list .data-list-item .item-title {background: #f1f1f1;width: 100%;line-height: 40px;}
+.order_detail .data-info .data-list .data-list-item .item-title .o-date { font-weight: bold;margin-left: 40px; }
+.order_detail .data-info .data-list .data-list-item .item-title span {background: #f1f1f1;margin-left: 20px; }
+.order_detail .data-info .data-list .data-list-item .item-title .o-del { float: right; margin-right: 20px;}
+.order_detail .data-info .data-list .data-list-item .item-title .o-del i {color: #c0c0c0; font-size: 24px;}
+.order_detail .data-info .data-list .data-table {width:100%;text-align:center;margin-top: 10px;margin-bottom: 10px;}
+.order_detail .data-info .data-list .data-list-item .item-title a { color: #fd8f68; }
+.order_detail .data-info .data-list .data-list-item .item-title a:hover {color:#fd8f68;}
+.order_detail .data-info .data-list .data-list-item .good-img { float: left;margin-left: 20px; }
+.order_detail .data-info .data-list .data-list-item .good-img img{ width: 60px;height: 60px;}
+.order_detail .data-info .data-list .data-list-item .good-name { float: left;margin-left: 10px; text-align: left;}
+.order_detail .data-info .data-list .data-list-item .data-table a { color: #000000; }
+.order_detail .data-info .data-list .data-list-item .data-table a:hover {color:#fd8f68;}
+.order_detail .data-info .data-list .data-list-item .data-table span { color: #777;}

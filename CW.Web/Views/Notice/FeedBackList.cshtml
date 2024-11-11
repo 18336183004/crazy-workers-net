@@ -1,0 +1,239 @@
+﻿@{
+    ViewBag.Title = "FeedBackList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            <blockquote class="layui-elem-quote mylog-info-tit">
+                问题反馈管理
+            </blockquote>
+            <div class="larry-separate"></div>
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                <div class="search-area">
+                    <div class="sa-ele">
+                        <label class="se-title">关键字:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input class="layui-input" id="keywords" name="keywords" placeholder="请输入问题/反馈人姓名/手机号码" />
+                    </div>
+                    <div class="sa-ele">
+                        <label class="se-title">开始时间:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input type="text" id="startTime" name="startTime" class="layui-input laydateitem" autocomplete="off" placeholder="">
+                    </div>
+                    <div class="sa-ele">
+                        <label class="se-title">结束时间:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input type="text" id="endTime" name="endTime" class="layui-input laydateitem" autocomplete="off" placeholder="">
+                    </div>
+                    <div class="sa-ele">
+                        <a class="layui-btn layui-btn-normal" id="search-action"><i class="layui-icon">&#xe615;</i>查询</a>
+                        <a class="layui-btn layui-btn-primary" id="reset-action"><i class="layui-icon">&#xe65c;</i>重置</a>
+                    </div>
+                </div>
+                <!-- layui.table 开始 -->
+                <table id="datalist" lay-filter="datalist"></table>
+                <script type="text/html" id="reviewTpl">
+                    {{# if(d.status == 1){ }}
+                    已处理
+                    {{# } else { }}
+                    未处理
+                    {{# } }}
+                </script>
+                <script type="text/html" id="barlist">
+                    @if (ViewBag.EditFlag)
+                    {
+                        <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit">处理</a>
+                    }
+                </script>
+                <!-- layui.table 结束 -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 处理信息弹出框 -->
+<div id="infoDialog" class="larry-personal" style="display: none">
+    <div class="larry-personal-body clearfix">
+        <form class="layui-form col-lg-10" action="" method="post">
+            <input type="hidden" id="id" name="id" />
+            <div class="layui-form-item">
+                <label class="layui-form-label">处理结果：</label>
+                <div class="layui-input-block">
+                    <textarea id="content" name="content" placeholder="请输入处理结果" class="layui-textarea"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <a class="layui-btn layui-btn-normal" onclick="saveInfo();">确定</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    var table = null;
+    var tableIns = null;
+    var dialogId;
+    layui.use(['table', 'laydate'], function () {
+        table = layui.table;
+        var laydate = layui.laydate;
+        var keywords = $.trim($("#keywords").val());
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+
+        lay('.laydateitem').each(function () {
+            laydate.render({
+                elem: this
+                , trigger: 'click'
+            });
+        });
+
+        tableIns = table.render({
+            elem: '#datalist'
+            , id: 'datalist'
+            , height: 'full'
+            , cellMinWidth: 100
+            , page: true  //是否分页
+            , limits: [10, 20, 50, 100]
+            , limit: 10
+            , loading: true //显示加载条
+            , even: true
+            , url: '@Url.Action("GetFeedBackList", "Notice", new { area = "Admin" })'   //请求地址
+            , where: { keywords: keywords, startTime: startTime, endTime: endTime }  //请求参数
+            , cols: [[
+                //{ checkbox: true, fixed: true},
+                //{ field: 'id', title: '编号' },
+                { field: 'question', title: '反馈内容', align: 'center', templet: '<div>{{d.question}}</div>' }
+                , { field: 'name', title: '反馈人', align: 'center' }
+                , { field: 'mobile', title: '手机号码', align: 'center' }
+                , { field: 'create_time', title: '反馈时间', align: 'center', width: 180, templet: '<div>{{formatDate(d.create_time)}}</div>' }
+                , { field: 'review_time', title: '处理时间', align: 'center', width: 180, templet: '<div>{{formatDate(d.review_time)}}</div>' }
+                , { field: 'review', title: '处理状态', align: 'center', width: 90, templet: '#reviewTpl' }
+                , { title: '操作', align: 'center', width: 100, fixed: 'right', toolbar: '#barlist' }
+            ]]
+            , request: {
+                pageName: 'cPage' //页码的参数名称，默认：page
+                , limitName: 'pSize' //每页数据量的参数名，默认：limit
+            }
+            , response: {
+                statusName: 'status' //数据状态的字段名称，默认：code
+                , statusCode: 200 //成功的状态码，默认：0
+                , msgName: 'msg' //状态信息的字段名称，默认：msg
+                , countName: 'totals' //数据总数的字段名称，默认：count
+                , dataName: 'data' //数据列表的字段名称，默认：data
+            }
+            , done: function (res, curr, count) {
+            }
+        });
+
+        //监听工具条
+        table.on('tool(datalist)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'edit') {
+                Edit(data);
+            }
+        });
+    });
+
+    //刷新数据列表
+    function reloadData(pageIndex) {
+        var keywords = $.trim($("#keywords").val());
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+        table.reload('datalist',{
+            where: { keywords: keywords, startTime: startTime, endTime: endTime }
+            , page: { curr: pageIndex }
+        });
+    }
+
+    // 绑定搜索事件
+    $('#search-action').on('click', function () {
+        reloadData(1);
+    });
+
+    // 绑定重置
+    $('#reset-action').on('click', function () {
+        $("#keywords").val('');
+        $("#startTime").val('');
+        $("#endTime").val('');
+        reloadData(1);
+    });
+
+    function formatArray(glisten) {
+        var imgList = [];
+        var list = JSON.parse(glisten);
+        if (list.length > 0) {
+            layui.each(list, function (index, item) {
+                imgList.push('<a onclick="showPic(this);" style="cursor: pointer;"><img src="' + item + '" style="width:60px;height: 60px;"></a>');
+            });
+            return imgList.join("&nbsp;&nbsp;");
+        }
+        return '';
+    }
+
+    function showPic(a) {
+        var content = $(a).find('img').attr('src');
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 2,
+            area: ['60%', '60%'],
+            skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: '<img src="' + content + '" style="height: 100%;">'
+        });
+    }
+</script>
+<script>
+    //编辑
+    function Edit(data) {
+        $("#id").val(data.id);
+        $("#content").html(data.review_description);
+       dialogId = layer.open({
+            type: 1,
+            title: data.question + ' - 问题处理',
+            //maxmin: true,
+            area: ['60%', '60%'],
+            content: $('#infoDialog')
+        });
+        //layer.full(dialogId);
+    }
+
+    //提交
+    function saveInfo() {
+        layer.confirm('确认处理?', { icon: 3 }, function () {
+            var errstr = '';
+            var url = '';
+            var param = {};
+            var id = $("#id").val();
+            var content = $.trim($("#content").val());
+            if (content == "") {
+                errstr += '请填写处理回复内容';
+            }
+            if (errstr != "") {
+                layer.msg(errstr, { icon: 8, time: 3000 });
+                return false;
+            }
+            url = '@Url.Action("HandleFeedBack", "Notice", new {area = "Admin"})';
+            param = {
+                id: id,
+                content: content
+            };
+            //执行ajax请求
+            $.post(url, param, function (data) {
+                if (data.state == "true") {
+                    layer.msg(data.content, { icon: 1, time: 2000 });
+                    layer.close(dialogId);
+                    $("#content").val('');
+                    var page = $('.layui-laypage-curr ').text();
+                    reloadData(page);
+                } else {
+                    layer.msg(data.content, { icon: 2, time: 3000 });
+                }
+            }, "json");
+        });
+    }
+</script>

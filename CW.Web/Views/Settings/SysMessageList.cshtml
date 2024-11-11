@@ -1,0 +1,180 @@
+﻿@{
+    ViewBag.Title = "SysMessageList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            <blockquote class="layui-elem-quote mylog-info-tit">
+                消息提醒管理
+            </blockquote>
+            <div class="larry-separate"></div>
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                <form class="layui-form" action="">
+                    <div class="search-area">
+                        <div class="sa-ele">
+                            <label class="se-title">关键字:</label>
+                        </div>
+                        <div class="sa-ele">
+                            <input class="layui-input" id="keywords" name="keywords" placeholder="输入标题/内容" />
+                        </div>
+                        <div class="sa-ele">
+                            <label class="se-title">开始时间:</label>
+                        </div>
+                        <div class="sa-ele">
+                            <input type="text" id="startTime" name="startTime" class="layui-input laydateitem" placeholder="">
+                        </div>
+                        <div class="sa-ele">
+                            <label class="se-title">结束时间:</label>
+                        </div>
+                        <div class="sa-ele">
+                            <input type="text" id="endTime" name="endTime" class="layui-input laydateitem" placeholder="">
+                        </div>
+                        <div class="sa-ele">
+                            <a class="layui-btn layui-btn-normal" id="search-action"><i class="layui-icon">&#xe615;</i>查询</a>
+                            <a class="layui-btn layui-btn-primary" id="reset-action"><i class="layui-icon">&#xe65c;</i>重置</a>
+                            @if (ViewBag.EditFlag)
+                            {
+                                <a class="layui-btn layui-btn-warm" id="flag-action"><i class="fa fa-bell"></i>全部标记已读</a>
+                            }
+                        </div>
+                    </div>
+                </form>
+                <!-- layui.table 开始 -->
+                <table id="datalist" lay-filter="datalist"></table>
+                <script type="text/html" id="typeTpl">
+                    {{# if(d.isRead == 1){ }} 已读 {{# } else { }} 未读 {{# } }}
+                </script>
+                <script type="text/html" id="barlist">
+                    @if (ViewBag.EditFlag)
+                    {
+                        <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="check">标记已读</a>
+                    }
+                </script>
+                <!-- layui.table 结束 -->
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    var table = null;
+    var tableIns = null;
+    var dialogId;
+    layui.use(['table', 'laydate'], function () {
+        table = layui.table;
+        var laydate = layui.laydate;
+        var keywords = $.trim($("#keywords").val());
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+
+        lay('.laydateitem').each(function () {
+            laydate.render({
+                elem: this
+                , type: 'datetime'
+                , trigger: 'click'
+            });
+        });
+
+        tableIns = table.render({
+            elem: '#datalist'
+            , id: 'datalist'
+            , height: 'full'
+            , cellMinWidth: 100
+            , page: true  //是否分页
+            , limits: [10, 20, 50, 100]
+            , limit: 20
+            , loading: true //显示加载条
+            , even: true
+            //, method: 'post'
+            , url: '@Url.Action("GetSysMessageDataList", "Settings", new { area = "Admin" })'   //请求地址
+            , where: { keywords: keywords, startTime: startTime, endTime: endTime }  //请求参数
+            , cols: [[
+                { checkbox: true, fixed: true},
+                //{ field: 'msgId', title: '编号' },
+                { field: 'msgTitle', title: '消息标题', width: 200, align: 'center' }
+                , { field: 'msgContent', title: '消息内容', align: 'center' }
+                , { field: 'createTime', title: '创建时间', width: 200, align: 'center', templet: '<div>{{formatDate(d.createTime)}}</div>' }
+                , { field: 'isRead', title: '阅读标记', align: 'center', width: 100, templet: '#typeTpl' }
+                , { title: '操作', align: 'center', width: 100, toolbar: '#barlist' }
+            ]]
+            , request: {
+                pageName: 'cPage' //页码的参数名称，默认：page
+                , limitName: 'pSize' //每页数据量的参数名，默认：limit
+            }
+            , response: {
+                statusName: 'status' //数据状态的字段名称，默认：code
+                , statusCode: 200 //成功的状态码，默认：0
+                , msgName: 'msg' //状态信息的字段名称，默认：msg
+                , countName: 'totals' //数据总数的字段名称，默认：count
+                , dataName: 'data' //数据列表的字段名称，默认：data
+            }
+            , done: function (res, curr, count) {
+            }
+        });
+
+        //监听工具条
+        table.on('tool(datalist)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'check') {
+                flagRead(data);
+            }
+        });
+    });
+
+    //刷新数据列表
+    function reloadData(pageIndex) {
+        var keywords = $.trim($("#keywords").val());
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+        table.reload('datalist',{
+            where: { keywords: keywords, startTime: startTime, endTime: endTime }
+            , page: { curr: pageIndex }
+        });
+    }
+
+    // 绑定搜索事件
+    $('#search-action').on('click', function () {
+        reloadData(1);
+    });
+
+    // 绑定重置
+    $('#reset-action').on('click', function () {
+        $("#keywords").val('');
+        $("#startTime").val('');
+        $("#endTime").val('');
+        reloadData(1);
+    });
+
+    // 绑定全部已读事件
+    $('#flag-action').on('click', function () {
+        flagReadAll();
+    });
+</script>
+<script>
+    //标记消息已读
+    function flagRead(data) {
+        if (data.msgId != '') {
+            var pageIndex = $('.layui-laypage-curr ').text();
+            $.post('@Url.Action("UpdateSysMsgReadState", "Settings", new { area = "Admin" })', { id: data.Id }, function (data) {
+                if (data.state == "true") {
+                    layer.msg(data.content, { icon: 1, time: 3000 });
+                } else {
+                    layer.msg(data.content, { icon: 2, time: 3000 });
+                }
+                reloadData(pageIndex);
+            }, "json");
+        }
+    }
+    //标记全部消息已读
+    function flagReadAll() {
+        var pageIndex = $('.layui-laypage-curr ').text();
+        $.post('@Url.Action("UpdateSysMsgReadState", "Settings", new { area = "Admin" })', { id: 'all' }, function (data) {
+            if (data.state == "true") {
+                layer.msg(data.content, { icon: 1, time: 3000 });
+            } else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+            reloadData(pageIndex);
+        }, "json");
+    }
+</script>

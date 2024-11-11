@@ -1,0 +1,78 @@
+--------------------------------
+2024/10/31 10:45:26|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/10/31 10:45:30|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unable to connect to any of the specified MySQL hosts.","Data":"at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)\r\n   at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)\r\n   at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()\r\n   at SqlSugar.QueryableProvider`1.FirstAsync()\r\n   at CW.Api.Services.LoginService.GetUserinfo(String openId) in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\LoginService.cs:line 32\r\n   at CW.Api.Controllers.LoginController.Login(LoginModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 82\r\n   at lambda_method491(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-31T10:45:30.5993472+08:00"}
+--------------------------------
+2024/10/31 10:47:30|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/10/31 10:47:33|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDEgMTA6NDc6MzIiLCJleHAiOjE3MzA0MjkzMTIsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.I7lux2sRTVpMJ2d8uEOqbZgnn1tSFuwcRUce_yRdWps","Day":2},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-31T10:47:33.181107+08:00"}
+--------------------------------
+2024/10/31 10:47:47|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/10/31 10:47:47|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-31T10:47:47.1207455+08:00"}
+--------------------------------
+2024/10/31 10:48:09|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/10/31 10:48:09|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"实习生名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","PositionLevelId":1,"PositionLevelIName":"实习生","Condition":"升级为[实习生]获得此装扮","Description":"实习生名牌","IsWear":1,"IsHold":1},{"Id":2,"Name":"正式员工名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png","PositionLevelId":2,"PositionLevelIName":"正式员工","Condition":"升级为[正式员工]获得此装扮","Description":"正式员工名牌","IsWear":0,"IsHold":0},{"Id":3,"Name":"资深员工名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150058_P7OcCYc9.png","PositionLevelId":3,"PositionLevelIName":"资深员工","Condition":"升级为[资深员工]获得此装扮","Description":"资深员工名牌","IsWear":0,"IsHold":0}],"HoldNum":1,"Total":3},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-31T10:48:09.5555253+08:00"}
+--------------------------------
+2024/10/31 10:48:50|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/10/31 10:49:07|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"实习生名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","PositionLevelId":1,"PositionLevelIName":"实习生","Condition":"升级为[实习生]获得此装扮","Description":"实习生名牌","IsWear":1,"IsHold":1},{"Id":2,"Name":"正式员工名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png","PositionLevelId":2,"PositionLevelIName":"正式员工","Condition":"升级为[正式员工]获得此装扮","Description":"正式员工名牌","IsWear":0,"IsHold":0},{"Id":3,"Name":"资深员工名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150058_P7OcCYc9.png","PositionLevelId":3,"PositionLevelIName":"资深员工","Condition":"升级为[资深员工]获得此装扮","Description":"资深员工名牌","IsWear":0,"IsHold":0}],"HoldNum":1,"Total":3},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-31T10:48:50.8134847+08:00"}
+--------------------------------
+2024/10/31 10:49:27|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/10/31 10:49:28|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"实习生名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","PositionLevelId":1,"PositionLevelIName":"实习生","Condition":"升级为[实习生]获得此装扮","Description":"实习生名牌","IsWear":1,"IsHold":1},{"Id":2,"Name":"正式员工名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png","PositionLevelId":2,"PositionLevelIName":"正式员工","Condition":"升级为[正式员工]获得此装扮","Description":"正式员工名牌","IsWear":0,"IsHold":0},{"Id":3,"Name":"资深员工名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150058_P7OcCYc9.png","PositionLevelId":3,"PositionLevelIName":"资深员工","Condition":"升级为[资深员工]获得此装扮","Description":"资深员工名牌","IsWear":0,"IsHold":0},{"Id":4,"Name":"小组长名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150082_p3Ls3vC9.png","PositionLevelId":4,"PositionLevelIName":"小组长","Condition":"升级为[小组长]获得此装扮","Description":"小组长名牌","IsWear":0,"IsHold":0},{"Id":5,"Name":"主管名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150103_IR4VbvvV.png","PositionLevelId":5,"PositionLevelIName":"主管","Condition":"升级为[主管]获得此装扮","Description":"主管名牌","IsWear":0,"IsHold":0},{"Id":6,"Name":"总监名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150167_NZ635a4a.png","PositionLevelId":6,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"总监名牌","IsWear":0,"IsHold":0},{"Id":7,"Name":"部门经理名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150194_B2oEWo2N.png","PositionLevelId":7,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"部门经理名牌","IsWear":0,"IsHold":0},{"Id":8,"Name":"副总经理名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150221_ia0aHa0D.png","PositionLevelId":8,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"副总经理名牌","IsWear":0,"IsHold":0},{"Id":9,"Name":"总经理名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150266_UMyzNUVf.png","PositionLevelId":9,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"总经理名牌","IsWear":0,"IsHold":0},{"Id":10,"Name":"执行副总裁名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150314_Y3GqGdpN.png","PositionLevelId":10,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"执行副总裁名牌","IsWear":0,"IsHold":0},{"Id":11,"Name":"执行总裁名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150420_MbZbfI68.png","PositionLevelId":11,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"执行总裁名牌","IsWear":0,"IsHold":0},{"Id":12,"Name":"首席运营官名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150445_l66A9Nn9.png","PositionLevelId":12,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"首席运营官名牌","IsWear":0,"IsHold":0},{"Id":13,"Name":"CEO名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150464_KyuMcWUb.png","PositionLevelId":13,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"CEO名牌","IsWear":0,"IsHold":0},{"Id":14,"Name":"董事长名牌","Picture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150484_f80Ti8j7.png","PositionLevelId":14,"PositionLevelIName":null,"Condition":"升级为[]获得此装扮","Description":"董事长名牌","IsWear":0,"IsHold":0}],"HoldNum":1,"Total":14},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-31T10:49:27.8063835+08:00"}

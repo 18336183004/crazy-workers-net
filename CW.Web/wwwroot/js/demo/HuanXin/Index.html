@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>环信客户端</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="../../jquery-1.12.1.min.js"></script>
+    <script src="../../utils.js"></script>
+</head>
+<body>
+<div>
+    <form id="lgform" name="lgform" action="">
+        用户名：<input id="user" name="user" value="" /><br />
+        密码：<input id="pwd" name="pwd" value=""/><br/>
+        <a href="javascript:;" onclick="login();">进入</a>
+    </form>
+</div>
+</body>
+</html>
+
+<script>
+    function login() {
+        var uid = $('#user').val();
+        var pwd = $('#pwd').val();
+        if (uid != '' && pwd != '') {
+            window.location.href = 'Main.html?uid=' + uid + '&pwd=' + pwd;
+        } else {
+            alert('请输入用户名和密码');
+        }
+    }
+</script>

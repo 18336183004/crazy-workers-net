@@ -1,0 +1,37 @@
+---------------------------------------------------------
+webapi：http://ip:9998/swagger/index.html
+QuartzUI：http://ip:9998/QuartzUI
+---------------------------------------------------------
+1、安装 SDK
+dotnet-hosting-6.0.25-win.exe
+
+2、启动网站
+-- 新建bat文件，修改下面命令
+
+dotnet 路径\*.dll --urls="http://*:9998" --environment=Development
+---------------------------------------------------------
+Nginx配置，添加以下配置
+
+server
+    {
+        listen  443 ssl;#https 端口
+        server_name  api.corgia.cc;  
+        ssl_certificate         /corgia.pem;
+        ssl_certificate_key     /corgia.key;
+        ssl_session_timeout 5m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers AESGCM:ALL:!DH:!EXPORT:!RC4:+HIGH:!MEDIUM:!LOW:!aNULL:!eNULL;
+        ssl_prefer_server_ciphers on;
+        location / {
+            proxy_http_version 1.1;
+            proxy_set_header   Upgrade $http_upgrade;
+            proxy_set_header   Connection keep-alive;
+            proxy_set_header   Host $host;
+            proxy_cache_bypass $http_upgrade;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header   X-Forwarded-Proto $scheme;
+            proxy_set_header  Origin "*";	 
+            proxy_pass http://localhost:9998;
+        }
+    }

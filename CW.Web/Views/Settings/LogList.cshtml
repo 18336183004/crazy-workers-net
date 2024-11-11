@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "LogList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            <blockquote class="layui-elem-quote mylog-info-tit">
+                <ul class="layui-tab-title">
+                    <li class="layui-btn layui-btn-normal" id="search-action"><i class="layui-icon">&#xe615;</i>查询</li>
+                    <li class="layui-btn layui-btn-normal" id="reset-action"><i class="layui-icon">&#xe65c;</i>重置</li>
+                </ul>
+            </blockquote>
+            <div class="larry-separate"></div>
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                <div class="search-area">
+                    <div class="sa-ele">
+                        <label class="se-title">用户名:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input class="layui-input" id="susername" name="susername" placeholder="输入用户名"/>
+                    </div>
+                    <div class="sa-ele">
+                        <label class="se-title">发生时间:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input type="text" id="starttime" name="starttime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div class="sa-ele">
+                        ～
+                    </div>
+                    <div class="sa-ele">
+                        <input type="text" id="endtime" name="endtime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+                <table id="datalist" lay-filter="datalist"></table>
+                @*<script type="text/html" id="barlog">
+                    <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit">编辑</a>
+                    <a class="layui-btn layui-btn-warm layui-btn-xs" lay-event="del">删除</a>
+                </script>*@
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    var table = null;
+    var tableIns = null;
+    layui.use(['table', 'laydate'], function () {
+        table = layui.table;
+        var laydate = layui.laydate;
+        var loginname = $("#susername").val();
+        var starttime = $("#starttime").val();
+        var endtime = $("#endtime").val();
+
+        lay('.laydateitem').each(function () {
+            laydate.render({
+                elem: this
+              , trigger: 'click'
+            });
+        });
+
+        tableIns = table.render({
+            elem: '#datalist'
+            , id: 'datalist'
+           , height: 'full'
+            , cellMinWidth: 100
+           , page: true  //是否分页
+           , limits: [10, 20, 50, 100, 200]
+           , limit: 10
+           , loading: true //显示加载条
+           , even: true
+           //, method: 'post'
+           , url: '@Url.Action("GetLogList", "Settings", new { area = "Admin" })'   //请求地址
+           , where: { loginname: loginname, starttime: starttime, endtime: endtime }  //请求参数
+           , cols: [[
+               { checkbox: true, fixed: true }
+               ,{ field: 'Id', title: '序号', fixed: 'left', align: 'center',  sort: true }
+               ,{ field: 'LoginName', title: '用户名', align: 'center', sort: true }
+               ,{ field: 'ip', title: 'IP地址', align: 'center', sort: true }
+               ,{ field: 'OpTime', title: '发生时间', align: 'center', width: 160,  templet: '<div>{{formatDate(d.OpTime)}}</div>' }
+               ,{ field: 'OpControler', title: '控制器', align: 'center' }
+               ,{ field: 'OpMethod', title: '方法', align: 'center' }
+           ]]
+           , initSort: {
+               field: 'Id' //排序字段，对应 cols 设定的各字段名
+               , type: 'desc' //排序方式  asc: 升序、desc: 降序、null: 默认排序
+           }
+           , request: {
+               pageName: 'cPage' //页码的参数名称，默认：page
+               , limitName: 'pSize' //每页数据量的参数名，默认：limit
+           }
+           , response: {
+               statusName: 'status' //数据状态的字段名称，默认：code
+             , statusCode: 200 //成功的状态码，默认：0
+             , msgName: 'msg' //状态信息的字段名称，默认：msg
+             , countName: 'totals' //数据总数的字段名称，默认：count
+             , dataName: 'data' //数据列表的字段名称，默认：data
+           }
+           , done: function (res, curr, count) {
+           }
+        });
+    });
+
+    //刷新数据列表
+    function reloadData(pageIndex) {
+        var loginname = $("#susername").val();
+        var starttime = $("#starttime").val();
+        var endtime = $("#endtime").val();
+        table.reload('datalist', {
+            where: { loginname: loginname, starttime: starttime, endtime: endtime }
+            , page: { curr: pageIndex }
+        });
+    }
+
+    // 绑定搜索事件
+    $('#search-action').on('click', function () {
+        reloadData(1);
+    });
+
+    // 绑定重置
+    $('#reset-action').on('click', function () {
+        $("#susername").val('');
+        $("#starttime").val('');
+        $("#endtime").val('');
+        reloadData(1);
+    });
+</script>

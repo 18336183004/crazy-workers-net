@@ -1,0 +1,36 @@
+--------------------------------
+2024/10/29 9:46:43|
+Request Data:
+QueryData:/api/tokenpass/Login/DailyRecord
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/DailyRecord
+
+--------------------------------
+2024/10/29 9:46:46|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unable to connect to any of the specified MySQL hosts.","Data":"at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)\r\n   at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)\r\n   at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()\r\n   at SqlSugar.QueryableProvider`1.CountAsync()\r\n   at SqlSugar.QueryableProvider`1.CountAsync(Expression`1 expression)\r\n   at CW.Api.Services.LoginService.DailyRecord() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\LoginService.cs:line 398\r\n   at CW.Api.Controllers.LoginController.DailyRecord() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 135\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-29T09:46:46.275162+08:00"}
+--------------------------------
+2024/10/29 9:47:06|
+Request Data:
+QueryData:/api/tokenpass/Login/DailyRecord
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/DailyRecord
+
+--------------------------------
+2024/10/29 9:47:08|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Total":0,"CompletedQuantity":0},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-29T09:47:07.1976127+08:00"}
+--------------------------------
+2024/10/29 9:47:35|
+Request Data:
+QueryData:/api/tokenpass/Login/DailyRecord
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/DailyRecord
+
+--------------------------------
+2024/10/29 9:47:35|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Total":2,"CompletedQuantity":2},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-29T09:47:35.5562467+08:00"}

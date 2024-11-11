@@ -1,0 +1,942 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CW.Api</name>
+    </assembly>
+    <members>
+        <member name="T:CW.Api.Controllers.BASE.BaseController">
+            <summary>
+            基类
+            </summary>
+        </member>
+        <member name="M:CW.Api.Controllers.BASE.BaseController.Success(System.Object,System.String)">
+            <summary>
+            通用响应-成功
+            </summary>
+            <param name="data"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.BASE.BaseController.Error(System.String,CW.Common.BASE.ResponseCode)">
+            <summary>
+            通用响应-错误
+            </summary>
+            <param name="msg"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.BASE.BaseController.Warn(System.String,System.Object,CW.Common.BASE.ResponseCode)">
+            <summary>
+            通用响应-警告
+            </summary>
+            <param name="msg"></param>
+            <param name="data"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CW.Api.Controllers.BASE.HomeController">
+            <summary>
+            主页
+            </summary>
+        </member>
+        <member name="M:CW.Api.Controllers.BASE.HomeController.HealthCheck">
+            <summary>
+            健康监测
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.BASE.HomeController.GenerateEntities">
+            <summary>
+            生成实体类(本地环境使用)
+            </summary>
+        </member>
+        <member name="M:CW.Api.Controllers.BASE.HomeController.GenerateEntitiesByCustom(CW.Api.Controllers.BASE.GenerateDbEntitiesModel)">
+            <summary>
+            自定义生成实体(本地环境使用)
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="P:CW.Api.Controllers.BASE.GenerateDbEntitiesModel.Path">
+            <summary>
+            生成路径（默认）
+            </summary>
+        </member>
+        <member name="P:CW.Api.Controllers.BASE.GenerateDbEntitiesModel.Namespace">
+            <summary>
+            命名空间（默认）
+            </summary>
+        </member>
+        <member name="P:CW.Api.Controllers.BASE.GenerateDbEntitiesModel.TablesName">
+            <summary>
+            指定表名
+            </summary>
+        </member>
+        <member name="P:CW.Api.Controllers.BASE.GenerateDbEntitiesModel.InterfaceName">
+            <summary>
+            实现接口
+            </summary>
+        </member>
+        <member name="P:CW.Api.Controllers.BASE.GenerateDbEntitiesModel.IsSerializable">
+            <summary>
+            是否序列化（默认是）
+            </summary>
+        </member>
+        <member name="M:CW.Api.Controllers.LoginController.UserInfo(CW.Api.Models.WeChatModel)">
+            <summary>
+            用户信息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.LoginController.Login(CW.Api.Models.LoginModel)">
+            <summary>
+            登录
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.LoginController.Map">
+            <summary>
+            获取地图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.LoginController.DailyRecord">
+            <summary>
+            每日总数记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.Authorisation(CW.Api.Models.LoginUserModel)">
+            <summary>
+            用户授权
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.GetUserInfo">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.GetUserCollectList">
+            <summary>
+            获取玩家收藏列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.UserWearCollect(System.Int32)">
+            <summary>
+            玩家穿戴收藏装扮
+            </summary>
+            <param name="collectId">收藏装扮Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.GetUserHonorList">
+            <summary>
+            获取玩家荣誉表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.UserWearHonor(System.Int32)">
+            <summary>
+            玩家穿戴荣誉
+            </summary>
+            <param name="honorId">荣誉Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.AddRecord">
+            <summary>
+            添加登录游玩记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.EndThisGame(CW.Api.Models.EndThisGameModel)">
+            <summary>
+            结束本局游戏
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.GetProvinceRanking">
+            <summary>
+            获取省份排行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.InvitationRecord">
+            <summary>
+            查询邀请申请
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.ReceiveInvitation">
+            <summary>
+            领取邀请奖励
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.GetPositionLevelRanking">
+            <summary>
+            查询职级排行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.GetToBenotifiedList">
+            <summary>
+            消息通知
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.EditToBenotified(CW.Api.Models.EditToBenotifiedModel)">
+            <summary>
+            修改消息通知为已读
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.AddToBenotified(CW.Api.Models.AddToBenotifiedModel)">
+            <summary>
+            新增消息通知
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Controllers.UserController.GetUserProp">
+            <summary>
+            获取玩家道具
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.ILoginService.GetUserinfo(System.String)">
+            <summary>
+            获取玩家信息
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.ILoginService.GetPositionLevelName(System.Int32)">
+            <summary>
+            查询职级名称
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.ILoginService.DailyRecord">
+            <summary>
+            每日总数记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.Authorisation(CW.Api.Models.LoginUserModel)">
+            <summary>
+            用户授权
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.GetUserInfo">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.GetUserCollectList">
+            <summary>
+            获取玩家收藏列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.UserWearCollect(System.Int32)">
+            <summary>
+            玩家穿戴收藏装扮
+            </summary>
+            <param name="collectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.GetUserHonorList">
+            <summary>
+            获取玩家荣誉表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.UserWearHonor(System.Int32)">
+            <summary>
+            玩家穿戴荣誉
+            </summary>
+            <param name="honorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.AddRecord">
+            <summary>
+            添加游玩记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.EndThisGame(CW.Api.Models.EndThisGameModel)">
+            <summary>
+            结束本局游戏
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.GetProvinceRanking">
+            <summary>
+            获取省份排行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.InvitationRecord">
+            <summary>
+            查询邀请申请
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.ReceiveInvitation">
+            <summary>
+            领取邀请奖励
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.GetPositionLevelRanking">
+            <summary>
+            查询职级排行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.GetToBenotifiedList">
+            <summary>
+            消息通知
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.EditToBenotified(CW.Api.Models.EditToBenotifiedModel)">
+            <summary>
+            修改消息通知为已读
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.AddToBenotified(CW.Api.Models.AddToBenotifiedModel)">
+            <summary>
+            新增消息通知
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.IServices.IUserService.GetUserProp">
+            <summary>
+            获取玩家道具
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CW.Api.Models.WeChatModel.InviterId">
+            <summary>
+            邀请人
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.LoginModel.OpenId">
+            <summary>
+            微信openId
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.LoginModel.InviterId">
+            <summary>
+            邀请人
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.LoginUserModel.OpenId">
+            <summary>
+            微信openId
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.LoginUserModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.LoginUserModel.Tel">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.LoginUserModel.Picture">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.LoginUserModel.City">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.SsoTokenInfoModel.SsoToken">
+            <summary>
+            ssoToken
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.SsoTokenInfoModel.Day">
+            <summary>
+            天
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.Tel">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.Picture">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.CollectId">
+            <summary>
+            装扮Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.Collect">
+            <summary>
+            装扮
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.FullBodyPhoto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.PositionLevelId">
+            <summary>
+            职级Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.PositionLevelName">
+            <summary>
+            职级
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.Area">
+            <summary>
+            地区
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfoModel.Day">
+            <summary>
+            上班天数
+            </summary>
+        </member>
+        <member name="T:CW.Api.Models.DateModel">
+            <summary>
+            地图信息
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.DateModel.MapDataBusTypes">
+            <summary>
+            地图类型 1(4*7) 2(5*8) 3(6*12) 4(7*11)
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.DateModel.MapData">
+            <summary>
+            地图数据
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.DateModel.MapDataRoloQueues">
+            <summary>
+            乘客排序颜色
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.DateModel.MapDataGraySitDownColor">
+            <summary>
+            可坐的乘客颜色
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.DateModel.MapDataCountDown">
+            <summary>
+            通关时间
+            </summary>
+        </member>
+        <member name="T:CW.Api.Models.UserCollectModel">
+            <summary>
+            玩家收藏
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.Id">
+            <summary>
+            收藏Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.Name">
+            <summary>
+            收藏名称
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.Picture">
+            <summary>
+            收藏图片
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.FullBodyPhoto">
+            <summary>
+            全身照
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.PositionLevelId">
+            <summary>
+            职级Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.PositionLevelIName">
+            <summary>
+            职级名称
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.Condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.IsWear">
+            <summary>
+            是否穿戴 0未穿戴 1穿戴
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectModel.IsHold">
+            <summary>
+            是否持有 0未持有 1持有
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectData.UserCollects">
+            <summary>
+            收藏列表
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectData.HoldNum">
+            <summary>
+            持有数
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserCollectData.Total">
+             <summary>
+            总数
+             </summary>
+        </member>
+        <member name="T:CW.Api.Models.UserHonorModel">
+            <summary>
+            玩家荣誉
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserHonorModel.Id">
+            <summary>
+            荣誉Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserHonorModel.Name">
+            <summary>
+            荣誉名称
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserHonorModel.Picture">
+            <summary>
+            荣誉图片
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserHonorModel.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserHonorModel.IsWear">
+            <summary>
+            是否穿戴 0未穿戴 1穿戴
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserHonorModel.IsHold">
+            <summary>
+            是否持有 0未持有 1持有
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserHonorData.UserHonor">
+            <summary>
+            穿戴荣誉
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.EndThisGameModel.Type">
+            <summary>
+            结果 0失败 1成功
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.EndThisGameModel.Barrier">
+            <summary>
+            关卡类型 0正常关卡 1加班关卡
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.RecordModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.RecordModel.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.RecordModel.IsSuccess">
+            <summary>
+            是否上班成功 0未成功 1成功
+            </summary>
+        </member>
+        <member name="T:CW.Api.Models.ProvinceRankingModel">
+            <summary>
+            省份排行
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.ProvinceRankingModel.Id">
+            <summary>
+            省份Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.ProvinceRankingModel.Name">
+            <summary>
+            省份名称
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.ProvinceRankingModel.TotalNumber">
+            <summary>
+            上班人数
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.ProvinceRankingModel.Attendance">
+            <summary>
+            出勤率
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelRankingModel.Id">
+            <summary>
+            职级Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelRankingModel.Name">
+            <summary>
+            职级名称
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelRankingModel.TotalNumber">
+            <summary>
+            总数量
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelRankingModel.List">
+            <summary>
+            玩家信息
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelUserModel.UserId">
+            <summary>
+            玩家Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelUserModel.Picture">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelUserModel.CollectId">
+            <summary>
+            装扮
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelUserModel.CollectPicture">
+            <summary>
+            装扮图片
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.PositionLevelUserModel.FullBodyPhoto">
+            <summary>
+            全身照
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.ToBenotifiedModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.ToBenotifiedModel.State">
+            <summary>
+            状态 0失去 1获得
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.ToBenotifiedModel.Type">
+            <summary>
+            类型 0职级 1装扮 2荣誉
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.ToBenotifiedModel.Data">
+            <summary>
+            数据 json
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.EditToBenotifiedModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.AddToBenotifiedModel.State">
+            <summary>
+            状态 0失去 1获得
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.AddToBenotifiedModel.Type">
+            <summary>
+            类型 0职级 1装扮 2荣誉
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.AddToBenotifiedModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserPropModel.Prop1">
+            <summary>
+            道具数量
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserPropModel.Prop2">
+            <summary>
+            道具数量
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserPropModel.Prop3">
+            <summary>
+            道具数量
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfo.Id">
+            <summary>
+            职级Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfo.Name">
+            <summary>
+            职级名称
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.UserInfo.WorkingDays">
+            <summary>
+            总上班天数
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.RewardModel.Reward">
+            <summary>
+            装扮 0未获取 1已获取
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.RewardModel.Reward1">
+            <summary>
+            道具
+            </summary>
+        </member>
+        <member name="P:CW.Api.Models.RewardModel.Num">
+            <summary>
+            邀请数量
+            </summary>
+        </member>
+        <member name="T:CW.Api.Services.BASE.BaseService">
+            <summary>
+            服务层公用部分
+            </summary>
+        </member>
+        <member name="P:CW.Api.Services.BASE.BaseService.UserId">
+            <summary>
+            玩家Id
+            </summary>
+        </member>
+        <member name="P:CW.Api.Services.BASE.BaseService.OpenId">
+            <summary>
+            玩家openId
+            </summary>
+        </member>
+        <member name="F:CW.Api.Services.BASE.BaseService._dbContext">
+            <summary>
+            SugarScope
+            </summary>
+        </member>
+        <member name="M:CW.Api.Services.LoginService.GetUserinfo(System.String)">
+            <summary>
+            获取玩家信息
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.LoginService.Login(CW.Api.Models.LoginModel,CW.Framework.Entities.user)">
+            <summary>
+            登录
+            </summary>
+            <param name="model"></param>
+            <param name="user"></param>
+            <returns></returns>
+            <exception cref="T:CW.Common.Attributes.UserOperationException"></exception>
+        </member>
+        <member name="M:CW.Api.Services.LoginService.LoginAccount(CW.Api.Models.LoginModel)">
+            <summary>
+            创建用户
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.LoginService.Map">
+            <summary>
+            地图
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.LoginService.GetPositionLevelName(System.Int32)">
+            <summary>
+            查询职级名称
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.LoginService.AddToBeNotified(System.Int64,System.Byte,System.Byte,System.Object)">
+            <summary>
+            新增待通知信息
+            </summary>
+            <param name="Id">玩家</param>
+            <param name="type">类型  0职级 1装扮 2荣誉</param>
+            <param name="state">0 失去 1获得</param>
+            <param name="model">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.LoginService.DailyRecord">
+            <summary>
+            每日总数记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.Authorisation(CW.Api.Models.LoginUserModel)">
+            <summary>
+            用户授权
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.GetUserInfo">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.GetUserCollectList">
+            <summary>
+            获取玩家收藏列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.UserWearCollect(System.Int32)">
+            <summary>
+            玩家穿戴收藏装扮
+            </summary>
+            <param name="collectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.GetUserHonorList">
+            <summary>
+            获取玩家荣誉列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.UserWearHonor(System.Int32)">
+            <summary>
+            玩家穿戴荣誉
+            </summary>
+            <param name="honorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.AddRecord">
+            <summary>
+            添加游玩记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.EndThisGame(CW.Api.Models.EndThisGameModel)">
+            <summary>
+            结束本局游戏
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.GetProvinceRanking">
+            <summary>
+            获取省份排行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.InvitationRecord">
+            <summary>
+            查询邀请申请
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.ReceiveInvitation">
+            <summary>
+            领取邀请奖励
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.GetPositionLevelRanking">
+            <summary>
+            查询职级排行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.GetToBenotifiedList">
+            <summary>
+            消息通知
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.EditToBenotified(CW.Api.Models.EditToBenotifiedModel)">
+            <summary>
+            修改消息通知为已读
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.AddToBenotified(CW.Api.Models.AddToBenotifiedModel)">
+            <summary>
+            新增消息通知
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.GetUserProp">
+            <summary>
+            获取玩家道具
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CW.Api.Services.UserService.AddToBeNotified(System.Int64,System.Byte,System.Byte,System.Object)">
+            <summary>
+            新增待通知信息
+            </summary>
+            <param name="Id">玩家</param>
+            <param name="type">类型 0职级 1装扮 2荣誉</param>
+            <param name="state">0 失去 1获得</param>
+            <param name="model">数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:CW.Api.windows.ActionMonitorMiddleware">
+            <summary>
+            WebAPI Action监控
+            </summary>
+        </member>
+        <member name="M:CW.Api.windows.ActionMonitorMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="next">下一个处理者</param>
+        </member>
+    </members>
+</doc>

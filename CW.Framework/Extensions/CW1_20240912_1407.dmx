@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CTOXML>
+<DataModels>
+  <CTVER>43543338</CTVER>
+  <TableCount>12</TableCount>
+  <Count>1</Count>
+</DataModels>
+
+<DataModels_items/>
+
+<DataModels_items1>
+  <ID>2</ID>
+  <Name>CW1</Name>
+  <CreateDate>2024/9/11 9:45:39</CreateDate>
+  <OrderNo>1</OrderNo>
+  <CustomAttr1>DVS:-347.00,-1006.00,1.00,0,</CustomAttr1>
+</DataModels_items1>
+
+<DataModels_items1_Tables>
+  <Count>12</Count>
+</DataModels_items1_Tables>
+
+<DataModels_items1_Tables_items/>
+
+<DataModels_items1_Tables_items1>
+  <ID>3</ID>
+  <Name>User</Name>
+  <Caption>用户表</Caption>
+  <CreateDate>2024/9/12 13:56:43</CreateDate>
+  <OrderNo>1</OrderNo>
+  <GraphDesc>Left=52.00
+Top=61.00</GraphDesc>
+</DataModels_items1_Tables_items1>
+
+<DataModels_items1_Tables_items1_MetaFields>
+  <Count>11</Count>
+</DataModels_items1_Tables_items1_MetaFields>
+
+<DataModels_items1_Tables_items1_MetaFields_items/>
+
+<DataModels_items1_Tables_items1_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>用户Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=786.00,291.00
+P2=326.00,291.00
+P3=326.00,223.00
+P4=281.00,223.00
+HookP1=20.00,20.00
+HookP2=209.00,162.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=1
+Horz2=1</GraphDesc>
+</DataModels_items1_Tables_items1_MetaFields_items1>
+
+<DataModels_items1_Tables_items1_MetaFields_items2>
+  <ID>8</ID>
+  <Name>OpenId</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>微信openId</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>100</DataLength>
+</DataModels_items1_Tables_items1_MetaFields_items2>
+
+<DataModels_items1_Tables_items1_MetaFields_items3>
+  <ID>12</ID>
+  <Name>ProvinceId</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>省份Id</DisplayName>
+  <DataType>2</DataType>
+</DataModels_items1_Tables_items1_MetaFields_items3>
+
+<DataModels_items1_Tables_items1_MetaFields_items4>
+  <ID>11</ID>
+  <Name>PositionLevelId</Name>
+  <OrderNo>4</OrderNo>
+  <DisplayName>职级Id</DisplayName>
+  <DataType>2</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=220.00,398.00
+P2=220.00,320.00
+P3=220.00,320.00
+P4=220.00,243.00
+HookP1=60.00,24.00
+HookP2=168.00,154.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=0
+Horz2=0</GraphDesc>
+</DataModels_items1_Tables_items1_MetaFields_items4>
+
+<DataModels_items1_Tables_items1_MetaFields_items5>
+  <ID>4</ID>
+  <Name>Name</Name>
+  <OrderNo>5</OrderNo>
+  <DisplayName>名称</DisplayName>
+  <DataType>1</DataType>
+  <DataLength>50</DataLength>
+</DataModels_items1_Tables_items1_MetaFields_items5>
+
+<DataModels_items1_Tables_items1_MetaFields_items6>
+  <ID>9</ID>
+  <Name>Tel</Name>
+  <OrderNo>6</OrderNo>
+  <DisplayName>手机号</DisplayName>
+  <DataType>1</DataType>
+  <DataLength>50</DataLength>
+</DataModels_items1_Tables_items1_MetaFields_items6>
+
+<DataModels_items1_Tables_items1_MetaFields_items7>
+  <ID>12</ID>
+  <Name>Picture</Name>
+  <OrderNo>7</OrderNo>
+  <DisplayName>头像</DisplayName>
+  <DataType>1</DataType>
+  <DataLength>500</DataLength>
+</DataModels_items1_Tables_items1_MetaFields_items7>
+
+<DataModels_items1_Tables_items1_MetaFields_items8>
+  <ID>14</ID>
+  <Name>WorkingDays</Name>
+  <OrderNo>8</OrderNo>
+  <DisplayName>上班天数</DisplayName>
+  <DataType>2</DataType>
+  <DataTypeName>Int</DataTypeName>
+</DataModels_items1_Tables_items1_MetaFields_items8>
+
+<DataModels_items1_Tables_items1_MetaFields_items9>
+  <ID>9</ID>
+  <Name>CreateDate</Name>
+  <Memo>默认为当前时间</Memo>
+  <OrderNo>9</OrderNo>
+  <DisplayName>创建时间</DisplayName>
+  <DataType>4</DataType>
+  <DefaultValue>sysdate</DefaultValue>
+</DataModels_items1_Tables_items1_MetaFields_items9>
+
+<DataModels_items1_Tables_items1_MetaFields_items10>
+  <ID>15</ID>
+  <Name>GoOnlineDate</Name>
+  <OrderNo>10</OrderNo>
+  <DisplayName>上线时间</DisplayName>
+  <DataType>4</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items1_MetaFields_items10>
+
+<DataModels_items1_Tables_items1_MetaFields_items11>
+  <ID>11</ID>
+  <Name>InviterId</Name>
+  <OrderNo>11</OrderNo>
+  <DisplayName>邀请人UserId</DisplayName>
+  <DataType>2</DataType>
+</DataModels_items1_Tables_items1_MetaFields_items11>
+
+<DataModels_items1_Tables_items2>
+  <ID>4</ID>
+  <Name>Map</Name>
+  <Caption>地图表</Caption>
+  <CreateDate>2024/9/12 14:48:01</CreateDate>
+  <OrderNo>2</OrderNo>
+  <GraphDesc>Left=359.00
+Top=91.00</GraphDesc>
+</DataModels_items1_Tables_items2>
+
+<DataModels_items1_Tables_items2_MetaFields>
+  <Count>7</Count>
+</DataModels_items1_Tables_items2_MetaFields>
+
+<DataModels_items1_Tables_items2_MetaFields_items/>
+
+<DataModels_items1_Tables_items2_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>地图Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items2_MetaFields_items1>
+
+<DataModels_items1_Tables_items2_MetaFields_items2>
+  <ID>23</ID>
+  <Name>DifficultyLevel</Name>
+  <Memo>1低级 2中级 3高级 4困难 5地狱</Memo>
+  <OrderNo>2</OrderNo>
+  <DisplayName>难度等级</DisplayName>
+  <DataType>6</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items2_MetaFields_items2>
+
+<DataModels_items1_Tables_items2_MetaFields_items3>
+  <ID>24</ID>
+  <Name>MapDataBusTypes</Name>
+  <Memo>1(7*11) 2(4*7) 3(4*8) 4(5*8) 5(5*11) 6(6*10) 7(6 * 12)</Memo>
+  <OrderNo>3</OrderNo>
+  <DisplayName>地图类型</DisplayName>
+  <DataType>6</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items2_MetaFields_items3>
+
+<DataModels_items1_Tables_items2_MetaFields_items4>
+  <ID>25</ID>
+  <Name>MapData</Name>
+  <OrderNo>4</OrderNo>
+  <DisplayName>地图数据</DisplayName>
+  <DataType>1</DataType>
+  <DataTypeName>text</DataTypeName>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items2_MetaFields_items4>
+
+<DataModels_items1_Tables_items2_MetaFields_items5>
+  <ID>26</ID>
+  <Name>MapDataRoloQueues</Name>
+  <OrderNo>5</OrderNo>
+  <DisplayName>乘客排序颜色</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>200</DataLength>
+</DataModels_items1_Tables_items2_MetaFields_items5>
+
+<DataModels_items1_Tables_items2_MetaFields_items6>
+  <ID>27</ID>
+  <Name>MapDataGraySitDownColor</Name>
+  <OrderNo>6</OrderNo>
+  <DisplayName>可坐的乘客颜色</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>50</DataLength>
+</DataModels_items1_Tables_items2_MetaFields_items6>
+
+<DataModels_items1_Tables_items2_MetaFields_items7>
+  <ID>28</ID>
+  <Name>MapDataCountDown</Name>
+  <OrderNo>7</OrderNo>
+  <DisplayName>通关时间</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>50</DataLength>
+</DataModels_items1_Tables_items2_MetaFields_items7>
+
+<DataModels_items1_Tables_items3>
+  <ID>5</ID>
+  <Name>Honor</Name>
+  <Caption>荣誉设置</Caption>
+  <CreateDate>2024/9/19 17:40:20</CreateDate>
+  <OrderNo>3</OrderNo>
+  <GraphDesc>Left=724.00
+Top=92.00</GraphDesc>
+</DataModels_items1_Tables_items3>
+
+<DataModels_items1_Tables_items3_MetaFields>
+  <Count>6</Count>
+</DataModels_items1_Tables_items3_MetaFields>
+
+<DataModels_items1_Tables_items3_MetaFields_items/>
+
+<DataModels_items1_Tables_items3_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>荣誉Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items3_MetaFields_items1>
+
+<DataModels_items1_Tables_items3_MetaFields_items2>
+  <ID>4</ID>
+  <Name>Name</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>荣誉名称</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>20</DataLength>
+</DataModels_items1_Tables_items3_MetaFields_items2>
+
+<DataModels_items1_Tables_items3_MetaFields_items3>
+  <ID>6</ID>
+  <Name>Picture</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>图片</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>500</DataLength>
+</DataModels_items1_Tables_items3_MetaFields_items3>
+
+<DataModels_items1_Tables_items3_MetaFields_items4>
+  <ID>12</ID>
+  <Name>Description</Name>
+  <OrderNo>4</OrderNo>
+  <DisplayName>荣誉描述</DisplayName>
+  <DataType>1</DataType>
+  <DataLength>200</DataLength>
+</DataModels_items1_Tables_items3_MetaFields_items4>
+
+<DataModels_items1_Tables_items3_MetaFields_items5>
+  <ID>13</ID>
+  <Name>Type</Name>
+  <Memo>1上班&amp;加班成功系列 2迟到&amp;旷工系列 3局内相关</Memo>
+  <OrderNo>5</OrderNo>
+  <DisplayName>类型</DisplayName>
+  <DataType>6</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items3_MetaFields_items5>
+
+<DataModels_items1_Tables_items3_MetaFields_items6>
+  <ID>14</ID>
+  <Name>Sort</Name>
+  <OrderNo>6</OrderNo>
+  <DisplayName>排序</DisplayName>
+  <DataType>2</DataType>
+  <DataTypeName>Int</DataTypeName>
+</DataModels_items1_Tables_items3_MetaFields_items6>
+
+<DataModels_items1_Tables_items4>
+  <ID>6</ID>
+  <Name>PositionLevel</Name>
+  <Caption>职位级别</Caption>
+  <CreateDate>2024/9/19 18:05:22</CreateDate>
+  <OrderNo>4</OrderNo>
+  <GraphDesc>Left=178.00
+Top=395.00</GraphDesc>
+</DataModels_items1_Tables_items4>
+
+<DataModels_items1_Tables_items4_MetaFields>
+  <Count>4</Count>
+</DataModels_items1_Tables_items4_MetaFields>
+
+<DataModels_items1_Tables_items4_MetaFields_items/>
+
+<DataModels_items1_Tables_items4_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <RelateTable>User</RelateTable>
+  <RelateField>PositionLevelId</RelateField>
+  <DefaultValue>{auto_increment}</DefaultValue>
+  <GraphDesc>P1=214.00,259.00
+P2=214.00,327.00
+P3=230.00,327.00
+P4=230.00,395.00
+HookP1=162.00,162.00
+HookP2=52.00,25.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=0
+Horz2=0</GraphDesc>
+</DataModels_items1_Tables_items4_MetaFields_items1>
+
+<DataModels_items1_Tables_items4_MetaFields_items2>
+  <ID>4</ID>
+  <Name>Name</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>名称</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>20</DataLength>
+</DataModels_items1_Tables_items4_MetaFields_items2>
+
+<DataModels_items1_Tables_items4_MetaFields_items3>
+  <ID>4</ID>
+  <Name>Picture</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>图片</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>500</DataLength>
+</DataModels_items1_Tables_items4_MetaFields_items3>
+
+<DataModels_items1_Tables_items4_MetaFields_items4>
+  <ID>12</ID>
+  <Name>Sort</Name>
+  <OrderNo>4</OrderNo>
+  <DisplayName>排序</DisplayName>
+  <DataType>2</DataType>
+  <DataTypeName>Int</DataTypeName>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items4_MetaFields_items4>
+
+<DataModels_items1_Tables_items5>
+  <ID>7</ID>
+  <Name>Collect</Name>
+  <Caption>收藏设置</Caption>
+  <CreateDate>2024/9/20 9:46:19</CreateDate>
+  <OrderNo>5</OrderNo>
+  <GraphDesc>Left=492.00
+Top=344.00</GraphDesc>
+</DataModels_items1_Tables_items5>
+
+<DataModels_items1_Tables_items5_MetaFields>
+  <Count>6</Count>
+</DataModels_items1_Tables_items5_MetaFields>
+
+<DataModels_items1_Tables_items5_MetaFields_items/>
+
+<DataModels_items1_Tables_items5_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>收藏Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items5_MetaFields_items1>
+
+<DataModels_items1_Tables_items5_MetaFields_items2>
+  <ID>12</ID>
+  <Name>PositionLevelId</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>职级Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>PositionLevel</RelateTable>
+  <RelateField>Id</RelateField>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=348.00,428.00
+P2=420.00,428.00
+P3=420.00,428.00
+P4=492.00,428.00
+HookP1=150.00,33.00
+HookP2=20.00,84.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=1
+Horz2=1</GraphDesc>
+</DataModels_items1_Tables_items5_MetaFields_items2>
+
+<DataModels_items1_Tables_items5_MetaFields_items3>
+  <ID>4</ID>
+  <Name>Name</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>收藏名称</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>20</DataLength>
+</DataModels_items1_Tables_items5_MetaFields_items3>
+
+<DataModels_items1_Tables_items5_MetaFields_items4>
+  <ID>13</ID>
+  <Name>Picture</Name>
+  <OrderNo>4</OrderNo>
+  <DisplayName>图片</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>500</DataLength>
+</DataModels_items1_Tables_items5_MetaFields_items4>
+
+<DataModels_items1_Tables_items5_MetaFields_items5>
+  <ID>14</ID>
+  <Name>Description</Name>
+  <OrderNo>5</OrderNo>
+  <DisplayName>收藏描述</DisplayName>
+  <DataType>1</DataType>
+  <DataLength>200</DataLength>
+</DataModels_items1_Tables_items5_MetaFields_items5>
+
+<DataModels_items1_Tables_items5_MetaFields_items6>
+  <ID>15</ID>
+  <Name>Sort</Name>
+  <OrderNo>6</OrderNo>
+  <DisplayName>排序</DisplayName>
+  <DataType>2</DataType>
+  <DataTypeName>Int</DataTypeName>
+</DataModels_items1_Tables_items5_MetaFields_items6>
+
+<DataModels_items1_Tables_items6>
+  <ID>8</ID>
+  <Name>userCollect</Name>
+  <Caption>玩家收藏</Caption>
+  <CreateDate>2024/9/20 10:05:49</CreateDate>
+  <OrderNo>6</OrderNo>
+  <GraphDesc>Left=12.00
+Top=543.00</GraphDesc>
+</DataModels_items1_Tables_items6>
+
+<DataModels_items1_Tables_items6_MetaFields>
+  <Count>6</Count>
+</DataModels_items1_Tables_items6_MetaFields>
+
+<DataModels_items1_Tables_items6_MetaFields_items/>
+
+<DataModels_items1_Tables_items6_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>玩家收藏Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items6_MetaFields_items1>
+
+<DataModels_items1_Tables_items6_MetaFields_items2>
+  <ID>12</ID>
+  <Name>UserId</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>玩家Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>User</RelateTable>
+  <RelateField>Id</RelateField>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=132.00,259.00
+P2=132.00,401.00
+P3=132.00,401.00
+P4=132.00,543.00
+HookP1=80.00,146.00
+HookP2=120.00,20.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=0
+Horz2=0</GraphDesc>
+</DataModels_items1_Tables_items6_MetaFields_items2>
+
+<DataModels_items1_Tables_items6_MetaFields_items3>
+  <ID>13</ID>
+  <Name>CollectId</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>收藏Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>Collect</RelateTable>
+  <RelateField>Id</RelateField>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=520.00,462.00
+P2=520.00,571.00
+P3=520.00,571.00
+P4=212.00,571.00
+HookP1=28.00,90.00
+HookP2=172.00,28.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=0
+Horz2=1</GraphDesc>
+</DataModels_items1_Tables_items6_MetaFields_items3>
+
+<DataModels_items1_Tables_items6_MetaFields_items4>
+  <ID>14</ID>
+  <Name>Ispermanent</Name>
+  <Memo>0否 1是</Memo>
+  <OrderNo>4</OrderNo>
+  <DisplayName>是否永久</DisplayName>
+  <DataType>6</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items6_MetaFields_items4>
+
+<DataModels_items1_Tables_items6_MetaFields_items5>
+  <ID>15</ID>
+  <Name>IsWear</Name>
+  <Memo>0未穿戴 1穿戴</Memo>
+  <OrderNo>5</OrderNo>
+  <DisplayName>是否穿戴</DisplayName>
+  <DataType>6</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items6_MetaFields_items5>
+
+<DataModels_items1_Tables_items6_MetaFields_items6>
+  <ID>16</ID>
+  <Name>ObtainingDate</Name>
+  <OrderNo>6</OrderNo>
+  <DisplayName>获得时间</DisplayName>
+  <DataType>4</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items6_MetaFields_items6>
+
+<DataModels_items1_Tables_items7>
+  <ID>10</ID>
+  <Name>UserHonor</Name>
+  <Caption>玩家荣誉</Caption>
+  <CreateDate>2024/9/20 15:21:23</CreateDate>
+  <OrderNo>7</OrderNo>
+  <GraphDesc>Left=786.00
+Top=271.00</GraphDesc>
+</DataModels_items1_Tables_items7>
+
+<DataModels_items1_Tables_items7_MetaFields>
+  <Count>5</Count>
+</DataModels_items1_Tables_items7_MetaFields>
+
+<DataModels_items1_Tables_items7_MetaFields_items/>
+
+<DataModels_items1_Tables_items7_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>玩家荣誉Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items7_MetaFields_items1>
+
+<DataModels_items1_Tables_items7_MetaFields_items2>
+  <ID>12</ID>
+  <Name>UserId</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>玩家Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>User</RelateTable>
+  <RelateField>Id</RelateField>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=221.00,259.00
+P2=221.00,291.00
+P3=221.00,291.00
+P4=786.00,291.00
+HookP1=169.00,138.00
+HookP2=20.00,20.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=0
+Horz2=1</GraphDesc>
+</DataModels_items1_Tables_items7_MetaFields_items2>
+
+<DataModels_items1_Tables_items7_MetaFields_items3>
+  <ID>13</ID>
+  <Name>HonorId</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>荣誉Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>Honor</RelateTable>
+  <RelateField>Id</RelateField>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=855.00,210.00
+P2=855.00,240.00
+P3=855.00,240.00
+P4=855.00,271.00
+HookP1=131.00,98.00
+HookP2=69.00,28.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=0
+Horz2=0</GraphDesc>
+</DataModels_items1_Tables_items7_MetaFields_items3>
+
+<DataModels_items1_Tables_items7_MetaFields_items4>
+  <ID>14</ID>
+  <Name>IsWear</Name>
+  <Memo>0未穿戴 1穿戴</Memo>
+  <OrderNo>4</OrderNo>
+  <DisplayName>是否穿戴</DisplayName>
+  <DataType>6</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items7_MetaFields_items4>
+
+<DataModels_items1_Tables_items7_MetaFields_items5>
+  <ID>15</ID>
+  <Name>ObtainingDate</Name>
+  <OrderNo>5</OrderNo>
+  <DisplayName>获得时间</DisplayName>
+  <DataType>4</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items7_MetaFields_items5>
+
+<DataModels_items1_Tables_items8>
+  <ID>12</ID>
+  <Name>LoginRecord</Name>
+  <Caption>玩家记录</Caption>
+  <CreateDate>2024/9/24 16:56:04</CreateDate>
+  <OrderNo>8</OrderNo>
+  <GraphDesc>Left=562.50
+Top=560.00</GraphDesc>
+</DataModels_items1_Tables_items8>
+
+<DataModels_items1_Tables_items8_MetaFields>
+  <Count>8</Count>
+</DataModels_items1_Tables_items8_MetaFields>
+
+<DataModels_items1_Tables_items8_MetaFields_items/>
+
+<DataModels_items1_Tables_items8_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>记录Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items8_MetaFields_items1>
+
+<DataModels_items1_Tables_items8_MetaFields_items2>
+  <ID>12</ID>
+  <Name>UserId</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>玩家Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>User</RelateTable>
+  <RelateField>Id</RelateField>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=281.00,231.00
+P2=742.00,231.00
+P3=742.00,231.00
+P4=742.00,560.00
+HookP1=201.00,170.00
+HookP2=179.50,20.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=1
+Horz2=0</GraphDesc>
+</DataModels_items1_Tables_items8_MetaFields_items2>
+
+<DataModels_items1_Tables_items8_MetaFields_items3>
+  <ID>13</ID>
+  <Name>PlayDate</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>游玩时间</DisplayName>
+  <DataType>4</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items8_MetaFields_items3>
+
+<DataModels_items1_Tables_items8_MetaFields_items4>
+  <ID>14</ID>
+  <Name>Data</Name>
+  <OrderNo>4</OrderNo>
+  <DisplayName>json数据</DisplayName>
+  <DataType>1</DataType>
+  <DataTypeName>text</DataTypeName>
+</DataModels_items1_Tables_items8_MetaFields_items4>
+
+<DataModels_items1_Tables_items8_MetaFields_items5>
+  <ID>15</ID>
+  <Name>IsSuccess</Name>
+  <Memo>0未成功 1成功</Memo>
+  <OrderNo>5</OrderNo>
+  <DisplayName>是否上班成功</DisplayName>
+  <DataType>6</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items8_MetaFields_items5>
+
+<DataModels_items1_Tables_items8_MetaFields_items6>
+  <ID>16</ID>
+  <Name>SatrtDate</Name>
+  <OrderNo>6</OrderNo>
+  <DisplayName>开始时间</DisplayName>
+  <DataType>4</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items8_MetaFields_items6>
+
+<DataModels_items1_Tables_items8_MetaFields_items7>
+  <ID>7</ID>
+  <Name>IsWorkOvertime</Name>
+  <Memo>0否 1是</Memo>
+  <OrderNo>7</OrderNo>
+  <DisplayName>是否加班</DisplayName>
+  <DataType>6</DataType>
+</DataModels_items1_Tables_items8_MetaFields_items7>
+
+<DataModels_items1_Tables_items8_MetaFields_items8>
+  <ID>8</ID>
+  <Name>IsWorkOvertimeSuccess</Name>
+  <Memo>0未成功 1成功</Memo>
+  <OrderNo>8</OrderNo>
+  <DisplayName>是否加班上班成功</DisplayName>
+  <DataType>6</DataType>
+</DataModels_items1_Tables_items8_MetaFields_items8>
+
+<DataModels_items1_Tables_items9>
+  <ID>13</ID>
+  <Name>Province</Name>
+  <Caption>省份</Caption>
+  <CreateDate>2024/9/25 9:49:12</CreateDate>
+  <OrderNo>9</OrderNo>
+  <GraphDesc>Left=-116.00
+Top=356.00</GraphDesc>
+</DataModels_items1_Tables_items9>
+
+<DataModels_items1_Tables_items9_MetaFields>
+  <Count>2</Count>
+</DataModels_items1_Tables_items9_MetaFields>
+
+<DataModels_items1_Tables_items9_MetaFields_items/>
+
+<DataModels_items1_Tables_items9_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>省份Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <RelateTable>User</RelateTable>
+  <RelateField>ProvinceId</RelateField>
+  <DefaultValue>{auto_increment}</DefaultValue>
+  <GraphDesc>P1=52.00,215.00
+P2=19.00,215.00
+P3=19.00,215.00
+P4=19.00,356.00
+HookP1=44.00,154.00
+HookP2=135.00,19.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=1
+Horz2=0</GraphDesc>
+</DataModels_items1_Tables_items9_MetaFields_items1>
+
+<DataModels_items1_Tables_items9_MetaFields_items2>
+  <ID>4</ID>
+  <Name>Name</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>名称</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>10</DataLength>
+</DataModels_items1_Tables_items9_MetaFields_items2>
+
+<DataModels_items1_Tables_items10>
+  <ID>15</ID>
+  <Name>InvitationRecord</Name>
+  <Caption>邀请记录</Caption>
+  <CreateDate>2024/9/25 14:12:40</CreateDate>
+  <OrderNo>10</OrderNo>
+  <GraphDesc>Left=-159.00
+Top=-39.00</GraphDesc>
+</DataModels_items1_Tables_items10>
+
+<DataModels_items1_Tables_items10_MetaFields>
+  <Count>4</Count>
+</DataModels_items1_Tables_items10_MetaFields>
+
+<DataModels_items1_Tables_items10_MetaFields_items/>
+
+<DataModels_items1_Tables_items10_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>记录Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items10_MetaFields_items1>
+
+<DataModels_items1_Tables_items10_MetaFields_items2>
+  <ID>12</ID>
+  <Name>UserId</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>玩家Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>User</RelateTable>
+  <RelateField>Id</RelateField>
+  <Not_Nullable>1</Not_Nullable>
+  <GraphDesc>P1=52.00,81.00
+P2=28.00,81.00
+P3=28.00,81.00
+P4=28.00,47.00
+HookP1=20.00,20.00
+HookP2=187.00,66.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=1
+Horz2=0</GraphDesc>
+</DataModels_items1_Tables_items10_MetaFields_items2>
+
+<DataModels_items1_Tables_items10_MetaFields_items3>
+  <ID>13</ID>
+  <Name>InvitationId</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>邀请Id</DisplayName>
+  <DataType>2</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items10_MetaFields_items3>
+
+<DataModels_items1_Tables_items10_MetaFields_items4>
+  <ID>14</ID>
+  <Name>InvitationDate</Name>
+  <OrderNo>4</OrderNo>
+  <DisplayName>邀请时间</DisplayName>
+  <DataType>4</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items10_MetaFields_items4>
+
+<DataModels_items1_Tables_items11>
+  <ID>16</ID>
+  <Name>Account</Name>
+  <Caption>账号</Caption>
+  <CreateDate>2024/9/25 15:23:57</CreateDate>
+  <OrderNo>11</OrderNo>
+  <GraphDesc>Left=1141.00
+Top=114.00</GraphDesc>
+</DataModels_items1_Tables_items11>
+
+<DataModels_items1_Tables_items11_MetaFields>
+  <Count>3</Count>
+</DataModels_items1_Tables_items11_MetaFields>
+
+<DataModels_items1_Tables_items11_MetaFields_items/>
+
+<DataModels_items1_Tables_items11_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DisplayName>账号Id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items11_MetaFields_items1>
+
+<DataModels_items1_Tables_items11_MetaFields_items2>
+  <ID>12</ID>
+  <Name>UserName</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>账号</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>100</DataLength>
+</DataModels_items1_Tables_items11_MetaFields_items2>
+
+<DataModels_items1_Tables_items11_MetaFields_items3>
+  <ID>13</ID>
+  <Name>PassWord</Name>
+  <OrderNo>3</OrderNo>
+  <DisplayName>密码</DisplayName>
+  <DataType>1</DataType>
+  <Not_Nullable>1</Not_Nullable>
+  <DataLength>100</DataLength>
+</DataModels_items1_Tables_items11_MetaFields_items3>
+
+<DataModels_items1_Tables_items12>
+  <ID>17</ID>
+  <Name>ToBeNotified</Name>
+  <Caption>待通知信息</Caption>
+  <CreateDate>2024/9/29 9:48:53</CreateDate>
+  <OrderNo>12</OrderNo>
+  <GraphDesc>Left=-360.00
+Top=166.00</GraphDesc>
+</DataModels_items1_Tables_items12>
+
+<DataModels_items1_Tables_items12_MetaFields>
+  <Count>7</Count>
+</DataModels_items1_Tables_items12_MetaFields>
+
+<DataModels_items1_Tables_items12_MetaFields_items/>
+
+<DataModels_items1_Tables_items12_MetaFields_items1>
+  <ID>1</ID>
+  <Name>Id</Name>
+  <OrderNo>1</OrderNo>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <DefaultValue>{auto_increment}</DefaultValue>
+</DataModels_items1_Tables_items12_MetaFields_items1>
+
+<DataModels_items1_Tables_items12_MetaFields_items2>
+  <ID>6</ID>
+  <Name>UserId</Name>
+  <OrderNo>2</OrderNo>
+  <DisplayName>玩家Id</DisplayName>
+  <DataType>2</DataType>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items12_MetaFields_items2>
+
+<DataModels_items1_Tables_items12_MetaFields_items3>
+  <ID>7</ID>
+  <Name>State</Name>
+  <Memo>0失去 1获得</Memo>
+  <OrderNo>3</OrderNo>
+  <DisplayName>状态</DisplayName>
+  <DataType>6</DataType>
+</DataModels_items1_Tables_items12_MetaFields_items3>
+
+<DataModels_items1_Tables_items12_MetaFields_items4>
+  <ID>12</ID>
+  <Name>Type</Name>
+  <Memo>0职级 1装扮 2荣誉</Memo>
+  <OrderNo>4</OrderNo>
+  <DisplayName>类型</DisplayName>
+  <DataType>6</DataType>
+</DataModels_items1_Tables_items12_MetaFields_items4>
+
+<DataModels_items1_Tables_items12_MetaFields_items5>
+  <ID>13</ID>
+  <Name>IsRead</Name>
+  <Memo>0未读 1已读</Memo>
+  <OrderNo>5</OrderNo>
+  <DisplayName>是否已读</DisplayName>
+  <DataType>6</DataType>
+</DataModels_items1_Tables_items12_MetaFields_items5>
+
+<DataModels_items1_Tables_items12_MetaFields_items6>
+  <ID>14</ID>
+  <Name>Data</Name>
+  <OrderNo>6</OrderNo>
+  <DisplayName>数据</DisplayName>
+  <DataType>1</DataType>
+  <DataTypeName>text</DataTypeName>
+</DataModels_items1_Tables_items12_MetaFields_items6>
+
+<DataModels_items1_Tables_items12_MetaFields_items7>
+  <ID>9</ID>
+  <Name>CreateDate</Name>
+  <OrderNo>7</OrderNo>
+  <DisplayName>创建时间</DisplayName>
+  <DataType>4</DataType>
+  <DefaultValue>sysdate</DefaultValue>
+  <Not_Nullable>1</Not_Nullable>
+</DataModels_items1_Tables_items12_MetaFields_items7>
+
+
+</CTOXML>

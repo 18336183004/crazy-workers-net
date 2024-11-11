@@ -1,0 +1,156 @@
+--------------------------------
+2024/9/12 14:12:13|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/12 14:16:50|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/12 14:31:13|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "openid",
+  "Name": "123456",
+  "Picture": "http:baidu.com"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/12 14:31:14|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T14:31:14.3047174+08:00"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T14:31:14.3049303+08:00"}
+--------------------------------
+2024/9/12 14:33:02|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "",
+  "Name": "",
+  "Picture": ""
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/12 14:33:02|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"名称不能为空!微信号不能为空!头像不能为空!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T14:33:02.4690494+08:00"}
+--------------------------------
+2024/9/12 14:33:15|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "11111",
+  "Name": "111111",
+  "Picture": "222222"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/12 14:33:16|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T14:33:16.1503515+08:00"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T14:33:16.1505573+08:00"}
+--------------------------------
+2024/9/12 15:08:51|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/12 15:34:35|
+Request Data:
+QueryData:/api/tokenpass/Login/Map
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Map
+
+--------------------------------
+2024/9/12 15:34:35|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"\"[System.Int32[]],\"","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T15:34:35.4256853+08:00"}
+--------------------------------
+2024/9/12 15:36:15|
+Request Data:
+QueryData:/api/tokenpass/Login/Map
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Map
+
+--------------------------------
+2024/9/12 15:36:15|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"\"[][System.Collections.Generic.List`1[System.Int32]],[System.Collections.Generic.List`1[System.Byte]],[System.Collections.Generic.List`1[System.Byte]],[System.Collections.Generic.List`1[System.String]],[System.Collections.Generic.List`1[System.String]],[System.Collections.Generic.List`1[System.String]],[System.Collections.Generic.List`1[System.String]]\"","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T15:36:15.2603248+08:00"}
+--------------------------------
+2024/9/12 15:42:34|
+Request Data:
+QueryData:/api/tokenpass/Login/Map
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Map
+
+--------------------------------
+2024/9/12 15:42:35|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"\"[][1,2],[1,2],[1,2],[[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[0,1,1,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,1],[0,1,1,1]],[[1,1,2,1,2,3,3,3,4,5,4,],[1,1,2,1,2,3,3,3,4,5,4,]],[1,2],[120,180]\"","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T15:42:34.8662329+08:00"}
+--------------------------------
+2024/9/12 15:43:53|
+Request Data:
+QueryData:/api/tokenpass/Login/Map
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Map
+
+--------------------------------
+2024/9/12 15:44:23|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"\"[][1,2],[1,2],[1,2],[[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[0,1,1,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,1],[0,1,1,1]],[[1,1,2,1,2,3,3,3,4,5,4,],[1,1,2,1,2,3,3,3,4,5,4,]],[1,2],[120,180]\"","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T15:43:53.622744+08:00"}
+--------------------------------
+2024/9/12 15:57:12|
+Request Data:
+QueryData:/api/tokenpass/Login/Map
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Map
+
+--------------------------------
+2024/9/12 15:57:49|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"\"[1,2],[1,2],[1,2],[[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[0,1,1,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,1],[0,1,1,1]],[[1,1,2,1,2,3,3,3,4,5,4,],[1,1,2,1,2,3,3,3,4,5,4,]],[1,2],[120,180]\"","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T15:57:12.9235489+08:00"}
+--------------------------------
+2024/9/12 16:14:46|
+Request Data:
+QueryData:/api/tokenpass/Login/Map
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Map
+
+--------------------------------
+2024/9/12 16:14:46|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"Id\":\"[1,2]\",\"DifficultyLevel\":\"[1,2]\",\"MapDataBusTypes\":\"[1,2]\",\"MapData\":\"[[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[0,1,1,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,1],[0,1,1,1]]\",\"MapDataRoloQueues\":\"[[1,1,2,1,2,3,3,3,4,5,4,],[1,1,2,1,2,3,3,3,4,5,4,]]\",\"MapDataGraySitDownColor\":\"[1,2]\",\"MapDataCountDown\":\"[120,180]\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T16:14:46.4534921+08:00"}
+--------------------------------
+2024/9/12 16:15:14|
+Request Data:
+QueryData:/api/tokenpass/Login/Map
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Map
+
+--------------------------------
+2024/9/12 16:15:29|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"Id\":\"[1,2]\",\"DifficultyLevel\":\"[1,2]\",\"MapDataBusTypes\":\"[1,2]\",\"MapData\":\"[[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[0,1,1,1],[1,0,1,0],[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,1],[0,1,1,1]]\",\"MapDataRoloQueues\":\"[[1,1,2,1,2,3,3,3,4,5,4,],[1,1,2,1,2,3,3,3,4,5,4,]]\",\"MapDataGraySitDownColor\":\"[1,2]\",\"MapDataCountDown\":\"[120,180]\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-12T16:15:14.8646426+08:00"}

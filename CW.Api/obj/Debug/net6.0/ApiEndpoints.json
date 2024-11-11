@@ -1,0 +1,507 @@
+[
+  {
+    "ContainingType": "CW.Api.Controllers.BASE.HomeController",
+    "Method": "GenerateEntities",
+    "RelativePath": "api/Home/GenerateEntities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.BASE.HomeController",
+    "Method": "GenerateEntitiesByCustom",
+    "RelativePath": "api/Home/GenerateEntitiesByCustom",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Path",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Namespace",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TablesName",
+        "Type": "System.String[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "InterfaceName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsSerializable",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.BASE.HomeController",
+    "Method": "HealthCheck",
+    "RelativePath": "api/Home/HealthCheck",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.LoginController",
+    "Method": "DailyRecord",
+    "RelativePath": "api/tokenpass/Login/DailyRecord",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.DailyRecordModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.LoginController",
+    "Method": "Get",
+    "RelativePath": "api/tokenpass/Login/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "latitude",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "longitude",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Common.BASE.ResponseModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/tokenpass/Login/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CW.Api.Models.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.LoginModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.LoginController",
+    "Method": "Map",
+    "RelativePath": "api/tokenpass/Login/Map",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Common.BASE.ResponseModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.LoginController",
+    "Method": "UserInfo",
+    "RelativePath": "api/tokenpass/Login/UserInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CW.Api.Models.WeChatModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.SsoTokenInfoModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "AddRecord",
+    "RelativePath": "api/User/AddRecord",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Common.BASE.ResponseModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "AddToBenotified",
+    "RelativePath": "api/User/AddToBenotified",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CW.Api.Models.AddToBenotifiedModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.AddToBenotifiedModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "Authorisation",
+    "RelativePath": "api/User/Authorisation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CW.Api.Models.LoginUserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Common.BASE.ResponseModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "EditToBenotified",
+    "RelativePath": "api/User/EditToBenotified",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CW.Api.Models.EditToBenotifiedModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Common.BASE.ResponseModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "EndThisGame",
+    "RelativePath": "api/User/EndThisGame",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CW.Api.Models.EndThisGameModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.UserInfo",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "GetPositionLevelRanking",
+    "RelativePath": "api/User/GetPositionLevelRanking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.PositionLevelRankingModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "GetProvinceRanking",
+    "RelativePath": "api/User/GetProvinceRanking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.ProvinceRankingData",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "GetToBenotifiedList",
+    "RelativePath": "api/User/GetToBenotifiedList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.ToBenotifiedModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "GetUserCollectList",
+    "RelativePath": "api/User/GetUserCollectList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.UserCollectData",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "GetUserHonorList",
+    "RelativePath": "api/User/GetUserHonorList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.UserHonorData",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/User/GetUserInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.UserInfoModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "GetUserProp",
+    "RelativePath": "api/User/GetUserProp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.UserPropModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "InvitationRecord",
+    "RelativePath": "api/User/InvitationRecord",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Api.Models.RewardModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "ReceiveInvitation",
+    "RelativePath": "api/User/ReceiveInvitation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Common.BASE.ResponseModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "UserWearCollect",
+    "RelativePath": "api/User/UserWearCollect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collectId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Common.BASE.ResponseModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CW.Api.Controllers.UserController",
+    "Method": "UserWearHonor",
+    "RelativePath": "api/User/UserWearHonor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "honorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CW.Common.BASE.ResponseModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,800 @@
+--------------------------------
+2024/9/20 9:50:41|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/20 10:17:40|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/20 10:41:03|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 10:41:05|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTA6NDE6MDUiLCJleHAiOjE3MjY4ODY1MjUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.rFr852QU7lGSNbRxMn11gHq1v2oV5Rn67fFqbrJzBAI"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:41:05.2113336+08:00"}
+--------------------------------
+2024/9/20 10:43:04|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 10:43:05|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTA6NDM6MDUiLCJleHAiOjE3MjY4ODY2NDUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.iRNvQTJXT1D3TzCzkS19B7zCWyvOEiYhTGVfFDlo5C8"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:43:05.5331503+08:00"}
+--------------------------------
+2024/9/20 10:43:19|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:43:20|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:43:19.8291414+08:00"}
+--------------------------------
+2024/9/20 10:45:43|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:45:43|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:45:43.4070229+08:00"}
+--------------------------------
+2024/9/20 10:45:48|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:45:48|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:45:48.7894915+08:00"}
+--------------------------------
+2024/9/20 10:46:15|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:46:59|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 10:47:12|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTA6NDc6MDkiLCJleHAiOjE3MjY4ODY4ODksImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.A2yAu6wWRL9NPiBrnD8MDPc7E0fHSaZJN_W9fNyrgXM"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:47:12.6664503+08:00"}
+--------------------------------
+2024/9/20 10:47:29|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:47:43|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:47:29.2570091+08:00"}
+--------------------------------
+2024/9/20 10:47:45|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:47:48|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:47:45.5403605+08:00"}
+--------------------------------
+2024/9/20 10:51:02|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 10:51:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTA6NTE6MDIiLCJleHAiOjE3MjY4ODcxMjIsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.IVcAZ5sZ8lY-jWL6dX7FCCvfIyKMrIB6PSe7vjAW9xg"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:51:02.9475003+08:00"}
+--------------------------------
+2024/9/20 10:52:07|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[1]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:52:14|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:52:14.7745129+08:00"}
+--------------------------------
+2024/9/20 10:52:27|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[1]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:52:27|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:52:27.7298657+08:00"}
+--------------------------------
+2024/9/20 10:52:59|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[1]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 10:54:32|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T10:54:32.3782184+08:00"}
+--------------------------------
+2024/9/20 11:04:05|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 11:04:06|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTE6MDQ6MDYiLCJleHAiOjE3MjY4ODc5MDYsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.Z0-eOesm7Y7D0hxrpG55wMOmi86r9I2kLVK1DPgt2Yk"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:04:06.9512672+08:00"}
+--------------------------------
+2024/9/20 11:04:25|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[123456]-[1]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:05:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:05:02.6792108+08:00"}
+--------------------------------
+2024/9/20 11:09:02|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 11:09:03|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTE6MDk6MDMiLCJleHAiOjE3MjY4ODgyMDMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.85OpwZd49atXxxFgcDDNg2r3NXlqhsibj2WM9EGsqSo"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:09:03.8596358+08:00"}
+--------------------------------
+2024/9/20 11:09:12|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:09:12|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:09:12.4883443+08:00"}
+--------------------------------
+2024/9/20 11:09:21|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:09:51|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:09:51.3078655+08:00"}
+--------------------------------
+2024/9/20 11:14:52|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 11:14:53|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTE6MTQ6NTMiLCJleHAiOjE3MjY4ODg1NTMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.hkAXWJ8Tm_pyO-_EfZ5T6MqKIAdxIIOqbcdF4A_H8CY"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:14:53.600526+08:00"}
+--------------------------------
+2024/9/20 11:15:05|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:15:15|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:15:15.5021853+08:00"}
+--------------------------------
+2024/9/20 11:16:43|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:17:44|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:17:44.5502176+08:00"}
+--------------------------------
+2024/9/20 11:20:33|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 11:20:34|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTE6MjA6MzQiLCJleHAiOjE3MjY4ODg4OTQsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.CBRKbnmwiiUVt5Jjdi9tFxjyNm4hCN_yRAcxpktz4xE"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:20:34.4826081+08:00"}
+--------------------------------
+2024/9/20 11:20:44|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:20:55|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:20:55.5218731+08:00"}
+--------------------------------
+2024/9/20 11:28:17|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 11:28:18|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTE6Mjg6MTgiLCJleHAiOjE3MjY4ODkzNTgsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.jh-8M4rM84yop_RyM95C_JAIx5zIJCxs7wfGAFt2EnU"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:28:18.7600765+08:00"}
+--------------------------------
+2024/9/20 11:28:32|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:28:57|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:28:57.0005326+08:00"}
+--------------------------------
+2024/9/20 11:30:31|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:30:37|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:30:37.5549403+08:00"}
+--------------------------------
+2024/9/20 11:33:23|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:37:45|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:37:45.686373+08:00"}
+--------------------------------
+2024/9/20 11:42:34|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 11:42:36|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTE6NDI6MzYiLCJleHAiOjE3MjY4OTAyMTYsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.6XTKTJI3pTBc2XvUIV6pQvo4DkO3vOebPnbDfnY2ntI"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:42:36.1562562+08:00"}
+--------------------------------
+2024/9/20 11:42:50|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 11:43:09|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T11:43:09.5881094+08:00"}
+--------------------------------
+2024/9/20 13:50:23|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 13:50:33|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTM6NTA6MzMiLCJleHAiOjE3MjY4OTc4OTMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.R8qHBDnltU9WXwW2p-PziGXTZK5sTNi78Bu0XSUv0rA"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T13:50:33.6496281+08:00"}
+--------------------------------
+2024/9/20 13:50:43|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 13:50:49|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T13:50:49.6179257+08:00"}
+--------------------------------
+2024/9/20 13:52:06|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 13:52:07|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTM6NTI6MDciLCJleHAiOjE3MjY4OTc5ODcsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.1VY2c-lf_bik_ioSfRDlazAXCooTOkJTaSRBfIBa1yQ"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T13:52:07.3525137+08:00"}
+--------------------------------
+2024/9/20 13:52:18|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 13:52:39|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T13:52:39.4022217+08:00"}
+--------------------------------
+2024/9/20 14:25:02|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 14:25:03|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTQ6MjU6MDMiLCJleHAiOjE3MjY4OTk5NjMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.6ByXQPP2isBRYp6gwtzgU1Utuv6GgY_iHLiGQV5zQyk"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:25:03.7637444+08:00"}
+--------------------------------
+2024/9/20 14:25:15|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 14:25:15|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:25:15.1729486+08:00"}
+--------------------------------
+2024/9/20 14:25:25|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 14:25:31|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":0}],"HoldNum":0,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:25:31.4589574+08:00"}
+--------------------------------
+2024/9/20 14:26:42|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 14:26:42|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:26:42.9200191+08:00"}
+--------------------------------
+2024/9/20 14:26:51|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 14:26:51|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTQ6MjY6NTEiLCJleHAiOjE3MjY5MDAwNzEsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.TiY3ctKpXrx5pA_HYRwcDFqBF_1rMjdFB3AN3TRuSoM"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:26:51.1146457+08:00"}
+--------------------------------
+2024/9/20 14:26:59|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 14:27:28|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"An exception was thrown while activating CW.Api.Controllers.UserController -> CW.Api.Services.UserService.","Data":"at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)\r\n   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)\r\n   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)\r\n   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest& request)\r\n   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest& request)\r\n   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)\r\n   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)\r\n   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)\r\n   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:27:28.757934+08:00"}
+--------------------------------
+2024/9/20 14:37:50|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 14:37:52|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTQ6Mzc6NTEiLCJleHAiOjE3MjY5MDA3MzEsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.txuTeT5gE52Q0t_Yx_PVxxyiRvunwQrKBcddtK2CHqA"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:37:51.9864865+08:00"}
+--------------------------------
+2024/9/20 14:38:01|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 14:38:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":1,"IsHold":1}],"HoldNum":1,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:38:01.8295177+08:00"}
+--------------------------------
+2024/9/20 14:39:12|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 14:39:25|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":1,"IsHold":1}],"HoldNum":1,"Total":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:39:12.5536223+08:00"}
+--------------------------------
+2024/9/20 14:41:01|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 14:41:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":1,"IsHold":1},{"Id":2,"Name":"装扮2","Picture":"222","Description":"222","IsWear":0,"IsHold":0}],"HoldNum":1,"Total":2},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:41:01.9310972+08:00"}
+--------------------------------
+2024/9/20 14:41:24|
+Request Data:
+QueryData:/api/User/GetUserCollectList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserCollectList
+
+--------------------------------
+2024/9/20 14:41:24|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"UserCollects":[{"Id":1,"Name":"装扮1","Picture":"111","Description":"111","IsWear":0,"IsHold":1},{"Id":2,"Name":"装扮2","Picture":"222","Description":"222","IsWear":0,"IsHold":0}],"HoldNum":1,"Total":2},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:41:24.402172+08:00"}
+--------------------------------
+2024/9/20 14:57:10|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 14:57:11|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTQ6NTc6MTEiLCJleHAiOjE3MjY5MDE4OTEsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.t9jXcr8huqc3I2OUvSkykjfKHcVQSP0rUgN5hhpa3wc"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:57:11.9209981+08:00"}
+--------------------------------
+2024/9/20 14:57:52|
+Request Data:
+QueryData:/api/User/UserWearCollect?collectId=2
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearCollect?collectId=2
+
+--------------------------------
+2024/9/20 14:58:01|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:58:00.4310174+08:00"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:58:00.4528391+08:00"}
+--------------------------------
+2024/9/20 14:59:51|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 14:59:53|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTQ6NTk6NTIiLCJleHAiOjE3MjY5MDIwNTIsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.aXf6lXsNqrsM59f6kijI_fkarjxP6VGsCv92N8DeseE"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T14:59:52.9924214+08:00"}
+--------------------------------
+2024/9/20 15:00:04|
+Request Data:
+QueryData:/api/User/UserWearCollect?collectId=1
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearCollect?collectId=1
+
+--------------------------------
+2024/9/20 15:00:04|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T15:00:04.6009043+08:00"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T15:00:04.6215079+08:00"}
+--------------------------------
+2024/9/20 15:01:42|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 15:01:43|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTU6MDE6NDMiLCJleHAiOjE3MjY5MDIxNjMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.SzeKDcGgI_zkdF22hFc1y67Vf0RDh0QvNBFtG6uDxCY"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T15:01:43.7425952+08:00"}
+--------------------------------
+2024/9/20 15:01:54|
+Request Data:
+QueryData:/api/User/UserWearCollect?collectId=2
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearCollect?collectId=2
+
+--------------------------------
+2024/9/20 15:01:55|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T15:01:55.3161181+08:00"}
+--------------------------------
+2024/9/20 15:28:14|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/20 17:23:09|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 17:23:11|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTc6MjM6MTEiLCJleHAiOjE3MjY5MTA2NTEsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.sPGhEBymkMB8godRAqXFXYFMDeCVY9iXCLHcrf7GXTw"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:23:11.5302212+08:00"}
+--------------------------------
+2024/9/20 17:23:29|
+Request Data:
+QueryData:/api/User/GetUserHonorList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserHonorList
+
+--------------------------------
+2024/9/20 17:23:30|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"List1":[{"Id":1,"Name":"全勤员工","Picture":"照片","Description":"连续一周每天都过关","IsWear":0,"IsHold":1}],"List2":[],"List3":[],"UserHonor":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:23:29.8476933+08:00"}
+--------------------------------
+2024/9/20 17:24:00|
+Request Data:
+QueryData:/api/User/UserWearHonor?honorId=1
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearHonor?honorId=1
+
+--------------------------------
+2024/9/20 17:24:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:24:00.8074823+08:00"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:24:00.8334428+08:00"}
+--------------------------------
+2024/9/20 17:24:06|
+Request Data:
+QueryData:/api/User/GetUserHonorList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserHonorList
+
+--------------------------------
+2024/9/20 17:24:06|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"List1":[{"Id":1,"Name":"全勤员工","Picture":"照片","Description":"连续一周每天都过关","IsWear":1,"IsHold":1}],"List2":[],"List3":[],"UserHonor":{"Id":1,"Name":"全勤员工","Picture":"照片","Description":"连续一周每天都过关","IsWear":1,"IsHold":1}},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:24:06.7735747+08:00"}
+--------------------------------
+2024/9/20 17:25:49|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 17:25:51|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTc6MjU6NTAiLCJleHAiOjE3MjY5MTA4MTAsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.-4dfhQkVUi8zj-ssMzDx6V-cQIknViOlMkLIj8nFqAI"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:25:51.2108682+08:00"}
+--------------------------------
+2024/9/20 17:26:03|
+Request Data:
+QueryData:/api/User/UserWearHonor?honorId=1
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearHonor?honorId=1
+
+--------------------------------
+2024/9/20 17:26:04|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"玩家没有当前荣誉!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:26:04.3434585+08:00"}
+--------------------------------
+2024/9/20 17:26:35|
+Request Data:
+QueryData:/api/User/UserWearHonor?honorId=1
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearHonor?honorId=1
+
+--------------------------------
+2024/9/20 17:26:54|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"玩家没有当前荣誉!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:26:54.6164016+08:00"}
+--------------------------------
+2024/9/20 17:28:39|
+Request Data:
+QueryData:/api/User/UserWearHonor?honorId=2
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearHonor?honorId=2
+
+--------------------------------
+2024/9/20 17:28:45|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"玩家没有当前荣誉!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:28:45.0059916+08:00"}
+--------------------------------
+2024/9/20 17:28:47|
+Request Data:
+QueryData:/api/User/UserWearHonor?honorId=2
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearHonor?honorId=2
+
+--------------------------------
+2024/9/20 17:28:48|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"玩家没有当前荣誉!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:28:48.3434894+08:00"}
+--------------------------------
+2024/9/20 17:30:45|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 17:30:47|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTc6MzA6NDciLCJleHAiOjE3MjY5MTExMDcsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.0FxEIfvwC-1hvt4GiJgtzEc0ZGYK0-sQO3U3EKUW5O0"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:30:47.2442359+08:00"}
+--------------------------------
+2024/9/20 17:31:00|
+Request Data:
+QueryData:/api/User/UserWearHonor?honorId=1
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearHonor?honorId=1
+
+--------------------------------
+2024/9/20 17:31:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:31:00.662792+08:00"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:31:00.6899016+08:00"}
+--------------------------------
+2024/9/20 17:58:13|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/20 17:58:15|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjEgMTc6NTg6MTUiLCJleHAiOjE3MjY5MTI3NTUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.WeNx6VHs1teMYJA-M3HfpIlDvSTL6K5TQ0ktig7dDZI"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:58:15.4610507+08:00"}
+--------------------------------
+2024/9/20 17:58:34|
+Request Data:
+QueryData:/api/User/UserWearHonor?honorId=1
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearHonor?honorId=1
+
+--------------------------------
+2024/9/20 17:58:35|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:58:35.1386567+08:00"}
+--------------------------------
+2024/9/20 17:58:42|
+Request Data:
+QueryData:/api/User/UserWearHonor?honorId=2
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/UserWearHonor?honorId=2
+
+--------------------------------
+2024/9/20 17:58:42|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:58:42.2984754+08:00"}
+--------------------------------
+2024/9/20 17:58:53|
+Request Data:
+QueryData:/api/User/GetUserHonorList
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetUserHonorList
+
+--------------------------------
+2024/9/20 17:58:53|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"List1":[{"Id":1,"Name":"全勤员工","Picture":"照片","Description":"连续一周每天都过关","IsWear":0,"IsHold":1},{"Id":2,"Name":"搞小团体","Picture":"照片","Description":"邀请满3人加入上班游戏","IsWear":1,"IsHold":1}],"List2":[],"List3":[],"UserHonor":{"Id":2,"Name":"搞小团体","Picture":"照片","Description":"邀请满3人加入上班游戏","IsWear":1,"IsHold":1}},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-20T17:58:53.2637375+08:00"}

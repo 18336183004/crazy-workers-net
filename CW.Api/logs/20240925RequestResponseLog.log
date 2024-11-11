@@ -1,0 +1,842 @@
+--------------------------------
+2024/9/25 9:59:30|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/25 10:42:31|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 10:42:33|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTA6NDI6MzMiLCJleHAiOjE3MjczMTg2MTMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.xnRLvNq4rtxKIV3I7jE534ZnLll2woze8cEsiY0Huyk","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:42:33.5881347+08:00"}
+--------------------------------
+2024/9/25 10:42:48|
+Request Data:
+QueryData:/api/User/AddRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/AddRecord
+
+--------------------------------
+2024/9/25 10:42:48|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:42:48.6511757+08:00"}
+--------------------------------
+2024/9/25 10:43:01|
+Request Data:
+QueryData:/api/User/EndThisGame
+BodyData:{
+  "Type": 0
+}
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/EndThisGame
+
+--------------------------------
+2024/9/25 10:43:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:43:02.0944688+08:00"}
+--------------------------------
+2024/9/25 10:43:23|
+Request Data:
+QueryData:/api/User/EndThisGame
+BodyData:{
+  "Type": 1
+}
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/EndThisGame
+
+--------------------------------
+2024/9/25 10:43:23|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:43:23.4022992+08:00"}
+--------------------------------
+2024/9/25 10:43:33|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 10:43:33|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 多表查询存在别名不一致,请把OrderBy中的c改成p就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样\r\nEnglish Message : Join p needs to be the same as OrderBy c","Data":"at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)\r\n   at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)\r\n   at SqlSugar.QueryableProvider`1._OrderBy(Expression expression, OrderByType type)\r\n   at SqlSugar.QueryableProvider`1.OrderBy(Expression`1 expression, OrderByType type)\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 363\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method550(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:43:33.5700278+08:00"}
+--------------------------------
+2024/9/25 10:44:14|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 10:44:15|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTA6NDQ6MTUiLCJleHAiOjE3MjczMTg3MTUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.HNNapB5B_fwdFdiJFFhnjTls72fCvpwWuWn2Xdg08_M","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:44:15.3424009+08:00"}
+--------------------------------
+2024/9/25 10:44:26|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 10:44:27|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unknown column 'p.TotalNumber' in 'order clause'","Data":"at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)\r\n   at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)\r\n   at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 363\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method517(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:44:27.1440583+08:00"}
+--------------------------------
+2024/9/25 10:46:57|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 10:46:58|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTA6NDY6NTgiLCJleHAiOjE3MjczMTg4NzgsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.kYkYGAI5lxCnW3m5w7mSNrvncNGuHw2pEsf81uLP84o","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:46:58.4591593+08:00"}
+--------------------------------
+2024/9/25 10:47:09|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 10:47:09|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":null,"TotalNumber":0,"Attendance":null}],"UserProvinceId":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T10:47:09.5689777+08:00"}
+--------------------------------
+2024/9/25 11:06:17|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 11:06:18|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTE6MDY6MTgiLCJleHAiOjE3MjczMjAwMzgsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.X1hC2emGNelGetdnKMRB9sK0Lj_V8u4uUU1KxUcW2zY","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:06:18.8451623+08:00"}
+--------------------------------
+2024/9/25 11:06:29|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 11:06:30|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"新疆","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"山东省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"台湾省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"天津市","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"湖南省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"内蒙古","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"海南省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"黑龙江省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"贵州省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"浙江省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"陕西省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"宁夏省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"江西省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"澳门","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"北京市","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"湖北省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"山西省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"广西省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"吉林省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"四川省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"江苏省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"西藏","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"福建省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"青海省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"香港","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"河南省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"河北省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"广东省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"辽宁省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"重庆市","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"上海市","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"云南省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"安徽省","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"甘肃省","TotalNumber":1,"Attendance":"100.0000%"}],"UserProvinceId":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:06:29.7056222+08:00"}
+--------------------------------
+2024/9/25 11:07:30|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 11:07:31|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTE6MDc6MzEiLCJleHAiOjE3MjczMjAxMTEsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.pZW9ZJMmpXw62H5eUCQNNTeb1PkwEK31k3zCv9zWQYM","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:07:31.2031051+08:00"}
+--------------------------------
+2024/9/25 11:07:41|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 11:07:42|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"山西省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"广西省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"吉林省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"四川省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"江苏省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"西藏","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"福建省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"青海省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"河南省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"香港","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"河北省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"广东省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"辽宁省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"重庆市","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"上海市","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"云南省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"安徽省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"甘肃省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"山东省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"新疆","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"天津市","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"湖南省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"台湾省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"内蒙古","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"海南省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"黑龙江省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"贵州省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"浙江省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"陕西省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"江西省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"宁夏省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"湖北省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"澳门","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"北京市","TotalNumber":1,"Attendance":"100.0000%"}],"UserProvinceId":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:07:41.4449275+08:00"}
+--------------------------------
+2024/9/25 11:41:16|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 11:41:17|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTE6NDE6MTciLCJleHAiOjE3MjczMjIxMzcsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.lB1XlvlkwNMFFwCwpZENY5k9jUFE2ec-TLypAtqiVRI","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:41:17.5926933+08:00"}
+--------------------------------
+2024/9/25 11:41:29|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 11:41:30|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"北京市","TotalNumber":1,"Attendance":"100.0000%"},{"Name":"河北省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"广东省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"辽宁省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"重庆市","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"上海市","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"云南省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"安徽省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"甘肃省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"山东省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"新疆","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"天津市","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"湖南省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"台湾省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"内蒙古","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"海南省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"黑龙江省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"贵州省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"浙江省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"陕西省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"江西省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"宁夏省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"湖北省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"澳门","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"山西省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"广西省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"吉林省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"四川省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"江苏省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"西藏","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"福建省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"青海省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"河南省","TotalNumber":0,"Attendance":"0.0000%"},{"Name":"香港","TotalNumber":0,"Attendance":"0.0000%"}],"UserProvinceId":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:41:29.9527707+08:00"}
+--------------------------------
+2024/9/25 11:46:57|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 11:46:58|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTE6NDY6NTgiLCJleHAiOjE3MjczMjI0NzgsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.lO3WWKAHav196ZnVyymA1DKwy3dxcd2OuZl9bcHE67A","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:46:58.3803773+08:00"}
+--------------------------------
+2024/9/25 11:47:09|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 11:47:10|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 当前表达式Round((Convert((Subqueryable().LeftJoin((u, l) => (u.Id == l.UserId)).Where((u, l) => (((value(CW.Api.Services.UserService)._dbContext.GetDate().Month == l.PlayDate.Month) AndAlso (Convert(l.IsSuccess, Int32) == 1)) AndAlso (u.ProvinceId == Convert(p.Id, Nullable`1)))).Count() / Subqueryable().LeftJoin((u, l) => (u.Id == l.UserId)).Where((u, l) => (value(CW.Api.Services.UserService)._dbContext.GetDate().Month == l.PlayDate.Month)).Count()), Double) * 100)) 不支持，查看导航是否配置正确等或者缺少Includes() \r\nEnglish Message : Round((Convert((Subqueryable().LeftJoin((u, l) => (u.Id == l.UserId)).Where((u, l) => (((value(CW.Api.Services.UserService)._dbContext.GetDate().Month == l.PlayDate.Month) AndAlso (Convert(l.IsSuccess, Int32) == 1)) AndAlso (u.ProvinceId == Convert(p.Id, Nullable`1)))).Count() / Subqueryable().LeftJoin((u, l) => (u.Id == l.UserId)).Where((u, l) => (value(CW.Api.Services.UserService)._dbContext.GetDate().Month == l.PlayDate.Month)).Count()), Double) * 100))no support Check if the navigation is configured correctly or Includes() is missing","Data":"at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)\r\n   at SqlSugar.MethodCallExpressionResolve.CusMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)\r\n   at SqlSugar.MethodCallExpressionResolve.SqlFuncMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.MethodCallExpressionResolve.AppendModel(ExpressionParameter parameter, MethodCallExpressionModel model, Expression item, String name, IEnumerable`1 args)\r\n   at SqlSugar.MethodCallExpressionResolve.AppendItem(ExpressionParameter parameter, String name, IEnumerable`1 args, MethodCallExpressionModel model, Expression item)\r\n   at SqlSugar.MethodCallExpressionResolve.Select(ExpressionParameter parameter, Nullable`1 isLeft, String name, IEnumerable`1 args, MethodCallExpressionModel model, List`1 appendArgs)\r\n   at SqlSugar.MethodCallExpressionResolve.SqlFuncMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BaseResolve.ResloveOtherMUC(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 363\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method517(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:47:10.4036941+08:00"}
+--------------------------------
+2024/9/25 11:47:59|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 11:48:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTE6NDg6MDAiLCJleHAiOjE3MjczMjI1NDAsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.N3Et46DZjAOkCVnGSuPwtFYfF4r3VgHJ-hxz86M-h5M","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:48:00.7680218+08:00"}
+--------------------------------
+2024/9/25 11:48:12|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 11:48:13|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '({0},), * ,), concat('', CAST('Append' AS CHAR),'%') AS `Attendance`  FROM `prov' at line 1","Data":"at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)\r\n   at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)\r\n   at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 363\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method517(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:48:13.2534937+08:00"}
+--------------------------------
+2024/9/25 11:50:05|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 11:50:06|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTE6NTA6MDYiLCJleHAiOjE3MjczMjI2NjYsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.yvCZrHaDuqeF27xMbkUBSpHJKtjCL9wpkJLse6KF86Y","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:50:06.2805885+08:00"}
+--------------------------------
+2024/9/25 11:50:17|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 11:50:18|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"北京市","TotalNumber":1,"Attendance":1},{"Name":"内蒙古","TotalNumber":0,"Attendance":0},{"Name":"上海市","TotalNumber":0,"Attendance":0},{"Name":"福建省","TotalNumber":0,"Attendance":0},{"Name":"湖北省","TotalNumber":0,"Attendance":0},{"Name":"海南省","TotalNumber":0,"Attendance":0},{"Name":"云南省","TotalNumber":0,"Attendance":0},{"Name":"青海省","TotalNumber":0,"Attendance":0},{"Name":"澳门","TotalNumber":0,"Attendance":0},{"Name":"天津市","TotalNumber":0,"Attendance":0},{"Name":"辽宁省","TotalNumber":0,"Attendance":0},{"Name":"江苏省","TotalNumber":0,"Attendance":0},{"Name":"江西省","TotalNumber":0,"Attendance":0},{"Name":"湖南省","TotalNumber":0,"Attendance":0},{"Name":"重庆市","TotalNumber":0,"Attendance":0},{"Name":"西藏","TotalNumber":0,"Attendance":0},{"Name":"宁夏省","TotalNumber":0,"Attendance":0},{"Name":"台湾省","TotalNumber":0,"Attendance":0},{"Name":"河北省","TotalNumber":0,"Attendance":0},{"Name":"吉林省","TotalNumber":0,"Attendance":0},{"Name":"浙江省","TotalNumber":0,"Attendance":0},{"Name":"山东省","TotalNumber":0,"Attendance":0},{"Name":"广东省","TotalNumber":0,"Attendance":0},{"Name":"四川省","TotalNumber":0,"Attendance":0},{"Name":"陕西省","TotalNumber":0,"Attendance":0},{"Name":"新疆","TotalNumber":0,"Attendance":0},{"Name":"山西省","TotalNumber":0,"Attendance":0},{"Name":"黑龙江省","TotalNumber":0,"Attendance":0},{"Name":"安徽省","TotalNumber":0,"Attendance":0},{"Name":"河南省","TotalNumber":0,"Attendance":0},{"Name":"广西省","TotalNumber":0,"Attendance":0},{"Name":"贵州省","TotalNumber":0,"Attendance":0},{"Name":"甘肃省","TotalNumber":0,"Attendance":0},{"Name":"香港","TotalNumber":0,"Attendance":0}],"UserProvinceId":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T11:50:17.9882434+08:00"}
+--------------------------------
+2024/9/25 13:34:47|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "string"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 13:34:49|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIyIiwiT3BlbklkIjoic3RyaW5nIiwiQ2lwaGVyIjoiQ3g2S2tqRzIzcC9BWG52VWJoVVZXdz09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTM6MzQ6NDgiLCJleHAiOjE3MjczMjg5NDgsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.OBqhOfbIeN0ofZ4b3K0DLqs8yrYHzIe-JJsw4N1aQfk","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:34:49.0798078+08:00"}
+--------------------------------
+2024/9/25 13:35:00|
+Request Data:
+QueryData:/api/User/AddRecord
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/AddRecord
+
+--------------------------------
+2024/9/25 13:35:01|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:35:01.2207225+08:00"}
+--------------------------------
+2024/9/25 13:35:06|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:35:06|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:35:06.6903537+08:00"}
+--------------------------------
+2024/9/25 13:36:55|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:36:55|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:36:55.4559082+08:00"}
+--------------------------------
+2024/9/25 13:36:56|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:36:56|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:36:56.9209332+08:00"}
+--------------------------------
+2024/9/25 13:36:57|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:36:57|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:36:57.6572239+08:00"}
+--------------------------------
+2024/9/25 13:36:58|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:36:58|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:36:58.3408921+08:00"}
+--------------------------------
+2024/9/25 13:36:59|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:36:59|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:36:59.1535729+08:00"}
+--------------------------------
+2024/9/25 13:36:59|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:36:59|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:36:59.5231961+08:00"}
+--------------------------------
+2024/9/25 13:36:59|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:36:59|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:36:59.8522234+08:00"}
+--------------------------------
+2024/9/25 13:37:00|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:00|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:00.1841084+08:00"}
+--------------------------------
+2024/9/25 13:37:00|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:00|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:00.5267412+08:00"}
+--------------------------------
+2024/9/25 13:37:11|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:11|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:11.580219+08:00"}
+--------------------------------
+2024/9/25 13:37:12|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:12|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:12.2417628+08:00"}
+--------------------------------
+2024/9/25 13:37:12|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:12|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:12.5889697+08:00"}
+--------------------------------
+2024/9/25 13:37:12|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:12|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:12.9810937+08:00"}
+--------------------------------
+2024/9/25 13:37:13|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:13|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:13.262237+08:00"}
+--------------------------------
+2024/9/25 13:37:13|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:13|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:13.5936654+08:00"}
+--------------------------------
+2024/9/25 13:37:13|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:37:13|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method524(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:37:13.8267102+08:00"}
+--------------------------------
+2024/9/25 13:38:35|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "string"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 13:38:36|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIyIiwiT3BlbklkIjoic3RyaW5nIiwiQ2lwaGVyIjoiQ3g2S2tqRzIzcC9BWG52VWJoVVZXdz09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTM6Mzg6MzYiLCJleHAiOjE3MjczMjkxNzYsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.wzKxqfxITDyuNfl2LFEt2nUS93OZqMRHwG0UpZTyzpo","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:38:36.7995016+08:00"}
+--------------------------------
+2024/9/25 13:38:49|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:38:49|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method517(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:38:49.7302822+08:00"}
+--------------------------------
+2024/9/25 13:39:13|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:39:17|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 不支持当前表达式\r\nEnglish Message : I'm sorry I can't parse the current expression","Data":"at SqlSugar.Check.ExceptionEasy(String enMessage, String cnMessage)\r\n   at SqlSugar.SubResolve..ctor(MethodCallExpression expression, ExpressionContext context, Expression oppsiteExpression)\r\n   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.BinaryExpressionResolve.Left(BinaryExpression expression, Expression leftExpression)\r\n   at SqlSugar.BinaryExpressionResolve.DefaultBinary(ExpressionParameter parameter, BinaryExpression expression, String operatorValue)\r\n   at SqlSugar.BinaryExpressionResolve.Other(ExpressionParameter parameter)\r\n   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.UnaryExpressionResolve.Append(ExpressionParameter parameter, ExpressionType nodeType)\r\n   at SqlSugar.UnaryExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.BaseResolve.ResolveBinary(Expression item, String asName)\r\n   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)\r\n   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)\r\n   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)\r\n   at SqlSugar.BaseResolve.Start()\r\n   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)\r\n   at SqlSugar.QueryBuilder.GetSelectValueByExpression()\r\n   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()\r\n   at SqlSugar.MySqlQueryBuilder.ToSqlString()\r\n   at SqlSugar.QueryableProvider`1._ToSql()\r\n   at SqlSugar.QueryableProvider`1.MergeTable()\r\n   at CW.Api.Services.UserService.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 377\r\n   at CW.Api.Controllers.UserController.GetProvinceRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 120\r\n   at lambda_method517(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:39:17.1846873+08:00"}
+--------------------------------
+2024/9/25 13:40:23|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "string"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 13:40:24|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIyIiwiT3BlbklkIjoic3RyaW5nIiwiQ2lwaGVyIjoiQ3g2S2tqRzIzcC9BWG52VWJoVVZXdz09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTM6NDA6MjQiLCJleHAiOjE3MjczMjkyODQsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.4Zy46gbzv4NIBEjtwyeXybxmjAliZofon69X4qtq_18","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:40:24.9462874+08:00"}
+--------------------------------
+2024/9/25 13:40:35|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:40:35|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"北京市","TotalNumber":1,"Attendance":null},{"Name":"广东省","TotalNumber":0,"Attendance":null},{"Name":"江苏省","TotalNumber":0,"Attendance":null},{"Name":"澳门","TotalNumber":0,"Attendance":null},{"Name":"贵州省","TotalNumber":0,"Attendance":null},{"Name":"山东省","TotalNumber":0,"Attendance":null},{"Name":"辽宁省","TotalNumber":0,"Attendance":null},{"Name":"青海省","TotalNumber":0,"Attendance":null},{"Name":"广西省","TotalNumber":0,"Attendance":null},{"Name":"浙江省","TotalNumber":0,"Attendance":null},{"Name":"天津市","TotalNumber":0,"Attendance":null},{"Name":"台湾省","TotalNumber":0,"Attendance":null},{"Name":"云南省","TotalNumber":0,"Attendance":null},{"Name":"河南省","TotalNumber":0,"Attendance":null},{"Name":"吉林省","TotalNumber":0,"Attendance":null},{"Name":"宁夏省","TotalNumber":0,"Attendance":null},{"Name":"海南省","TotalNumber":0,"Attendance":null},{"Name":"安徽省","TotalNumber":0,"Attendance":null},{"Name":"河北省","TotalNumber":0,"Attendance":null},{"Name":"西藏","TotalNumber":0,"Attendance":null},{"Name":"湖北省","TotalNumber":0,"Attendance":null},{"Name":"黑龙江省","TotalNumber":0,"Attendance":null},{"Name":"新疆","TotalNumber":0,"Attendance":null},{"Name":"重庆市","TotalNumber":0,"Attendance":null},{"Name":"福建省","TotalNumber":0,"Attendance":null},{"Name":"山西省","TotalNumber":0,"Attendance":null},{"Name":"陕西省","TotalNumber":0,"Attendance":null},{"Name":"湖南省","TotalNumber":0,"Attendance":null},{"Name":"上海市","TotalNumber":0,"Attendance":null},{"Name":"香港","TotalNumber":0,"Attendance":null},{"Name":"四川省","TotalNumber":0,"Attendance":null},{"Name":"江西省","TotalNumber":0,"Attendance":null},{"Name":"内蒙古","TotalNumber":0,"Attendance":null},{"Name":"甘肃省","TotalNumber":0,"Attendance":null}],"UserProvinceId":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:40:35.3846054+08:00"}
+--------------------------------
+2024/9/25 13:42:19|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "string"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 13:42:21|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIyIiwiT3BlbklkIjoic3RyaW5nIiwiQ2lwaGVyIjoiQ3g2S2tqRzIzcC9BWG52VWJoVVZXdz09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTM6NDI6MjAiLCJleHAiOjE3MjczMjk0MDAsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.mKrdHVh_4YXx--IXTJeoSh4pO6H9Fm_47Dij6Q6NvMc","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:42:21.0771384+08:00"}
+--------------------------------
+2024/9/25 13:42:32|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:42:33|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"北京市","TotalNumber":1,"Attendance":1.0},{"Name":"内蒙古","TotalNumber":0,"Attendance":null},{"Name":"上海市","TotalNumber":0,"Attendance":null},{"Name":"福建省","TotalNumber":0,"Attendance":null},{"Name":"湖北省","TotalNumber":0,"Attendance":null},{"Name":"海南省","TotalNumber":0,"Attendance":null},{"Name":"云南省","TotalNumber":0,"Attendance":null},{"Name":"青海省","TotalNumber":0,"Attendance":null},{"Name":"澳门","TotalNumber":0,"Attendance":null},{"Name":"天津市","TotalNumber":0,"Attendance":null},{"Name":"辽宁省","TotalNumber":0,"Attendance":null},{"Name":"江苏省","TotalNumber":0,"Attendance":null},{"Name":"江西省","TotalNumber":0,"Attendance":null},{"Name":"湖南省","TotalNumber":0,"Attendance":null},{"Name":"重庆市","TotalNumber":0,"Attendance":null},{"Name":"西藏","TotalNumber":0,"Attendance":null},{"Name":"宁夏省","TotalNumber":0,"Attendance":null},{"Name":"台湾省","TotalNumber":0,"Attendance":null},{"Name":"河北省","TotalNumber":0,"Attendance":null},{"Name":"吉林省","TotalNumber":0,"Attendance":null},{"Name":"浙江省","TotalNumber":0,"Attendance":null},{"Name":"山东省","TotalNumber":0,"Attendance":null},{"Name":"广东省","TotalNumber":0,"Attendance":null},{"Name":"四川省","TotalNumber":0,"Attendance":null},{"Name":"陕西省","TotalNumber":0,"Attendance":null},{"Name":"新疆","TotalNumber":0,"Attendance":null},{"Name":"山西省","TotalNumber":0,"Attendance":null},{"Name":"黑龙江省","TotalNumber":0,"Attendance":null},{"Name":"安徽省","TotalNumber":0,"Attendance":null},{"Name":"河南省","TotalNumber":0,"Attendance":null},{"Name":"广西省","TotalNumber":0,"Attendance":null},{"Name":"贵州省","TotalNumber":0,"Attendance":null},{"Name":"甘肃省","TotalNumber":0,"Attendance":null},{"Name":"香港","TotalNumber":0,"Attendance":null}],"UserProvinceId":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:42:32.6712879+08:00"}
+--------------------------------
+2024/9/25 13:42:46|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/9/25 13:42:46|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"北京市","TotalNumber":2,"Attendance":0.5},{"Name":"内蒙古","TotalNumber":0,"Attendance":null},{"Name":"上海市","TotalNumber":0,"Attendance":null},{"Name":"福建省","TotalNumber":0,"Attendance":null},{"Name":"湖北省","TotalNumber":0,"Attendance":null},{"Name":"海南省","TotalNumber":0,"Attendance":null},{"Name":"云南省","TotalNumber":0,"Attendance":null},{"Name":"青海省","TotalNumber":0,"Attendance":null},{"Name":"澳门","TotalNumber":0,"Attendance":null},{"Name":"天津市","TotalNumber":0,"Attendance":null},{"Name":"辽宁省","TotalNumber":0,"Attendance":null},{"Name":"江苏省","TotalNumber":0,"Attendance":null},{"Name":"江西省","TotalNumber":0,"Attendance":null},{"Name":"湖南省","TotalNumber":0,"Attendance":null},{"Name":"重庆市","TotalNumber":0,"Attendance":null},{"Name":"西藏","TotalNumber":0,"Attendance":null},{"Name":"宁夏省","TotalNumber":0,"Attendance":null},{"Name":"台湾省","TotalNumber":0,"Attendance":null},{"Name":"河北省","TotalNumber":0,"Attendance":null},{"Name":"吉林省","TotalNumber":0,"Attendance":null},{"Name":"浙江省","TotalNumber":0,"Attendance":null},{"Name":"山东省","TotalNumber":0,"Attendance":null},{"Name":"广东省","TotalNumber":0,"Attendance":null},{"Name":"四川省","TotalNumber":0,"Attendance":null},{"Name":"陕西省","TotalNumber":0,"Attendance":null},{"Name":"新疆","TotalNumber":0,"Attendance":null},{"Name":"山西省","TotalNumber":0,"Attendance":null},{"Name":"黑龙江省","TotalNumber":0,"Attendance":null},{"Name":"安徽省","TotalNumber":0,"Attendance":null},{"Name":"河南省","TotalNumber":0,"Attendance":null},{"Name":"广西省","TotalNumber":0,"Attendance":null},{"Name":"贵州省","TotalNumber":0,"Attendance":null},{"Name":"甘肃省","TotalNumber":0,"Attendance":null},{"Name":"香港","TotalNumber":0,"Attendance":null}],"UserProvinceId":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:42:46.069345+08:00"}
+--------------------------------
+2024/9/25 13:50:07|
+Request Data:
+QueryData:/api/User/EndThisGame
+BodyData:{
+  "Type": 1
+}
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/EndThisGame
+
+--------------------------------
+2024/9/25 13:50:08|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:50:08.0938208+08:00"}
+--------------------------------
+2024/9/25 13:50:19|
+Request Data:
+QueryData:/api/User/GetUserInfo
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetUserInfo
+
+--------------------------------
+2024/9/25 13:50:19|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"Name":null,"Tel":null,"Picture":null,"Collect":null,"PositionLevelName":null,"Area":"北京市","Day":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T13:50:19.5802559+08:00"}
+--------------------------------
+2024/9/25 14:24:25|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/25 14:40:45|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 14:40:47|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTQ6NDA6NDciLCJleHAiOjE3MjczMzI5MDcsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.wgltmfxuF3mei54qTpr8gb2AyjPVY6nu0NgwbBScoaE","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:40:47.2460085+08:00"}
+--------------------------------
+2024/9/25 14:40:59|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:41:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:40:59.9468025+08:00"}
+--------------------------------
+2024/9/25 14:41:44|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:41:44|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:41:44.2148921+08:00"}
+--------------------------------
+2024/9/25 14:41:45|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:41:45|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:41:45.4881176+08:00"}
+--------------------------------
+2024/9/25 14:42:51|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:42:51|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:42:51.6044316+08:00"}
+--------------------------------
+2024/9/25 14:42:52|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:42:52|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:42:52.7793335+08:00"}
+--------------------------------
+2024/9/25 14:43:40|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:43:40|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:43:40.1103731+08:00"}
+--------------------------------
+2024/9/25 14:44:33|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:44:34|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:44:33.9652032+08:00"}
+--------------------------------
+2024/9/25 14:46:00|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:46:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:46:00.7977222+08:00"}
+--------------------------------
+2024/9/25 14:46:01|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:46:01|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:46:01.7649639+08:00"}
+--------------------------------
+2024/9/25 14:46:06|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:46:33|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":0,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:46:06.5321999+08:00"}
+--------------------------------
+2024/9/25 14:48:14|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 14:48:15|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTQ6NDg6MTUiLCJleHAiOjE3MjczMzMzNTUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.lH_FRoq7Fo7uRZMuje7Lb6CxpfsvMXrS7iy7m4kRa3k","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:48:15.2585982+08:00"}
+--------------------------------
+2024/9/25 14:48:25|
+Request Data:
+QueryData:/api/User/InvitationRecord
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/InvitationRecord
+
+--------------------------------
+2024/9/25 14:48:25|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":1,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T14:48:25.3506647+08:00"}
+--------------------------------
+2024/9/25 15:12:54|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "string"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/25 15:12:55|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIyIiwiT3BlbklkIjoic3RyaW5nIiwiQ2lwaGVyIjoiQ3g2S2tqRzIzcC9BWG52VWJoVVZXdz09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjYgMTU6MTI6NTUiLCJleHAiOjE3MjczMzQ4MzUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.QR60zIXUYmLEQSa_9LuadUkUuXHk8HwexUAovvOWS3M","Day":null,"PositionLevelName":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T15:12:55.7087067+08:00"}
+--------------------------------
+2024/9/25 15:13:05|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[2]-[string]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/9/25 15:13:06|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Name":"实习生","TotalNumber":2},{"Name":"总经理","TotalNumber":0},{"Name":"小组长","TotalNumber":0},{"Name":"首席运营官","TotalNumber":0},{"Name":"部门经理","TotalNumber":0},{"Name":"正式员工","TotalNumber":0},{"Name":"执行副总裁","TotalNumber":0},{"Name":"主管","TotalNumber":0},{"Name":"CE0","TotalNumber":0},{"Name":"副总经理","TotalNumber":0},{"Name":"资深员工","TotalNumber":0},{"Name":"不用执行副总裁","TotalNumber":0},{"Name":"总监","TotalNumber":0},{"Name":"董事长","TotalNumber":0}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-25T15:13:06.0184039+08:00"}
+--------------------------------
+2024/9/25 15:35:46|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+

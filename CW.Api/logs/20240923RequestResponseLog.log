@@ -1,0 +1,101 @@
+--------------------------------
+2024/9/23 15:29:40|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/23 15:29:40|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-23T15:29:40.4594453+08:00"}
+--------------------------------
+2024/9/23 15:29:47|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/23 15:29:47|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-23T15:29:47.5246338+08:00"}
+--------------------------------
+2024/9/23 15:29:48|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/23 15:29:48|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-23T15:29:48.4307432+08:00"}
+--------------------------------
+2024/9/23 15:29:50|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/23 15:29:50|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-23T15:29:50.7030087+08:00"}
+--------------------------------
+2024/9/23 15:32:05|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/23 15:35:08|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "654321",
+  "InviterId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/23 15:35:10|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Can only be used in expressions","Data":"at SqlSugar.SqlFunc.Subqueryable[T]()\r\n   at CW.Api.Services.LoginService.LoginAccount(LoginModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\LoginService.cs:line 37\r\n   at CW.Api.Controllers.LoginController.Login(LoginModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 38\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-23T15:35:10.1509994+08:00"}
+--------------------------------
+2024/9/23 15:35:54|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "654321",
+  "InviterId": "123456"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/23 15:35:55|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI2IiwiT3BlbklkIjoiNjU0MzIxIiwiQ2lwaGVyIjoiQlRwOFpSMnVVRElySFpQaENGemVZdz09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjQgMTU6MzU6NTUiLCJleHAiOjE3MjcxNjM0MTUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.mRR74zAtiCsMVdbIILv8f5b_CzB7UDI4bQPssFdMvhI"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-23T15:35:55.4465271+08:00"}
+--------------------------------
+2024/9/23 18:06:54|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/9/23 18:08:18|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMjQgMTg6MDg6MTciLCJleHAiOjE3MjcxNzI1NTcsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.u8fS9am52ZnjptmuEMZRT_EuqDG4_T07Y3ZVQaslJKA","Day":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-23T18:08:18.1630054+08:00"}

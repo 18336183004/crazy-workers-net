@@ -1,0 +1,402 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大鹅管理后台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <!-- load css -->
+    <link href="~/js/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link rel="stylesheet" href="~/common/font-awesome/css/font-awesome.css" media="all" />
+    <link rel="stylesheet" href="~/Admin/css/index.css?v=@CW.Common.Datetime.DateTimeHelper.ConvertDateToTimeStamp(DateTime.Now)" media="all" />
+    <link rel="stylesheet" href="~/Admin/css/themes/default.css?v=@CW.Common.Datetime.DateTimeHelper.ConvertDateToTimeStamp(DateTime.Now)" media="all" id="skin" kit-skin />
+</head>
+<body class="kit-theme">
+    <div class="layui-layout layui-layout-admin kit-layout-admin" id="layui_layout">
+        <!-- 顶部区域 -->
+        <div class="layui-header">
+            <!--  PC模式 -->
+            <div class="layui-logo"><img src="~/Admin/image/logo.png?v=@CW.Common.Datetime.DateTimeHelper.ConvertDateToTimeStamp(DateTime.Now)" />&nbsp;大鹅管理后台</div>
+            <!-- 导航左 -->
+            <ul class="layui-nav layui-layout-left kit-nav sys-nav" kit-one-level>
+            </ul>
+            <ul class="layui-nav layui-layout-right kit-nav">
+                <li class="layui-nav-item">
+                    <a href="javascript:;" id="fullscreen">
+                        <i class="fa fa-window-maximize"></i>
+                        全屏
+                    </a>
+                </li>
+                @*<li class="layui-nav-item">
+                        <a href="javascript:;">
+                            <i class="fa fa-magic"></i> 皮肤
+                        </a>
+                        <dl class="layui-nav-child skin">
+                            <dd><a href="javascript:;" data-skin="default" style="color: #393D49;"><i class="fa fa-adjust"></i> 默认</a></dd>
+                            <dd><a href="javascript:;" data-skin="orange" style="color: #ff6700;"><i class="fa fa-adjust"></i> 橘子橙</a></dd>
+                            <dd><a href="javascript:;" data-skin="green" style="color: #00a65a;"><i class="fa fa-adjust"></i> 原谅绿</a></dd>
+                            <dd><a href="javascript:;" data-skin="pink" style="color: #FA6086;"><i class="fa fa-adjust"></i> 少女粉</a></dd>
+                            <dd><a href="javascript:;" data-skin="blue.1" style="color: #00c0ef;"><i class="fa fa-adjust"></i> 天空蓝</a></dd>
+                            <dd><a href="javascript:;" data-skin="red" style="color: #dd4b39;"><i class="fa fa-adjust"></i> 枫叶红</a></dd>
+                        </dl>
+                    </li>*@
+                <li class="layui-nav-item">
+                    <a href="javascript:;" id="lock">
+                        <i class="fa fa-lock"></i> 锁屏
+                    </a>
+                </li>
+                @*<li class="layui-nav-item">
+                    <a href="javascript:;" id="message">
+                        <i class="fa fa-bell"></i> 消息
+                    </a>
+                </li>*@
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        @if (string.IsNullOrEmpty(ViewData["Avatar"]?.ToString()))
+                        {
+                            <img src="~/Admin/image/user.jpg" class="layui-nav-img">
+                        }
+                        else
+                        {
+                            <img src="@ViewData["Avatar"]?.ToString()" class="layui-nav-img">
+                        }
+                        @ViewData["UserName"]?.ToString()
+                    </a>
+                    <dl class="layui-nav-child">
+                        @*<dd><a href="javascript:;" kit-target data-options="{url:'@Url.Action("MyInfo", "Settings", new {area = "Admin"})',icon:'fa-id-card',title:'基本资料',id:'10000'}"><span><i class="fa fa-id-card"></i>&nbsp;基本资料</span></a></dd>*@
+                        <dd><a href="javascript:;" kit-target data-options="{url:'@Url.Action("ResetPwd", "Settings", new {area = "Admin"})',icon:'fa-key',title:'修改密码',id:'10001'}"><span><i class="fa fa-key"></i>&nbsp;修改密码</span></a></dd>
+                    </dl>
+                </li>
+               @*  <li class="layui-nav-item"><a href="@Url.Action("Logout", "Account", new {area = "Admin"})"><i class="fa fa-sign-out" aria-hidden="true"></i> 退出</a></li> *@
+                <li class="layui-nav-item"><i class="fa fa-sign-out" aria-hidden="true" onclick="login()"></i> 退出</a></li>
+            </ul>
+            <!-- PC模式结束 -->
+            <!-- mobile模式 -->
+            <div class="layui-logo kit-logo-mobile">大鹅</div>
+            <ul class="layui-nav layui-layout-right kit-nav-mobile">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        @if (string.IsNullOrEmpty(ViewData["Avatar"]?.ToString()))
+                        {
+                            <img src="~/Admin/image/user.jpg" class="layui-nav-img">
+                        }
+                        else
+                        {
+                            <img src="@ViewData["Avatar"]?.ToString()" class="layui-nav-img">
+                        }
+                        @ViewData["UserName"]?.ToString()
+                    </a>
+                    <dl class="layui-nav-child">
+                        @*<dd><a href="javascript:;" kit-target data-options="{url:'@Url.Action("MyInfo", "Settings", new {area = "Admin"})',icon:'fa-id-card',title:'基本资料',id:'10000'}"><span><i class="fa fa-id-card"></i>&nbsp;基本资料</span></a></dd>*@
+                        <dd><a href="javascript:;" kit-target data-options="{url:'@Url.Action("ResetPwd", "Settings", new {area = "Admin"})',icon:'fa-key',title:'修改密码',id:'10001'}"><span><i class="fa fa-key"></i>&nbsp;修改密码</span></a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="@Url.Action("Logout", "Account", new {area = "Admin"})"><i class="fa fa-sign-out" aria-hidden="true"></i> 退出</a></li>
+            </ul>
+            <!-- mobile模式结束 -->
+        </div>
+        <!-- 顶部区域结束 -->
+        <!-- 左侧侧边导航开始 -->
+        <div class="layui-side layui-bg-black kit-side" id="larry-side">
+            <div class="layui-side-scroll" id="layui-nav-side" lay-filter="side">
+                <div class="kit-side-fold">
+                    <i class="fa fa-navicon" aria-hidden="true"></i>
+                </div>
+                <!-- 左侧菜单 -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="kitNavbar" kit-navbar></ul>
+            </div>
+        </div>
+        <!-- 左侧侧边导航结束 -->
+        <!-- 右侧主体内容 -->
+        <div class="layui-body" id="container">
+            <div style="padding: 15px;">
+                <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop">&#xe63e;</i> 请稍等...
+            </div>
+        </div>
+        <!-- 右侧主体内容结束 -->
+        <!-- 底部区域 -->
+        <div class="layui-footer" id="larry-footer">
+            <a href="@Url.Action("Index","Home",new {Area =""})" target="_blank">管理后台</a>. All rights reserved
+        </div>
+        <!-- 底部区域结束 -->
+    </div>
+    <!-- 锁屏 -->
+    <div class="lock-screen" style="display: none;">
+        <div id="locker" class="lock-wrapper">
+            <div id="time"></div>
+            <div class="lock-box center">
+                @if (string.IsNullOrEmpty(ViewData["Avatar"]?.ToString()))
+            {
+                    <img src="~/Admin/image/user.jpg" alt="">
+                }
+                else
+                {
+                    <img src="@ViewData["Avatar"]?.ToString()" alt="" style="width: 80px; height: 80px;">
+                }
+                <h1>@ViewData["UserName"]?.ToString()</h1>
+                <div class="form-group col-lg-12">
+                    <input type="hidden" id="lock_url" value="@Url.Action("UnlockSystem", "Settings", new { area = "Admin" })" />
+                    <input type="password" placeholder='锁屏状态，请输入密码解锁' id="lock_password" class="lock-input layui-input" autofocus name="lock_password">
+                    <button id="unlock" class="layui-btn layui-btn-normal">解锁</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 锁屏结束 -->
+    <!-- 消息中心层 -->
+    <div id="msgDialog" class="larry-personal" style="display: none">
+    </div>
+    <!-- 消息中心层结束 -->
+</body>
+</html>
+    <!-- 加载js文件-->
+<script src="~/js/layui/layui.js?v=@CW.Common.Datetime.DateTimeHelper.ConvertDateToTimeStamp(DateTime.Now)"></script>
+<script src="~/js/jquery-1.12.1.min.js"></script>
+<script src="~/js/utils.js?v=@CW.Common.Datetime.DateTimeHelper.ConvertDateToTimeStamp(DateTime.Now)"></script>
+<script type="text/javascript" src="~/Admin/js/index.js?v=@CW.Common.Datetime.DateTimeHelper.ConvertDateToTimeStamp(DateTime.Now)"></script>
+<script>
+        $(function () {
+            @*$('.layui-nav-tree li,dd').on('click', function (e) {
+                if ($(this).find('dl').length == 0) {
+                    $('.layui-nav-tree li,dd').removeClass('layui-this');
+                    $(this).addClass('layui-this');
+                }
+            });*@
+        });
+
+    var message;
+    layui.config({
+        base: '../Admin/js/'
+    }).use(['app', 'message'], function () {
+        var app = layui.app,
+            $ = layui.jquery,
+            layer = layui.layer;
+        //将message设置为全局以便子页面调用
+        message = layui.message;
+        //主入口
+        app.set({
+            type: 'iframe',
+            tabMainUrl: "@Url.Action("Console", "Home")"
+        }).init(tab);
+        //$('dl.skin > dd').on('click', function () {
+        //    var $that = $(this);
+        //    var skin = $that.children('a').data('skin');
+        //    switchSkin(skin);
+        //});
+        //var setSkin = function (value) {
+        //        layui.data('kit_skin', {
+        //            key: 'skin',
+        //            value: value
+        //        });
+        //    },
+        //    getSkinName = function () {
+        //        return layui.data('kit_skin').skin;
+        //    },
+        //    switchSkin = function (value) {
+        //        var _target = $('link[kit-skin]')[0];
+        //        var _path = _target.href.substring(0, _target.href.lastIndexOf('/') + 1);
+        //        var _filename = value + '.css';
+        //        var _suffix = _target.href.substring(_target.href.lastIndexOf('?'), _target.href.length);
+        //        //_target.href = _target.href.substring(0, _target.href.lastIndexOf('/') + 1) + value + _target.href.substring(_target.href.lastIndexOf('.'));
+        //        _target.href = _path + _filename + _suffix;
+        //        setSkin(value);
+        //    },
+        //    initSkin = function () {
+        //        var skin = getSkinName();
+        //        switchSkin(skin === undefined ? 'default' : skin);
+        //    }();
+    });
+   
+
+    @*//切换多语言
+    function changeCulture(lang) {
+        window.location = '@Url.Action("ChangeCulture", "Tools",new {area=""})?lang=' + lang + '&returnUrl=' + window.location.href;
+    }*@
+</script>
+<script type="text/javascript">
+
+    function login()
+    {
+            wx.login({
+                success(res) {
+                    if (res.code) {
+                        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+                        // wx.request({
+                        //     url: 'https://你的服务器地址/api/login', // 你的 C# 后端接口地址
+                        //     data: {
+                        //         code: res.code
+                        //     },
+                        //     method: 'POST',
+                        //     header: {
+                        //         'content-type': 'application/x-www-form-urlencoded'
+                        //     },
+                        //     success(res) {
+                        //         console.log('登录成功:', res.data);
+                        //     }
+                        // })
+                        console.log('登录成功:', res.code);
+                    } else {
+                        console.log('登录失败！' + res.errMsg)
+                    }
+                }
+            });
+    }
+    var ws;
+    //var url = 'Ywt.Utility.PubConstant.GetConfigurationValue("AppSettings:WebSocketUrl")' + '/sys_' + '@ViewData["Uid"]?.ToString()';
+    //验证浏览器是否支持WebSocket协议
+    $(function () {
+        if (!window.WebSocket) {
+            layer.msg('浏览器不支持连接到后台消息中心', { icon: 2, time: 5000 });
+        }
+        //读取消息
+        loadMsg();
+        // 绑定消息弹出层事件
+        $('#message').on('click', function () {
+            var dialogId = layer.open({
+                id: 'myMsg',
+                type: 1,
+                title: '消息中心',
+                offset: 'rb',
+                shade: 0,
+                anim: 2,
+                //time: 3000,
+                move: false,
+                //maxmin: true,
+                area: ['300px', '90%'],
+                content: $('#msgDialog'),
+                cancel: function (index, layero) {
+                }
+            });
+        });
+        //连接WebSocket
+        ToggleConnectionClicked();
+    });
+
+    //读取消息
+    function loadMsg() {
+        $.post('@Url.Action("GetUnReadSysMsgList", "Settings", new { area = "Admin" })', function (res) {
+            if (res.state == "true") {
+                $("#message").html('<i class="fa fa-bell"></i> 消息');
+                var html = '<div class="layui-card"><div class="layui-card-body"><a href="javascript:;" onclick="flagReadAll();" style="cursor: pointer;float: right;color:blue;">全部标记已读</a></div></div>';
+                layui.each(res.data, function (index, item) {
+                    html += '<div class="layui-card" id="msg_' + item.Id + '">' +
+                        '<div class="layui-card-body">' +
+                        '<p>' + item.msgTitle + '</p>' +
+                        '<p>' + item.msgContent + '</p>' +
+                        '<p style="color: #cccccc">' + formatDate(item.createTime) + '<a href="javascript:;" onclick="flagRead(\'' + item.Id + '\');" style="cursor: pointer;float: right">标记已读</a></p>' +
+                        '</div>' +
+                        '</div>';
+                    var tagType = $('#' + item.msgType).attr('data-type');
+                    switch (tagType) {
+                        case 'li':
+                            if ($('#' + item.msgType).find('span.layui-badge-dot').length<=0) {
+                                $('#' + item.msgType).find('a').append('<span class="layui-badge-dot"></span>');
+                            }
+                            break;
+                        case 'dd':
+                            if ($('#' + item.msgType).find('a').find('span.layui-badge-dot').length <= 0) {
+                                $('#' + item.msgType).find('a').append('<span class="layui-badge-dot"></span>');
+                                $('#' + item.msgType).parents('li').find('a.menu-icon').append('<span class="layui-badge-dot"></span>');
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                });
+                if (res.count > 0) {
+                    $("#msgDialog").html(html);
+                    $("#message").append('<span class="layui-badge-dot"></span>');
+                }
+            } else {
+                $("#msgDialog").html(res.content);
+            }
+        }, "json");
+    }
+
+    //标记消息已读
+    function flagRead(Id) {
+        if (Id != '') {
+            $.post('@Url.Action("UpdateSysMsgReadState", "Settings", new { area = "Admin" })', { id: Id }, function (data) {
+                if (data.state == "true") {
+                    $('#msg_' + Id).remove();
+                    var num = $("#msgDialog").find('div').length;
+                    if (num <= 0) {
+                        $("#message").html('<i class="fa fa-bell"></i> 消息');
+                        $('ul.layui-nav-tree').find('span.layui-badge-dot').remove();
+                    }
+                } else {
+                    layer.msg(data.content, { icon: 2, time: 3000 });
+                }
+            }, "json");
+        }
+    }
+    //标记全部消息已读
+    function flagReadAll() {
+        $.post('@Url.Action("UpdateSysMsgReadState", "Settings", new { area = "Admin" })', { id: 'all' }, function (data) {
+            if (data.state == "true") {
+                $("#msgDialog").html('');
+                $("#message").html('<i class="fa fa-bell"></i> 消息');
+                $('ul.layui-nav-tree').find('span.layui-badge-dot').remove();
+            } else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+        }, "json");
+    }
+
+    //连接WebSocket
+    function ToggleConnectionClicked() {
+        // console.log(url);
+        try {
+            ws = new WebSocket(url);
+            // 打开WebSocket
+            ws.onopen = function () {
+                //WebSocket Status:: Socket Open
+                //发送一个初始化消息
+                ws.send("Login");
+            };
+            //监听接收消息
+            ws.onmessage = function (event) {
+                console.log(event.data);
+                var sender = event.data.split(':')[0];
+                var msg = event.data.split(':')[1];
+                if (sender.toLowerCase() == 'server') {
+                    //追加消息中心
+                    loadMsg();
+                    //var content = msg.split('|');
+                    //var type = content[0];
+                    //var text = '有新消息请查看';
+                    //switch (type) {
+                    //    case 9:
+                    //        text = '有商城订单需要处理请查看';
+                    //        break;
+                    //}
+                    //layer.msg(text, { icon: 1, time: 3000, anim: 6 });
+                } else {
+                    if (msg != null && msg != '')
+                        layer.msg(event.data, { icon: 1, time: 3000, anim: 6 });
+                }
+            };
+            //Socket Closed
+            ws.onclose = function (event) {
+                //WebSocket Status:: Socket Closed
+                console.log(event.data);
+            };
+            ws.onerror = function (event) {
+                console.log(event.data);
+            };
+        } catch (ex) {
+            console.log(ex.message);
+        }
+    };
+
+    //function sendMsg() {
+    //    ws.send(msg);
+    //}
+</script>

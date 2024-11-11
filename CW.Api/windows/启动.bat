@@ -1,0 +1,1 @@
+dotnet D:\ShangBanWangApi\api\CW.Api.dll --urls="http://*:7000" --environment=Development

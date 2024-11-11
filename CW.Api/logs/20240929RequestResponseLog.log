@@ -1,0 +1,151 @@
+--------------------------------
+2024/9/29 9:53:06|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/29 10:03:41|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/29 13:48:52|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId":null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 13:48:53|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T13:48:53.6163422+08:00"}
+--------------------------------
+2024/9/29 13:54:09|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 13:54:10|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T13:54:10.902423+08:00"}
+--------------------------------
+2024/9/29 13:57:30|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 13:57:57|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unable to cast object of type 'System.Object' to type 'CW.Common.JwtAuth.JwtSSOTokenModel'.","Data":"at CW.Api.Controllers.LoginController.Login(LoginModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 70\r\n   at CW.Api.Controllers.LoginController.UserInfo(WeChatModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 47\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T13:57:57.6049728+08:00"}
+--------------------------------
+2024/9/29 13:58:35|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 13:58:40|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unable to cast object of type 'System.Object' to type 'CW.Common.JwtAuth.JwtSSOTokenModel'.","Data":"at CW.Api.Controllers.LoginController.Login(LoginModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 70\r\n   at CW.Api.Controllers.LoginController.UserInfo(WeChatModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 47\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T13:58:40.1597822+08:00"}
+--------------------------------
+2024/9/29 14:02:36|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 14:02:40|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unable to cast object of type 'System.Object' to type 'CW.Common.JwtAuth.JwtSSOTokenModel'.","Data":"at CW.Api.Controllers.LoginController.Login(LoginModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 70\r\n   at CW.Api.Controllers.LoginController.UserInfo(WeChatModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 47\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T14:02:40.0992198+08:00"}
+--------------------------------
+2024/9/29 14:08:23|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 14:08:24|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T14:08:24.6242023+08:00"}
+--------------------------------
+2024/9/29 14:12:32|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 14:12:44|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMzAgMTQ6MTI6NDMiLCJleHAiOjE3Mjc2NzY4MjMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.e097kCUq4EkDIjUD3LZbnYyDcaMGqEe4yiVIwN10AGg"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T14:12:44.1086503+08:00"}
+--------------------------------
+2024/9/29 14:20:36|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 14:20:36|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMzAgMTQ6MjA6MzYiLCJleHAiOjE3Mjc2NzcyOTYsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.xgqj9eF2jY-Z3_s9Vm1P9zT6Jvf_-mNZe5IwUKyHCPw"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T14:20:36.4989656+08:00"}
+--------------------------------
+2024/9/29 14:24:56|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/9/29 14:24:58|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMDktMzAgMTQ6MjQ6NTgiLCJleHAiOjE3Mjc2Nzc1NTgsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.A1wY2f4hAsjLxF12_u8aT3ees3xTLkzw0YroCu75l-g"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-29T14:24:58.1356217+08:00"}

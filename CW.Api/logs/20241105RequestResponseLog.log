@@ -1,0 +1,162 @@
+--------------------------------
+2024/11/5 14:56:03|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/11/5 14:56:05|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDYgMTQ6NTY6MDUiLCJleHAiOjE3MzA4NzYyMjUsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.uIY9YWoG1vP5gtji5BN2I0TW3nl81UjCC4ugsueZhek","Day":2},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T14:56:05.2115177+08:00"}
+--------------------------------
+2024/11/5 14:56:25|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 14:56:25|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png","FullBodyPhoto":""}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T14:56:25.4481672+08:00"}
+--------------------------------
+2024/11/5 14:56:55|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/11/5 14:56:55|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"天津市","TotalNumber":0,"Attendance":null},{"Name":"辽宁省","TotalNumber":0,"Attendance":null},{"Name":"江苏省","TotalNumber":0,"Attendance":null},{"Name":"江西省","TotalNumber":0,"Attendance":null},{"Name":"湖南省","TotalNumber":0,"Attendance":null},{"Name":"重庆市","TotalNumber":0,"Attendance":null},{"Name":"西藏","TotalNumber":0,"Attendance":null},{"Name":"宁夏省","TotalNumber":0,"Attendance":null},{"Name":"台湾省","TotalNumber":0,"Attendance":null},{"Name":"河北省","TotalNumber":0,"Attendance":null},{"Name":"吉林省","TotalNumber":0,"Attendance":null},{"Name":"浙江省","TotalNumber":0,"Attendance":null},{"Name":"山东省","TotalNumber":0,"Attendance":null},{"Name":"广东省","TotalNumber":0,"Attendance":null},{"Name":"四川省","TotalNumber":0,"Attendance":null},{"Name":"陕西省","TotalNumber":0,"Attendance":null},{"Name":"新疆","TotalNumber":0,"Attendance":null},{"Name":"山西省","TotalNumber":0,"Attendance":null},{"Name":"黑龙江省","TotalNumber":0,"Attendance":null},{"Name":"安徽省","TotalNumber":0,"Attendance":null},{"Name":"河南省","TotalNumber":0,"Attendance":null},{"Name":"广西省","TotalNumber":0,"Attendance":null},{"Name":"贵州省","TotalNumber":0,"Attendance":null},{"Name":"甘肃省","TotalNumber":0,"Attendance":null},{"Name":"香港","TotalNumber":0,"Attendance":null},{"Name":"北京市","TotalNumber":0,"Attendance":null},{"Name":"内蒙古","TotalNumber":0,"Attendance":null},{"Name":"上海市","TotalNumber":0,"Attendance":null},{"Name":"福建省","TotalNumber":0,"Attendance":null},{"Name":"湖北省","TotalNumber":0,"Attendance":null},{"Name":"海南省","TotalNumber":0,"Attendance":null},{"Name":"云南省","TotalNumber":0,"Attendance":null},{"Name":"青海省","TotalNumber":0,"Attendance":null},{"Name":"澳门","TotalNumber":0,"Attendance":null}],"UserProvinceId":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T14:56:55.1487495+08:00"}
+--------------------------------
+2024/11/5 14:59:05|
+Request Data:
+QueryData:/api/User/GetProvinceRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetProvinceRanking
+
+--------------------------------
+2024/11/5 14:59:05|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"ProvinceRankings":[{"Name":"北京市","TotalNumber":2,"Attendance":1.0},{"Name":"天津市","TotalNumber":0,"Attendance":null},{"Name":"辽宁省","TotalNumber":0,"Attendance":null},{"Name":"江苏省","TotalNumber":0,"Attendance":null},{"Name":"江西省","TotalNumber":0,"Attendance":null},{"Name":"湖南省","TotalNumber":0,"Attendance":null},{"Name":"重庆市","TotalNumber":0,"Attendance":null},{"Name":"西藏","TotalNumber":0,"Attendance":null},{"Name":"宁夏省","TotalNumber":0,"Attendance":null},{"Name":"台湾省","TotalNumber":0,"Attendance":null},{"Name":"河北省","TotalNumber":0,"Attendance":null},{"Name":"吉林省","TotalNumber":0,"Attendance":null},{"Name":"浙江省","TotalNumber":0,"Attendance":null},{"Name":"山东省","TotalNumber":0,"Attendance":null},{"Name":"广东省","TotalNumber":0,"Attendance":null},{"Name":"四川省","TotalNumber":0,"Attendance":null},{"Name":"陕西省","TotalNumber":0,"Attendance":null},{"Name":"新疆","TotalNumber":0,"Attendance":null},{"Name":"山西省","TotalNumber":0,"Attendance":null},{"Name":"黑龙江省","TotalNumber":0,"Attendance":null},{"Name":"安徽省","TotalNumber":0,"Attendance":null},{"Name":"河南省","TotalNumber":0,"Attendance":null},{"Name":"广西省","TotalNumber":0,"Attendance":null},{"Name":"贵州省","TotalNumber":0,"Attendance":null},{"Name":"甘肃省","TotalNumber":0,"Attendance":null},{"Name":"香港","TotalNumber":0,"Attendance":null},{"Name":"内蒙古","TotalNumber":0,"Attendance":null},{"Name":"上海市","TotalNumber":0,"Attendance":null},{"Name":"福建省","TotalNumber":0,"Attendance":null},{"Name":"湖北省","TotalNumber":0,"Attendance":null},{"Name":"海南省","TotalNumber":0,"Attendance":null},{"Name":"云南省","TotalNumber":0,"Attendance":null},{"Name":"青海省","TotalNumber":0,"Attendance":null},{"Name":"澳门","TotalNumber":0,"Attendance":null}],"UserProvinceId":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T14:59:05.4426275+08:00"}
+--------------------------------
+2024/11/5 15:34:59|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/11/5 15:35:01|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDYgMTU6MzU6MDAiLCJleHAiOjE3MzA4Nzg1NjAsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.89p9ehmEvYzdRJAQvszxLFSqD_PAPbb3lb7lERdlXA8","Day":0},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T15:35:01.0391045+08:00"}
+--------------------------------
+2024/11/5 15:35:21|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:35:21|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png","FullBodyPhoto":""}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T15:35:21.1101916+08:00"}
+--------------------------------
+2024/11/5 15:35:54|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:40:04|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:40:06|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[null,null,null,null,null,null]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},null,null,null,null,{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png","FullBodyPhoto":""}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T15:40:05.2793537+08:00"}
+--------------------------------
+2024/11/5 15:40:34|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:42:36|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:42:37|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},null,null,null,null,{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png","FullBodyPhoto":""}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T15:42:36.8067242+08:00"}
+--------------------------------
+2024/11/5 15:44:28|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:45:33|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:45:34|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},null,null,null,null,{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T15:45:33.5602958+08:00"}
+--------------------------------
+2024/11/5 15:51:45|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:51:46|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},null,null,null,null,{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T15:51:45.5925829+08:00"}
+--------------------------------
+2024/11/5 15:52:00|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/5 15:52:46|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},null,null,null,null,{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png","FullBodyPhoto":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-05T15:52:00.5692898+08:00"}

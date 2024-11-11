@@ -1,0 +1,134 @@
+﻿@{
+    ViewBag.Title = "PlayerWearList";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<input type="hidden" id="uid" name="uid" value="@ViewBag.uid" />
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            @*<blockquote class="layui-elem-quote mylog-info-tit">
+                <ul class="layui-tab-title">
+                    <li class="layui-btn layui-btn-normal" id="search-action"><i class="layui-icon">&#xe615;</i>查询</li>
+                    <li class="layui-btn layui-btn-normal" id="reset-action"><i class="layui-icon">&#xe65c;</i>重置</li>
+                </ul>
+            </blockquote>
+            <div class="larry-separate"></div>*@
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                @*<div class="search-area">
+            <div class="sa-ele">
+                <label class="se-title">时间:</label>
+            </div>
+            <div class="sa-ele">
+                <input type="text" id="startTime" name="startTime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+            </div>
+            <div class="sa-ele">
+                ～
+            </div>
+            <div class="sa-ele">
+                <input type="text" id="endTime" name="endTime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+            </div>
+        </div>*@
+                <!-- layui.table 开始 -->
+                <table id="datalist" lay-filter="datalist"></table>
+                <script type="text/html" id="partTpl">
+                    {{# if(d.wear_part == 1){ }}
+                    耳饰
+                    {{# } else if(d.wear_part == 2){ }}
+                    眼镜
+                    {{# } else if(d.wear_part == 3){ }}
+                    配饰
+                    {{# } else if(d.wear_part == 4){ }}
+                    服装
+                    {{# } else if(d.wear_part == 5){ }}
+                    鞋子
+                    {{# } else if(d.wear_part == 6){ }}
+                    玩具
+                    {{# } else { }}
+                    {{# } }}
+                </script>
+                <!-- layui.table 结束 -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    var table = null;
+    var tableIns = null;
+    var dialogId;
+    layui.use(['table', 'laydate'], function () {
+        table = layui.table;
+        var laydate = layui.laydate;
+        //var startTime = $("#startTime").val();
+        //var endTime = $("#endTime").val();
+
+        lay('.laydateitem').each(function () {
+            laydate.render({
+                elem: this
+                , trigger: 'click'
+            });
+        });
+
+        tableIns = table.render({
+            elem: '#datalist'
+            , id: 'datalist'
+            , height: 'full'
+            , cellMinWidth: 100
+            , page: false  //是否分页
+            //, limits: [10, 20, 50, 100, 200]
+            //, limit: 10
+            , loading: true //显示加载条
+            , even: true
+            //, method: 'post'
+            , url: '@Url.Action("GetPlayerWearDataList", "Player", new { area = "Admin" })'   //请求地址
+            , where: { uid: '@ViewBag.uid' }  //请求参数
+            , cols: [[
+                //{ checkbox: true, fixed: true }, 
+                { field: 'wear_part', title: '部位名称', align: 'center', width: 100, templet: '#partTpl' }
+                , { field: 'item_name', title: '装备名称', align: 'center' }
+                , { field: 'item_quality', title: '装备品级', align: 'center' }
+                , { field: 'combat_num', title: '装备战力', align: 'center' }
+                , { field: 'intensify', title: '强化等级', align: 'center' }
+                , { field: 'intensify_combat', title: '强化增加战力加成', align: 'center' }
+            ]]
+            //, initSort: {
+            //    field: 'LoginName' //排序字段，对应 cols 设定的各字段名
+            //    , type: 'asc' //排序方式  asc: 升序、desc: 降序、null: 默认排序
+            //}
+            , request: {
+                pageName: 'cPage' //页码的参数名称，默认：page
+                , limitName: 'pSize' //每页数据量的参数名，默认：limit
+            }
+            , response: {
+                statusName: 'status' //数据状态的字段名称，默认：code
+                , statusCode: 200 //成功的状态码，默认：0
+                , msgName: 'msg' //状态信息的字段名称，默认：msg
+                , countName: 'totals' //数据总数的字段名称，默认：count
+                , dataName: 'data' //数据列表的字段名称，默认：data
+            }
+            , done: function (res, curr, count) {
+
+            }
+        });
+    });
+
+    //刷新数据列表
+    function reloadData() {
+        //var startTime = $("#startTime").val();
+        //var endTime = $("#endTime").val();
+        table.reload('datalist',{
+            where: { uid: '@ViewBag.uid'}
+        });
+    }
+
+    // 绑定搜索事件
+    $('#search-action').on('click', function () {
+        reloadData();
+    });
+
+    // 绑定重置
+    $('#reset-action').on('click', function () {
+        $("#startTime").val('');
+        $("#endTime").val('');
+    });
+</script>

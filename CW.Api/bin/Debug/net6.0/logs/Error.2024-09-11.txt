@@ -1,0 +1,70 @@
+2024-09-11 18:15:04.0738 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：用户密码解密失败，原因：Specified key is not a valid size for this algorithm.
+【堆栈】：at System.Security.Cryptography.SymmetricAlgorithm.set_Key(Byte[] value)
+   at CW.Common.Cryptions.AESEncryptHelper.Decrypt(String decryptStr, String iv, String cryptoKey) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\AESEncryptHelper.cs:line 117
+   at CW.Common.Cryptions.UserPasswordCryptionHelper.DecryptPassword1(String ciphertext, String iv) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\UserPasswordCryptionHelper.cs:line 55 
+  LoginController.Login2 => UserPasswordCryptionHelper.DecryptPassword1 => NLogHelper.ErrorLog
+2024-09-11 18:16:37.1118 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：用户密码解密失败，原因：Padding is invalid and cannot be removed.
+【堆栈】：at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamReader.ReadBuffer()
+   at System.IO.StreamReader.ReadToEnd()
+   at CW.Common.Cryptions.AESEncryptHelper.Decrypt(String decryptStr, String iv, String cryptoKey) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\AESEncryptHelper.cs:line 130
+   at CW.Common.Cryptions.UserPasswordCryptionHelper.DecryptPassword1(String ciphertext, String iv) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\UserPasswordCryptionHelper.cs:line 55 
+  LoginController.Login2 => UserPasswordCryptionHelper.DecryptPassword1 => NLogHelper.ErrorLog
+2024-09-11 18:17:40.4191 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：用户密码解密失败，原因：Padding is invalid and cannot be removed.
+【堆栈】：at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamReader.ReadBuffer()
+   at System.IO.StreamReader.ReadToEnd()
+   at CW.Common.Cryptions.AESEncryptHelper.Decrypt(String decryptStr, String iv, String cryptoKey) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\AESEncryptHelper.cs:line 130
+   at CW.Common.Cryptions.UserPasswordCryptionHelper.DecryptPassword1(String ciphertext, String iv) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\UserPasswordCryptionHelper.cs:line 55 
+  LoginController.Login2 => UserPasswordCryptionHelper.DecryptPassword1 => NLogHelper.ErrorLog
+2024-09-11 18:27:24.7113 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：用户密码解密失败，原因：Padding is invalid and cannot be removed.
+【堆栈】：at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamReader.ReadBuffer()
+   at System.IO.StreamReader.ReadToEnd()
+   at CW.Common.Cryptions.AESEncryptHelper.Decrypt(String decryptStr, String iv, String cryptoKey) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\AESEncryptHelper.cs:line 130
+   at CW.Common.Cryptions.UserPasswordCryptionHelper.DecryptPassword1(String ciphertext, String iv) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\UserPasswordCryptionHelper.cs:line 55 
+  LoginController.Login2 => UserPasswordCryptionHelper.DecryptPassword1 => NLogHelper.ErrorLog
+2024-09-11 18:28:23.5304 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：用户密码解密失败，原因：Padding is invalid and cannot be removed.
+【堆栈】：at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+   at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamReader.ReadBuffer()
+   at System.IO.StreamReader.ReadToEnd()
+   at CW.Common.Cryptions.AESEncryptHelper.Decrypt(String decryptStr, String iv, String cryptoKey)
+   at CW.Common.Cryptions.UserPasswordCryptionHelper.DecryptPassword1(String ciphertext, String iv) 
+  LoginController.Login2 => UserPasswordCryptionHelper.DecryptPassword1 => NLogHelper.ErrorLog
+2024-09-11 18:30:39.3607 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：用户密码解密失败，原因：Specified initialization vector (IV) does not match the block size for this algorithm.
+【堆栈】：at System.Security.Cryptography.SymmetricAlgorithm.set_IV(Byte[] value)
+   at CW.Common.Cryptions.AESEncryptHelper.Decrypt(String decryptStr, String iv, String cryptoKey) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\AESEncryptHelper.cs:line 118
+   at CW.Common.Cryptions.UserPasswordCryptionHelper.DecryptPassword1(String ciphertext, String iv) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\UserPasswordCryptionHelper.cs:line 55 
+  LoginController.Login2 => UserPasswordCryptionHelper.DecryptPassword1 => NLogHelper.ErrorLog
+2024-09-11 18:31:20.8281 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：用户密码解密失败，原因：Specified initialization vector (IV) does not match the block size for this algorithm.
+【堆栈】：at System.Security.Cryptography.SymmetricAlgorithm.set_IV(Byte[] value)
+   at CW.Common.Cryptions.AESEncryptHelper.Decrypt(String decryptStr, String iv, String cryptoKey)
+   at CW.Common.Cryptions.UserPasswordCryptionHelper.DecryptPassword1(String ciphertext, String iv) 
+  LoginController.Login2 => UserPasswordCryptionHelper.DecryptPassword1 => NLogHelper.ErrorLog

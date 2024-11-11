@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>环信客户端</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="../../jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/strophe-1.2.8.min.js"></script>
+    <script type="text/javascript" src="js/webim.config.js"></script>
+    <script type="text/javascript" src="js/websdk-1.1.3.js"></script>
+</head>
+<body>
+<div id="content">
+
+</div>
+<br/><br /><br /><br /><br />
+<div>
+    <form id="lgform" name="lgform" action="">
+        用户名：<input id="user" name="user" value="" /><br />
+        内容：<input id="msg" name="msg" value="" /><br />
+        <a href="javascript:;" onclick="send();">发送</a>
+    </form>
+</div>
+</body>
+</html>
+
+<script>
+    function GetArg() {
+        var address = unescape(window.location.href);
+        var allargs = address.split("?")[1];
+        if (allargs != null) {
+            var args = allargs.split("&");
+            for (var i = 0; i < args.length; i++) {
+                var arg = args[i].split("=");
+                eval('this.' + arg[0] + '="' + (arg[1].split("#"))[0] + '";');
+            }
+        }
+    }
+
+    var urlarg = new GetArg();
+    var uid = urlarg.uid;
+    var pwd = urlarg.pwd;
+    if (urlarg.uid != null && urlarg.uid != pwd) {
+        var ifIn = true; //判断过来的信息发送人是否在聊天列表，如果在则为true 不在则为false 插到聊天列表里
+
+        var conn = new WebIM.connection({
+            //appkey: '1188161202178760#shengpintest',
+            https: WebIM.config.https,
+            url: WebIM.config.xmppURL,
+            isAutoLogin: WebIM.config.isAutoLogin,
+            isMultiLoginSessions: WebIM.config.isMultiLoginSessions
+        });
+
+        var options = {
+            apiUrl: WebIM.config.apiURL,
+            user: uid,
+            pwd: pwd,
+            appKey: WebIM.config.appkey
+        };
+
+        conn.open(options);
+
+        conn.listen({
+            onOpened: function (message) {
+                $('#content').append('<li>环信连接成功</li>');
+            },//连接成功回调
+            onClosed: function (message) {
+                console.log('环信连接关闭');
+            }, //连接关闭回调
+            onTextMessage: function (message) {
+                console.log(message);
+                $('#content').append('<li>' + message.from + '：' + message.data + '</li>');
+            },//收到文本消息
+            onEmojiMessage: function (message) {
+                console.log(message);
+            }, //收到表情消息
+            onPictureMessage: function (message) { 
+                console.log(message);
+            }, //收到图片消息
+            onCmdMessage: function (message) {
+                console.log(message);
+            }, //收到命令消息
+            onAudioMessage: function (message) {
+                console.log(message);
+            }, //收到音频消息
+            onFileMessage: function (message) {
+                console.log(message);
+            }, //收到文件消息
+            onVideoMessage: function (message) {
+                console.log(message);
+            }, //收到视频消息
+            onLocationMessage: function (message) { }, //收到位置消息
+            onPresence: function (message) { }, //收到联系人订阅请求、处理群组、聊天室被踢解散等消息
+            onRoster: function (message) { }, //处理好友申请
+            onInviteMessage: function (message) { }, //处理群组邀请
+            onOnline: function () { }, //本机网络连接成功
+            onOffline: function () { }, //本机网络掉线
+            onError: function (message) {
+                console.log(message);
+            } //失败回调
+        });
+
+        var sendPrivateText = function (user,content) {
+            var id = conn.getUniqueId();                 // 生成本地消息id
+            var msg = new WebIM.message('txt', id);      // 创建文本消息
+            msg.set({
+                msg: content,                  // 消息内容
+                to: user,                          // 接收消息对象（用户id）
+                roomType: false,
+                success: function (id, serverMsgId) {
+                    console.log('send private text Success');
+                }
+            });
+            msg.body.chatType = 'singleChat';
+            conn.send(msg.body);
+        };
+    }
+
+    function send() {
+        var user = $('#user').val();
+        var msg = $('#msg').val();
+        if (user != '' && msg != '') {
+            $('#content').append('<li>' + uid + '：' + msg + '</li>');
+            sendPrivateText(user, msg);
+        } else {
+            alert('发送失败');
+        }
+    }
+
+</script>

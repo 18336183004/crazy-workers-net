@@ -1,0 +1,54 @@
+2024-09-19 16:52:57.2011 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：2024-09-19 16:52:56 生成SSOToken失败，Value cannot be null. (Parameter 'value')
+【堆栈】：at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at CW.Common.JwtAuth.SsoJwtHelper.IssueJwt(JwtSSOTokenModel tokenModel, IConfiguration configuration) in D:\work\crazy-workers-net.git\CW.Common\JwtAuth\SsoJwtHelper.cs:line 30 
+  <Login>d__3.MoveNext => SsoJwtHelper.IssueJwt => NLogHelper.ErrorLog
+2024-09-19 16:55:14.6670 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：2024-09-19 16:55:14 生成SSOToken失败，Value cannot be null. (Parameter 'value')
+【堆栈】：at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at CW.Common.JwtAuth.SsoJwtHelper.IssueJwt(JwtSSOTokenModel tokenModel, IConfiguration configuration) in D:\work\crazy-workers-net.git\CW.Common\JwtAuth\SsoJwtHelper.cs:line 30 
+  <Login>d__3.MoveNext => SsoJwtHelper.IssueJwt => NLogHelper.ErrorLog
+2024-09-19 16:55:56.1158 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：2024-09-19 16:55:56 生成SSOToken失败，Value cannot be null. (Parameter 'value')
+【堆栈】：at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at CW.Common.JwtAuth.SsoJwtHelper.IssueJwt(JwtSSOTokenModel tokenModel, IConfiguration configuration) in D:\work\crazy-workers-net.git\CW.Common\JwtAuth\SsoJwtHelper.cs:line 30 
+  <Login>d__3.MoveNext => SsoJwtHelper.IssueJwt => NLogHelper.ErrorLog
+2024-09-19 17:11:45.3437 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：2024-09-19 17:11:45 校验JWTToken失败，IDX10503: Signature validation failed. Token does not have a kid. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+【堆栈】：at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at CW.Common.JwtAuth.BnsJwtHelper.ValidateJwtToken(String jwtStr) 
+  <Invoke>d__7.MoveNext => BnsJwtHelper.ValidateJwtToken => NLogHelper.ErrorLog
+2024-09-19 17:18:50.2424 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：2024-09-19 17:18:49 校验JWTToken失败，IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'System.String'.
+【堆栈】：at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at CW.Common.JwtAuth.SsoJwtHelper.ValidateJwtToken(String jwtStr) in D:\work\crazy-workers-net.git\CW.Common\JwtAuth\SsoJwtHelper.cs:line 127 
+  <Invoke>d__7.MoveNext => SsoJwtHelper.ValidateJwtToken => NLogHelper.ErrorLog
+2024-09-19 17:19:40.8152 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：2024-09-19 17:19:40 校验JWTToken失败，IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'System.String'.
+【堆栈】：at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at CW.Common.JwtAuth.SsoJwtHelper.ValidateJwtToken(String jwtStr) in D:\work\crazy-workers-net.git\CW.Common\JwtAuth\SsoJwtHelper.cs:line 127 
+  <Invoke>d__7.MoveNext => SsoJwtHelper.ValidateJwtToken => NLogHelper.ErrorLog
+2024-09-19 17:24:54.8057 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：2024-09-19 17:24:54 生成SSOToken失败，Value cannot be null. (Parameter 'value')
+【堆栈】：at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at CW.Common.JwtAuth.SsoJwtHelper.IssueJwt(JwtSSOTokenModel tokenModel, IConfiguration configuration) in D:\work\crazy-workers-net.git\CW.Common\JwtAuth\SsoJwtHelper.cs:line 28 
+  <Login>d__3.MoveNext => SsoJwtHelper.IssueJwt => NLogHelper.ErrorLog
+2024-09-19 17:26:46.1951 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：2024-09-19 17:26:45 生成SSOToken失败，String reference not set to an instance of a String. (Parameter 's')
+【堆栈】：at System.Text.Encoding.GetBytes(String s)
+   at System.Text.UTF8Encoding.UTF8EncodingSealed.GetBytes(String s)
+   at CW.Common.Cryptions.AESEncryptHelper.RijndaelEncrypt(String encryptStr, String cryptoKey) in D:\work\crazy-workers-net.git\CW.Common\Cryptions\AESEncryptHelper.cs:line 18
+   at CW.Common.JwtAuth.SsoJwtHelper.IssueJwt(JwtSSOTokenModel tokenModel, IConfiguration configuration) in D:\work\crazy-workers-net.git\CW.Common\JwtAuth\SsoJwtHelper.cs:line 28 
+  <Login>d__3.MoveNext => SsoJwtHelper.IssueJwt => NLogHelper.ErrorLog

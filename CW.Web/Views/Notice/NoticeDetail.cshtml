@@ -1,0 +1,144 @@
+﻿@model Ywt.Model.ng_notice_info
+@{
+    ViewBag.Title = "NoticeDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Scripts/kindeditor-4.1.10/themes/default/default.css" rel="stylesheet" />
+<script src="~/Scripts/kindeditor-4.1.10/kindeditor-min.js"></script>
+<script src="~/Scripts/kindeditor-4.1.10/lang/zh_CN.js"></script>
+<input type="hidden" id="noticeId" name="noticeId" value="@Model.id" />
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-card">
+            @*<div class="layui-card-header">商品信息</div>*@
+            <div class="layui-card-body">
+                <form class="layui-form">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">标题：</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="title" name="title" autocomplete="off" class="layui-input" value="@Model.title">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">公告内容：</label>
+                        <div class="layui-input-block">
+                            <textarea id="content" name="content" class="layui-textarea" style="height: 400px;">@Model.content</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">状态：</label>
+                        <div class="layui-input-inline">
+                           @if (Model.enable == 1)
+                           {
+                                <input type="radio" name="enable" value="1" title="正常" checked="checked">
+                                <input type="radio" name="enable" value="0" title="禁用">
+                            }
+                            else
+                            {
+                                <input type="radio" name="enable" value="1" title="正常">
+                                <input type="radio" name="enable" value="0" title="禁用" checked="checked">
+                            }
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <a class="layui-btn" lay-submit="" lay-filter="" onclick="saveInfo();">保存</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    var table = null;
+    var tbClassifyData;
+    var dialogId;
+    var editor;
+
+    //富文本编辑器
+    KindEditor.ready(function (K) {
+        editor = K.create('textarea[name="content"]', {
+            uploadJson: '../../../Filters/upload_json.ashx',
+            fileManagerJson: '../../../Filters/file_manager_json.ashx',
+            allowFileManager: true
+        });
+    });
+
+    layui.use(['table'], function () {
+        table = layui.table;
+    });
+
+    function showPic(a) {
+        var content = $(a).find('img').attr('src');
+        if (content == null || content == '')
+            return;
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 2,
+            area: ['80%', '80%'],
+            skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: '<img src="' + content + '" style="height: 100%;">'
+        });
+    }
+
+    function delPic(a) {
+        $(a).parent().empty().remove();
+    }
+</script>
+<!-- 商品基础数据 -->
+<script>
+    //提交
+    function saveInfo() {
+        var errstr = '';
+        var url = '';
+        var param = {};
+        var id = $("#noticeId").val();
+        var title = $.trim($("#title").val());
+        if (title == '') {
+            errstr += '请填写标题<br/>';
+        }
+        var content = editor.html();
+        var enable = $('input[name="enable"]:checked').val();
+        var pageIndex = 1;
+        if (id == '') { //新增
+            if (errstr != "") {
+                layer.msg(errstr, { icon: 8, time: 3000 });
+                return false;
+            }
+            url = '@Url.Action("AddNotice", "Notice", new {area = "Admin"})';
+            param = {
+                title: title,
+                content: content,
+                enable: enable
+            };
+        } else {  //编辑
+            if (errstr != "") {
+                layer.msg(errstr, { icon: 8, time: 3000 });
+                return false;
+            }
+            url = '@Url.Action("EditNotice", "Notice", new {area = "Admin"})';
+            param = {
+                id: id,
+                title: title,
+                content: content,
+                enable: enable
+            };
+            pageIndex = $('.layui-laypage-curr ').text();
+        }
+        //执行ajax请求
+        $.post(url, param, function (data) {
+            if (data.state == "true") {
+                parent.layer.msg(data.content, { icon: 1, time: 2000 });
+                parent.layer.closeAll();
+                parent.reloadData(pageIndex);
+            } else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+        }, "json");
+        return false;
+    }
+</script>

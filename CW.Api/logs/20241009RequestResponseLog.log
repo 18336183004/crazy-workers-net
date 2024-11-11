@@ -1,0 +1,36 @@
+--------------------------------
+2024/10/9 18:36:07|
+Request Data:
+QueryData:/api/tokenpass/Login/ErWeiMa
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/ErWeiMa
+
+--------------------------------
+2024/10/9 18:36:08|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unexpected character encountered while parsing value: �. Path '', line 0, position 0.","Data":"at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)\r\n   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)\r\n   at CW.Api.Controllers.LoginController.ErWeiMa() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 158\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-09T18:36:08.7611952+08:00"}
+--------------------------------
+2024/10/9 18:36:41|
+Request Data:
+QueryData:/api/tokenpass/Login/ErWeiMa
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/ErWeiMa
+
+--------------------------------
+2024/10/9 18:36:43|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unexpected character encountered while parsing value: �. Path '', line 0, position 0.","Data":"at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)\r\n   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)\r\n   at CW.Api.Controllers.LoginController.ErWeiMa() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 158\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-09T18:36:43.0193985+08:00"}
+--------------------------------
+2024/10/9 18:37:13|
+Request Data:
+QueryData:/api/tokenpass/Login/ErWeiMa
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/ErWeiMa
+
+--------------------------------
+2024/10/9 18:37:30|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Unexpected character encountered while parsing value: �. Path '', line 0, position 0.","Data":"at Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)\r\n   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)\r\n   at CW.Api.Controllers.LoginController.ErWeiMa() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 158\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-10-09T18:37:30.7476876+08:00"}

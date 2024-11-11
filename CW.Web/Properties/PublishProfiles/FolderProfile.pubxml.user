@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\CW.WEB.bin</_PublishTargetUrl>
+    <History>True|2024-09-25T10:07:47.6379158Z||;False|2024-09-25T18:02:44.0155255+08:00||;False|2024-09-25T17:59:53.8081681+08:00||;False|2024-09-25T17:59:22.0822846+08:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DbConnect.Default.Server">
+      <Value>PORT=3306%3bDATABASE=crazy_workers%3bHOST=8.140.184.170%3bPASSWORD=e055c42145dd4a53%3bUSER ID=root</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

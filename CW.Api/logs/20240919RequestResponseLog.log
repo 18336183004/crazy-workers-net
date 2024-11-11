@@ -1,0 +1,289 @@
+--------------------------------
+2024/9/19 15:43:12|
+Request Data:
+QueryData:/api/Home/GenerateEntities
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Home/GenerateEntities
+
+--------------------------------
+2024/9/19 16:16:39|
+Request Data:
+QueryData:/api/Login/AccreditLogin
+BodyData:{
+  "OpenId": "12312312312",
+  "Name": "12312312",
+  "Tel": "123213123",
+  "Picture": "12312312312"
+}
+Operator:
+RequestPath:http://localhost:7000/api/Login/AccreditLogin
+
+--------------------------------
+2024/9/19 16:16:39|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:16:39.5207374+08:00"}
+--------------------------------
+2024/9/19 16:16:58|
+Request Data:
+QueryData:/api/Login/AccreditLogin
+BodyData:{
+  "OpenId": "12312312312",
+  "Name": "12312312",
+  "Tel": "123213123",
+  "Picture": "12312312312"
+}
+Operator:
+RequestPath:http://localhost:7000/api/Login/AccreditLogin
+
+--------------------------------
+2024/9/19 16:16:58|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:16:58.722957+08:00"}
+--------------------------------
+2024/9/19 16:17:00|
+Request Data:
+QueryData:/api/Login/AccreditLogin
+BodyData:{
+  "OpenId": "12312312312",
+  "Name": "12312312",
+  "Tel": "123213123",
+  "Picture": "12312312312"
+}
+Operator:
+RequestPath:http://localhost:7000/api/Login/AccreditLogin
+
+--------------------------------
+2024/9/19 16:17:00|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:17:00.127229+08:00"}
+--------------------------------
+2024/9/19 16:21:10|
+Request Data:
+QueryData:/api/tokenpass/Login/AccreditLogin
+BodyData:{
+  "OpenId": "1123123123",
+  "Name": "12312312312",
+  "Tel": "123123123123",
+  "Picture": "12321312312"
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/AccreditLogin
+
+--------------------------------
+2024/9/19 16:21:23|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJPcGVuSWQiOiIxMTIzMTIzMTIzIiwiQWNjb3VudCI6IjEyMzEyMzEyMzEyMyIsIlVzZXJuYW1lIjoiMTIzMTIzMTIzMTIiLCJpc3MiOiJyYW53ZW4iLCJhdWQiOiJDVyJ9.k4WVPdS_VUpQ__XYyR8ZjaAroiBhR-UvUKZsXbJ93AM"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:21:23.2920187+08:00"}
+--------------------------------
+2024/9/19 16:22:07|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=1123123123
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=1123123123
+
+--------------------------------
+2024/9/19 16:22:08|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJPcGVuSWQiOiIxMTIzMTIzMTIzIiwiQWNjb3VudCI6IjEyMzEyMzEyMzEyMyIsIlVzZXJuYW1lIjoiMTIzMTIzMTIzMTIiLCJpc3MiOiJyYW53ZW4iLCJhdWQiOiJDVyJ9.k4WVPdS_VUpQ__XYyR8ZjaAroiBhR-UvUKZsXbJ93AM"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:22:08.0205743+08:00"}
+--------------------------------
+2024/9/19 16:52:53|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=13213
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=13213
+
+--------------------------------
+2024/9/19 16:52:57|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"生成Token失败!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:52:57.2732697+08:00"}
+--------------------------------
+2024/9/19 16:55:13|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=13213
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=13213
+
+--------------------------------
+2024/9/19 16:55:14|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"生成Token失败!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:55:14.7452208+08:00"}
+--------------------------------
+2024/9/19 16:55:37|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=13213
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=13213
+
+--------------------------------
+2024/9/19 16:55:56|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"生成Token失败!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:55:56.1627397+08:00"}
+--------------------------------
+2024/9/19 16:56:42|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=13213
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=13213
+
+--------------------------------
+2024/9/19 16:56:44|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJPcGVuSWQiOiIxMzIxMyIsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.WyTrHrA51hbo5pWvjkEcTOa8YUPdKisZmF1F2OVs_wI"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T16:56:44.1110621+08:00"}
+--------------------------------
+2024/9/19 17:08:17|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/19 17:08:18|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJPcGVuSWQiOiIxMjM0NTYiLCJpc3MiOiJyYW53ZW4iLCJhdWQiOiJDVyJ9.Ug9RcGXQaXKECrVOl28JTX_1gi6kPEExDS18S8tN_Sw"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:08:18.4175291+08:00"}
+--------------------------------
+2024/9/19 17:08:44|
+Request Data:
+QueryData:/api/User/Authorisation
+BodyData:{
+  "OpenId": "123456",
+  "Name": "121",
+  "Tel": "123",
+  "Picture": "1234"
+}
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/Authorisation
+
+--------------------------------
+2024/9/19 17:08:44|
+Response Data:
+{"Version":"1.0.0","Code":601,"Message":"过期令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:08:44.6339905+08:00"}
+--------------------------------
+2024/9/19 17:10:26|
+Request Data:
+QueryData:/api/User/Authorisation
+BodyData:{
+  "OpenId": "123456",
+  "Name": "string",
+  "Tel": "string",
+  "Picture": "string"
+}
+Operator:
+RequestPath:http://localhost:7000/api/User/Authorisation
+
+--------------------------------
+2024/9/19 17:10:36|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:10:33.8263332+08:00"}
+--------------------------------
+2024/9/19 17:11:37|
+Request Data:
+QueryData:/api/User/Authorisation
+BodyData:{
+  "OpenId": "123456",
+  "Name": "string",
+  "Tel": "string",
+  "Picture": "string"
+}
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/Authorisation
+
+--------------------------------
+2024/9/19 17:11:49|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:11:46.2720688+08:00"}
+--------------------------------
+2024/9/19 17:18:24|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/19 17:18:25|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJPcGVuSWQiOiIxMjM0NTYiLCJpc3MiOiJyYW53ZW4iLCJhdWQiOiJDVyJ9.Ug9RcGXQaXKECrVOl28JTX_1gi6kPEExDS18S8tN_Sw"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:18:25.2952094+08:00"}
+--------------------------------
+2024/9/19 17:18:46|
+Request Data:
+QueryData:/api/User/Authorisation
+BodyData:{
+  "OpenId": "123456",
+  "Name": "123",
+  "Tel": "123",
+  "Picture": "123"
+}
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/Authorisation
+
+--------------------------------
+2024/9/19 17:19:40|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:19:40.8208587+08:00"}
+--------------------------------
+2024/9/19 17:24:53|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/19 17:24:54|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"生成Token失败!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:24:54.8757677+08:00"}
+--------------------------------
+2024/9/19 17:26:44|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/19 17:26:46|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"生成Token失败!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:26:46.2589484+08:00"}
+--------------------------------
+2024/9/19 17:26:55|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/19 17:27:54|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?openId=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?openId=123456
+
+--------------------------------
+2024/9/19 17:27:55|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJPcGVuSWQiOiIxMjM0NTYiLCJDaXBoZXIiOiJLVHVPZnVwdU9RelRZMDZSR0cxVkVBPT0iLCJFeHBpcmVzIjoiMjAyNC0wOS0yMCAxNzoyNzo1NSIsImV4cCI6MTcyNjgyNDUzNSwiaXNzIjoicmFud2VuIiwiYXVkIjoiQ1cifQ.aVXWQLK6Rmk5pxcJWvWKVnCNtJC3RDVWYAfS1z1Uls0"},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:27:55.8437683+08:00"}
+--------------------------------
+2024/9/19 17:28:11|
+Request Data:
+QueryData:/api/User/Authorisation
+BodyData:{
+  "OpenId": "123456",
+  "Name": "string",
+  "Tel": "string",
+  "Picture": "string"
+}
+Operator:[123456]-[]
+RequestPath:http://localhost:7000/api/User/Authorisation
+
+--------------------------------
+2024/9/19 17:28:15|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-19T17:28:15.377771+08:00"}

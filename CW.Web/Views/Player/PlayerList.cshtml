@@ -1,0 +1,218 @@
+﻿@{
+    ViewBag.Title = "PlayerList";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            <blockquote class="layui-elem-quote mylog-info-tit">
+                <ul class="layui-tab-title">
+                    <li class="layui-btn layui-btn-normal" id="search-action"><i class="layui-icon">&#xe615;</i>查询</li>
+                    <li class="layui-btn layui-btn-normal" id="reset-action"><i class="layui-icon">&#xe65c;</i>重置</li>
+                    @*<li class="layui-btn layui-btn-normal" onclick="addUser();"><i class="layui-icon">&#xe608;</i>添加</li>*@
+                </ul>
+            </blockquote>
+            <div class="larry-separate"></div>
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                <div class="search-area">
+                    <div class="sa-ele">
+                        <label class="se-title">昵称:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input class="layui-input" id="keywords" name="keywords" placeholder="输入昵称" />
+                    </div>
+                    <div class="sa-ele">
+                        <label class="se-title">TgId:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input class="layui-input" id="tgId" name="tgId" placeholder="输入Telegram用户ID" />
+                    </div>
+                    <div class="sa-ele">
+                        <label class="se-title">注册时间:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input type="text" id="startTime" name="startTime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div class="sa-ele">
+                        ～
+                    </div>
+                    <div class="sa-ele">
+                        <input type="text" id="endTime" name="endTime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+                <!-- layui.table 开始 -->
+                <table id="datalist" lay-filter="datalist"></table>
+                <script type="text/html" id="stateTpl">
+                    {{# if(d.enable == 1){ }}
+                    <a onclick="setState('{{d.uid}}',0)" class="layui-btn layui-btn-warm layui-btn-xs">已启用</a>
+                    {{# } else { }}
+                    <a onclick="setState('{{d.uid}}',1)" class="layui-btn layui-btn-danger layui-btn-xs">已禁用</a>
+                    {{# } }}
+                </script>
+                <script type="text/html" id="barUser">
+                    <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="wear">玩家装备</a>
+                    <a class="layui-btn layui-btn-warm layui-btn-xs" lay-event="assets">玩家资产</a>
+                    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="logins">登录信息</a>
+                </script>
+                <!-- layui.table 结束 -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    var table = null;
+    var tableIns = null;
+    var dialogId;
+    layui.use(['table', 'laydate'], function () {
+        table = layui.table;
+        var laydate = layui.laydate;
+        var keywords = $("#keywords").val();
+        var tgId = $("#tgId").val();
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+
+        lay('.laydateitem').each(function () {
+            laydate.render({
+                elem: this
+                , trigger: 'click'
+            });
+        });
+
+        tableIns = table.render({
+            elem: '#datalist'
+            , id: 'datalist'
+            , height: 'full'
+            , cellMinWidth: 100
+            , page: true  //是否分页
+            , limits: [10, 20, 50, 100, 200]
+            , limit: 10
+            , loading: true //显示加载条
+            , even: true
+            , url: '@Url.Action("GetPlayerDataList", "Player", new { area = "Admin" })'   //请求地址
+            , where: { keywords: keywords, tgId: tgId, startTime: startTime, endTime: endTime }  //请求参数
+            , cols: [[
+                //{ checkbox: true, fixed: true },
+                //{ field: 'uid', title: '玩家编号' }, 
+                { field: 'telegram_id', title: 'Telegram用户ID', align: 'center' }
+                , { field: 'nick_name', title: '玩家昵称', align: 'center' }
+                , { field: 'level', title: '等级', align: 'center' }
+                , { field: 'teamPlayers', title: '好友数量', align: 'center' }
+                , { field: 'mobile', title: '手机号码', align: 'center' }
+                , { field: 'reg_time', title: '注册时间', align: 'center', width: 180, templet: '<div>{{formatDate(d.reg_time)}}</div>' }
+                , { field: 'enable', title: '状态', align: 'center', width: 100, templet: '#stateTpl' } //自定义返回
+                , { title: '操作', width: 240, align: 'center', toolbar: '#barUser' }
+            ]]
+            //, initSort: {
+            //    field: 'LoginName' //排序字段，对应 cols 设定的各字段名
+            //    , type: 'asc' //排序方式  asc: 升序、desc: 降序、null: 默认排序
+            //}
+            , request: {
+                pageName: 'cPage' //页码的参数名称，默认：page
+                , limitName: 'pSize' //每页数据量的参数名，默认：limit
+            }
+            , response: {
+                statusName: 'status' //数据状态的字段名称，默认：code
+                , statusCode: 200 //成功的状态码，默认：0
+                , msgName: 'msg' //状态信息的字段名称，默认：msg
+                , countName: 'totals' //数据总数的字段名称，默认：count
+                , dataName: 'data' //数据列表的字段名称，默认：data
+            }
+            , done: function (res, curr, count) {
+
+            }
+        });
+
+        //监听工具条
+        table.on('tool(datalist)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'wear') {
+                playWear(data);
+            } 
+            if (obj.event === 'assets') {
+                playAssets(data);
+            } 
+            if (obj.event === 'logins') {
+                playLogins(data);
+            } 
+        });
+    });
+
+    //刷新数据列表
+    function reloadData() {
+        var keywords = $("#keywords").val();
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+        table.reload('datalist',{
+            where: { keywords: keywords, startTime: startTime, endTime: endTime }
+        });
+    }
+
+    // 绑定搜索事件
+    $('#search-action').on('click', function () {
+        reloadData();
+    });
+
+    // 绑定重置
+    $('#reset-action').on('click', function () {
+        $("#keywords").val('');
+        $("#startTime").val('');
+        $("#endTime").val('');
+        reloadData();
+    });
+</script>
+<script>
+    //启用、禁用
+    function setState(uid, state) {
+        $.post('@Url.Action("SetPlayerState", "Player", new {area = "Admin"})', { uid: uid, state: state }, function (data) {
+            if (data.state == "true") {
+                layer.msg(data.content, { icon: 1, time: 2000 });
+                reloadData();
+            } else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+        }, "json");
+    }
+
+    //玩家装备
+    function playWear(d) {
+        dialogId = layer.open({
+            type: 2,
+            title: d.uid + ' - 玩家装备',
+            maxmin: true,
+            area: ['90%', '90%'],
+            content: '@Url.Action("PlayerWearList", "Player", new {area = "Admin"})?uid=' + d.uid,
+            cancel: function (index, layero) {
+            }
+        });
+        //layer.full(dialogId);
+    }
+
+    //玩家资产
+    function playAssets(d) {
+        dialogId = layer.open({
+            type: 2,
+            title: d.uid + ' - 玩家资产',
+            maxmin: true,
+            area: ['90%', '90%'],
+            content: '@Url.Action("PlayerAssetsList", "Player", new {area = "Admin"})?uid=' + d.uid,
+            cancel: function (index, layero) {
+            }
+        });
+        //layer.full(dialogId);
+    }
+
+    //登录记录
+    function playLogins(d) {
+        dialogId = layer.open({
+            type: 2,
+            title: d.uid + ' - 登录记录',
+            maxmin: true,
+            area: ['90%', '90%'],
+            content: '@Url.Action("PlayerLoginsList", "Player", new {area = "Admin"})?uid=' + d.uid,
+            cancel: function (index, layero) {
+            }
+        });
+        //layer.full(dialogId);
+    }
+</script>

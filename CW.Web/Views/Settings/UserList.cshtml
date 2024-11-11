@@ -1,0 +1,446 @@
+﻿@{
+    ViewBag.Title = "UserList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            <blockquote class="layui-elem-quote mylog-info-tit">
+                <ul class="layui-tab-title">
+                    <li class="layui-btn layui-btn-normal" id="search-action"><i class="layui-icon">&#xe615;</i>查询</li>
+                    <li class="layui-btn layui-btn-normal" id="reset-action"><i class="layui-icon">&#xe65c;</i>重置</li>
+                    <li class="layui-btn layui-btn-normal" onclick="addUser();"><i class="layui-icon">&#xe608;</i>添加</li>
+                    <li class="layui-btn layui-btn-normal" style="float: right" onclick="delUsers();"><i class="layui-icon">&#xe640;</i>批量删除用户</li>
+                </ul>
+            </blockquote>
+            <div class="larry-separate"></div>
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                <div class="search-area">
+                    <div class="sa-ele">
+                        <label class="se-title">用户名:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input class="layui-input" id="susername" name="susername" placeholder="输入用户名"/>
+                    </div>
+                    <div class="sa-ele">
+                        <label class="se-title">创建时间:</label>
+                    </div>
+                    <div class="sa-ele">
+                        <input type="text" id="starttime" name="starttime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div class="sa-ele">
+                        ～
+                    </div>
+                    <div class="sa-ele">
+                        <input type="text" id="endtime" name="endtime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+                <!-- layui.table 开始 -->
+                <table id="datalist" lay-filter="datalist"></table>
+                <script type="text/html" id="sexTpl">
+                    {{# if(d.Sex == 1){ }}
+                        男
+                    {{# } else { }}
+                        女
+                    {{# } }}
+                </script>
+                <script type="text/html" id="stateTpl">
+                    {{# if(d.ActivatedState == 1){ }}
+                    <a onclick="setState('{{d.UserId}}',0)" class="layui-btn layui-btn-xs">已启用</a>
+                    {{# } else { }}
+                    <a onclick="setState('{{d.UserId}}',1)" class="layui-btn layui-btn-xs">已禁用</a>
+                    {{# } }}
+                </script>
+                <script type="text/html" id="barUser">
+                    <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="role">设置角色</a>
+                    <a class="layui-btn layui-btn-warm layui-btn-xs" lay-event="resetpwd">重置密码</a>
+                    <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit">编辑</a>
+                    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                </script>
+                <!-- layui.table 结束 -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 添加、编辑信息弹出框 -->
+<div id="infodialog" class="larry-personal" style="display: none">
+	<div class="larry-personal-body clearfix">
+		<form class="layui-form col-lg-10" action="" method="post">
+			<div class="layui-form-item">
+				<label class="layui-form-label">用户名：</label>
+				<div class="layui-input-block">
+				    <input type="text" id="loginname" name="loginname" autocomplete="off" class="layui-input">
+				    <input type="hidden" id="userId" name="userId"/>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">密码：</label>
+				<div class="layui-input-block">
+					<input type="password" id="password" name="password" autocomplete="off" class="layui-input"><div class="layui-form-mid layui-word-aux" id="pwdbio">注：不填写则不会修改密码</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">性别</label>
+				<div class="layui-input-block">
+				    <input type="radio" name="sex" value="1" title="男" checked="checked">
+				    <div class="layui-unselect layui-form-radio layui-form-radioed">
+				        <i class="layui-anim layui-icon"></i><span>男</span></div>
+				    <input type="radio" name="sex" value="2" title="女">
+				    <div class="layui-unselect layui-form-radio">
+				        <i class="layui-anim layui-icon"></i><span>女</span></div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<a class="layui-btn"  onclick="saveInfo();">提交</a>
+					
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- 设置角色弹出框 -->
+<div id="roleDialog" class="larry-personal" style="display: none">
+    <div class="larry-personal-body clearfix">
+        <form class="layui-form col-lg-10" action="" method="post">
+            <input type="hidden" id="uId" name="uId"/>
+            <div class="layui-form-item">
+                <label class="layui-form-label">选择角色：</label>
+                <div class="layui-input-block">
+                    <select id="selectRole" name="selectRole" lay-filter="selectRole">
+                        <option value=''></option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <a class="layui-btn" lay-submit="" lay-filter="" onclick="saveRole();">提交</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var table = null;
+    var tableIns = null;
+    var dialogId;
+    layui.use(['table', 'laydate'], function () {
+        table = layui.table;
+        var laydate = layui.laydate;
+        var loginname = $("#susername").val();
+        var starttime = $("#starttime").val();
+        var endtime = $("#endtime").val();
+
+        lay('.laydateitem').each(function () {
+            laydate.render({
+                elem: this
+                , trigger: 'click'
+            });
+        });
+
+        $.post('@Url.Action("GetSelectSysRoleList", "Settings", new {area="Admin" })',
+            function (data) {
+                $('#selectRole').html('<option value="">无</option>');
+                $('#selectRole').append(data);
+                form.render('select');
+            });
+
+        tableIns = table.render({
+            elem: '#datalist'
+            , id: 'datalist'
+            , height: 'full'
+            , cellMinWidth: 100
+            , page: true  //是否分页
+            , limits: [10, 20, 50, 100, 200]
+            , limit: 10
+            , loading: true //显示加载条
+            , even: true
+            //, method: 'post'
+            , url: '@Url.Action("GetUserDataList", "Settings", new { area = "Admin" })'   //请求地址
+            , where: { loginname: loginname, starttime: starttime, endtime: endtime }  //请求参数
+            , cols: [[
+                { checkbox: true, fixed: true }
+                //, { field: 'UserId', title: '用户编号' }
+                , { field: 'LoginName', title: '用户名', align: 'center' }
+                , { field: 'Sex', title: '性别', align: 'center', width: 80, templet: '#sexTpl' } //自定义返回
+                , { field: 'Email', title: '邮箱', align: 'center' }
+                , { field: 'Mobile', title: '手机号码', align: 'center' }
+                , { field: 'CreateTime', title: '创建时间', align: 'center', width: 180,  templet: '<div>{{formatDate(d.CreateTime)}}</div>' }
+                , { field: 'RoleName', title: '角色', align: 'center', width: 100 }
+                , { field: 'ActivatedState', title: '激活状态', align: 'center', width: 100, templet: '#stateTpl' } //自定义返回
+                , { title: '操作', width: 300, align: 'center', toolbar: '#barUser' }
+            ]]
+            //, initSort: {
+            //    field: 'LoginName' //排序字段，对应 cols 设定的各字段名
+            //    , type: 'asc' //排序方式  asc: 升序、desc: 降序、null: 默认排序
+            //}
+            , request: {
+                pageName: 'cPage' //页码的参数名称，默认：page
+                , limitName: 'pSize' //每页数据量的参数名，默认：limit
+            }
+            , response: {
+                statusName: 'status' //数据状态的字段名称，默认：code
+                , statusCode: 200 //成功的状态码，默认：0
+                , msgName: 'msg' //状态信息的字段名称，默认：msg
+                , countName: 'totals' //数据总数的字段名称，默认：count
+                , dataName: 'data' //数据列表的字段名称，默认：data
+            }
+            , done: function (res, curr, count) {
+                //如果是异步请求数据方式，res即为你接口返回的信息。
+                //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+                //console.log(res);
+                //得到当前页码
+                //console.log(curr);
+                //得到数据总量
+                //console.log(count);
+            }
+        });
+
+        //监听工具条
+        table.on('tool(datalist)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'role') {
+                setRole(data.UserId, data.RoleId);
+            } else if (obj.event === 'del') {
+                delUser(data.UserId);
+            } else if (obj.event === 'edit') {
+                editUser(data.UserId, data.LoginName, data.Sex);
+            } else if (obj.event === 'resetpwd') {
+                resetPwd(data.UserId);
+            }
+        });
+
+        //事件监听
+        //table.on('checkbox(datalist)', function (obj) {
+        //    //console.log(obj.checked); //当前是否选中状态
+        //    //console.log(obj.data); //选中行的相关数据
+        //    //console.log(obj.type); //如果触发的是全选，则为：all，如果触发的是单选，则为：one
+        //});
+    });
+
+    //刷新数据列表
+    function reloadData() {
+        var loginname = $("#susername").val();
+        var starttime = $("#starttime").val();
+        var endtime = $("#endtime").val();
+        table.reload('datalist',{
+            where: { loginname: loginname, starttime: starttime, endtime: endtime }
+        });
+    }
+
+    // 绑定搜索事件
+    $('#search-action').on('click', function () {
+        reloadData();
+    });
+
+    // 绑定重置
+    $('#reset-action').on('click', function () {
+        $("#susername").val('');
+        $("#starttime").val('');
+        $("#endtime").val('');
+        reloadData();
+    });
+</script>
+<script>
+    //重置密码
+    function resetPwd(userId) {
+        if (userId != '') {
+            layer.confirm('确认重置用户密码为\'123456\'?', { icon: 3 }, function () {
+                $.post('@Url.Action("ResetPwd", "Settings", new {area = "Admin"})', { userId: userId, pwd: '123456' }, function (data) {
+                    if (data.state == "true") {
+                        layer.msg(data.content, { icon: 1, time: 2000 });
+                        reloadData();
+                    } else {
+                        layer.msg(data.content, { icon: 2, time: 3000 });
+                    }
+                }, "json");
+            });
+        }
+    }
+
+    //删除
+    function delUser(userId) {
+        if (userId != '') {
+            layer.confirm('确认删除?', { icon: 3 }, function() {
+                $.post('@Url.Action("DeleteUser", "Settings", new {area = "Admin"})', { userId: userId }, function (data) {
+                    if (data.state == "true") {
+                        layer.msg(data.content, { icon: 1, time: 2000 });
+                        reloadData();
+                    } else {
+                        layer.msg(data.content, { icon: 2, time: 3000 });
+                    }
+                }, "json");
+            });
+        }
+    }
+
+    //批量删除
+    function delUsers() {
+        var checkStatus = table.checkStatus('datalist');
+        var data = checkStatus.data;  //获取选中行的数据
+        if (data.length == 0) {
+            layer.msg("没有选中任何行", { icon: 8, time: 3000 });
+        }
+        var userIdList = '';
+        for (var i = 0; i < data.length; i++) {
+            userIdList += data[i].UserId + ",";
+        }
+        if (userIdList.length > 0) {
+            userIdList = userIdList.substring(0, userIdList.length - 1);
+        }
+        layer.confirm('确认批量删除?', { icon: 3 }, function () {
+            $.post('@Url.Action("DeleteUserList", "Settings", new {area = "Admin"})', { userIdList: userIdList }, function (data) {
+                if (data.state == "true") {
+                    layer.msg(data.content, { icon: 1, time: 2000 });
+                    reloadData();
+                } else {
+                    layer.msg(data.content, { icon: 2, time: 3000 });
+                }
+            }, "json");
+        });
+    }
+
+    //启用、禁用
+    function setState(userId, state) {
+        $.post('@Url.Action("SetUserState", "Settings", new {area = "Admin"})', { userId: userId, state: state }, function(data) {
+            if (data.state == "true") {
+                layer.msg(data.content, { icon: 1, time: 2000 });
+                reloadData();
+            } else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+        }, "json");
+    }
+
+    //添加
+    function addUser() {
+        $('#pwdbio').hide();
+        $("#userId").val('');
+        $("#loginname").val('');
+        $('#password').val('');
+        $("input[name='sex'][value='1']").attr("checked", true);
+        $("input[name='sex'][value='2']").attr("checked", false);
+        form.render('radio');
+        dialogId = layer.open({
+            type: 1,
+            title: '添加',
+            maxmin: true,
+            area: ['90%', '90%'],
+            content: $('#infodialog')
+        });
+        //layer.full(dialogId);
+    }
+
+    //编辑
+    function editUser(userId, userName, sex) {
+        $('#pwdbio').show();
+        $("#userId").val(userId);
+        $("#loginname").val(userName);
+        $('#password').val('');
+        if (sex == '1') {
+            $("input[name='sex'][value='1']").attr("checked", true);
+            $("input[name='sex'][value='2']").attr("checked", false);
+        } else {
+            $("input[name='sex'][value='1']").attr("checked", false);
+            $("input[name='sex'][value='2']").attr("checked", true);
+        }
+        form.render('radio');
+        dialogId = layer.open({
+            type: 1,
+            title: '编辑',
+            maxmin: true,
+            area: ['90%', '90%'],
+            content: $('#infodialog')
+        });
+        //layer.full(dialogId);
+    }
+
+    //提交
+    function saveInfo() {
+        var errstr = '';
+        var url = '';
+        var param = {};
+        var userId = $("#userId").val();
+        var loginname = $("#loginname").val();
+        if (loginname.replace(/(^s*)|(s*$)/g, "").length == 0) {
+            errstr += '用户名不能为空<br/>';
+        }
+        var password = $("#password").val();
+        var sex = $('input[name="sex"]:checked').val();
+        if (userId == '') { //新增
+            if (password.length == 0) {
+                errstr += '密码不能为空<br/>';
+            }
+            if (errstr != "") {
+                layer.msg(errstr, { icon: 8, time: 3000 });
+                return false;
+            }
+            url = '@Url.Action("AddUser", "Settings", new {area = "Admin"})';
+            param = {
+                loginname: loginname,
+                password: password,
+                sex: sex,
+                activatedState: 1
+            };
+        } else {  //编辑
+            if (errstr != "") {
+                layer.msg(errstr, { icon: 8, time: 3000 });
+                return false;
+            }
+            url = '@Url.Action("EditUser", "Settings", new {area = "Admin"})';
+            param = {
+                userId: userId,
+                loginname: loginname,
+                password: password,
+                sex: sex,
+                activatedState: 1
+            };
+        }
+        //执行ajax请求
+        $.post(url, param, function (data) {
+            if (data.state == "true") {
+                layer.msg(data.content, { icon: 1, time: 2000 });
+                layer.close(dialogId);
+                reloadData();
+            } else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+        }, "json");
+        return false;
+    }
+
+    //设置角色
+    function setRole(uId, roleId) {
+        $("#uId").val(uId);
+        $('#selectRole').val(roleId);
+        form.render('select');
+        dialogId = layer.open({
+            type: 1,
+            title: '设置角色',
+            area: ['400px', '300px'],
+            content: $('#roleDialog')
+        });
+        //layer.full(dialogId);
+    }
+
+    //保存设置角色
+    function saveRole() {
+        var pageIndex = $('.layui-laypage-curr ').text();
+        var uId = $("#uId").val();
+        if (uId == "") {
+            return false;
+        }
+        var roleId = $('#selectRole').val();
+        $.post('@Url.Action("EditUserSysRole", "Settings", new {area="Admin" })', { userId: uId, roleId: roleId }, function (data) {
+            if (data.state == "true") {
+                layer.msg(data.content, { icon: 1, time: 2000 });
+                layer.close(dialogId);
+                reloadData(pageIndex);
+            }
+            else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+        }, "json");
+    }
+</script>

@@ -1,0 +1,197 @@
+﻿@{
+    ViewBag.Title = "PlayerAssetsList";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<input type="hidden" id="uid" name="uid" value="@ViewBag.uid" />
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            <blockquote class="layui-elem-quote mylog-info-tit">
+                <ul class="layui-tab-title">
+                    <li class="layui-btn layui-btn-normal" id="search-action"><i class="layui-icon">&#xe615;</i>查询</li>
+                    <li class="layui-btn layui-btn-normal" id="reset-action"><i class="layui-icon">&#xe65c;</i>重置</li>
+                </ul>
+            </blockquote>
+            <div class="larry-separate"></div>
+            <table class="layui-table" lay-even="" lay-skin="nob" id="baseTable">
+                <colgroup>
+                    <col width="33%" align="center">
+                    <col width="34%" align="center">
+                    <col width="33%" align="center">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="larry-separate"></div>
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                <form class="layui-form">
+                    <div class="search-area">
+                        <div class="sa-ele">
+                            <label class="se-title">资产类型:</label>
+                        </div>
+                        <div class="sa-ele">
+                            <select id="selectAssetsType" name="selectAssetsType" lay-filter="selectAssetsType">
+                                <option value='101'>扭蛋</option>
+                                <option value='201'>宝石</option>
+                                <option value='301'>积分</option>
+                            </select>
+                        </div>
+                        <div class="sa-ele">
+                            <label class="se-title">流水类型:</label>
+                        </div>
+                        <div class="sa-ele">
+                            <select id="selectSourceType" name="selectSourceType" lay-filter="selectSourceType">
+                                <option value='1'>获得</option>
+                                <option value='2'>消耗</option>
+                                <option value='3'>系统赠送</option>
+                            </select>
+                        </div>
+                        <div class="sa-ele">
+                            <label class="se-title">时间:</label>
+                        </div>
+                        <div class="sa-ele">
+                            <input type="text" id="startTime" name="startTime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+                        </div>
+                        <div class="sa-ele">
+                            ～
+                        </div>
+                        <div class="sa-ele">
+                            <input type="text" id="endTime" name="endTime" class="layui-input laydateitem" placeholder="YYYY-MM-DD">
+                        </div>
+                    </div>
+                </form>
+                <!-- layui.table 开始 -->
+                <table id="datalist" lay-filter="datalist"></table>
+                <script type="text/html" id="assetsTpl">
+                    {{# if(d.asset_type == 101){ }}
+                    扭蛋
+                    {{# } else if(d.wear_part == 201){ }}
+                    宝石
+                    {{# } else if(d.wear_part == 301){ }}
+                    积分
+                    {{# } else { }}
+                    {{# } }}
+                </script>
+                <script type="text/html" id="sourceTpl">
+                    {{# if(d.source_type == 1){ }}
+                    获得
+                    {{# } else if(d.source_type == 2){ }}
+                    消耗
+                    {{# } else if(d.source_type == 3){ }}
+                    系统赠送
+                    {{# } else { }}
+                    {{# } }}
+                </script>
+                <!-- layui.table 结束 -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    var table = null;
+    var tableIns = null;
+    var dialogId;
+    layui.use(['table', 'laydate'], function () {
+        table = layui.table;
+        var laydate = layui.laydate;
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+        var sourceType = $("#selectSourceType").val();
+        var assetsType = $("#selectAssetsType").val();
+
+        lay('.laydateitem').each(function () {
+            laydate.render({
+                elem: this
+                , trigger: 'click'
+            });
+        });
+
+        getBaseTable()
+
+        tableIns = table.render({
+            elem: '#datalist'
+            , id: 'datalist'
+            , height: 'full'
+            , cellMinWidth: 100
+            , page: true  //是否分页
+            , limits: [20, 50, 100, 200]
+            , limit: 20
+            , loading: true //显示加载条
+            , even: true
+            //, method: 'post'
+            , url: '@Url.Action("GetPlayerAssetsRecordList", "Player", new { area = "Admin" })'   //请求地址
+            , where: { uid: '@ViewBag.uid', startTime: startTime, endTime: endTime, sourceType: sourceType, assetsType: assetsType }  //请求参数
+            , cols: [[
+                //{ checkbox: true, fixed: true },
+                { field: 'asset_type', title: '资产类型', align: 'center', width: 100, templet: '#assetsTpl' }
+                , { field: 'source_type', title: '流水类型', align: 'center', width: 100, templet: '#sourceTpl' }
+                , { field: 'asset_num', title: '数量', align: 'center', width: 100 }
+                , { field: 'record_time', title: '时间', align: 'center', width: 180, templet: '<div>{{formatDate(d.record_time)}}</div>' }
+                , { field: 'remark', title: '备注', align: 'center' }
+            ]]
+            //, initSort: {
+            //    field: 'LoginName' //排序字段，对应 cols 设定的各字段名
+            //    , type: 'asc' //排序方式  asc: 升序、desc: 降序、null: 默认排序
+            //}
+            , request: {
+                pageName: 'cPage' //页码的参数名称，默认：page
+                , limitName: 'pSize' //每页数据量的参数名，默认：limit
+            }
+            , response: {
+                statusName: 'status' //数据状态的字段名称，默认：code
+                , statusCode: 200 //成功的状态码，默认：0
+                , msgName: 'msg' //状态信息的字段名称，默认：msg
+                , countName: 'totals' //数据总数的字段名称，默认：count
+                , dataName: 'data' //数据列表的字段名称，默认：data
+            }
+            , done: function (res, curr, count) {
+
+            }
+        });
+
+    });
+
+    //刷新数据列表
+    function reloadData() {
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+        var sourceType = $("#selectSourceType").val();
+        var assetsType = $("#selectAssetsType").val();
+        table.reload('datalist',{
+            where: { uid: '@ViewBag.uid', startTime: startTime, endTime: endTime, sourceType: sourceType, assetsType: assetsType }
+        });
+    }
+
+    // 绑定搜索事件
+    $('#search-action').on('click', function () {
+        reloadData();
+    });
+
+    // 绑定重置
+    $('#reset-action').on('click', function () {
+        $("#startTime").val('');
+        $("#endTime").val('');
+        $("#selectSourceType").val('1');
+        $("#selectAssetsType").val('101');
+        form.render('select');
+    });
+
+    function getBaseTable() {
+        $.post('@Url.Action("GetPlayerAssetsData", "Player", new { area = "Admin" })', {uid: '@ViewBag.uid'}, function (res) {
+            $('#baseTable').find('tbody').html('');
+            if (res.state == 'true') {
+                //console.log(res.data);
+                $('#baseTable').find('tbody').html('<tr>' +
+                    '<td align="center">扭蛋数：' + res.data.numA + '</td>' +
+                    '<td align="center">宝石数：' + res.data.numB + '</td>' +
+                    '<td align="center">积分数：' + res.data.numC + '</td>');
+            }
+        });
+    }
+</script>

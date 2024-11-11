@@ -1,0 +1,288 @@
+﻿@{
+    ViewBag.Title = "SysMenuList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            <blockquote class="layui-elem-quote mylog-info-tit">
+                导航菜单管理
+            </blockquote>
+            <div class="larry-separate"></div>
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                <a class="layui-btn layui-btn-warm" onclick="addMenu('0', '');"><i class="fa fa-list"></i>添加根菜单</a>
+                <table id="menuTreeGird" class="layui-table layui-form"></table>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 添加、编辑信息弹出框 -->
+<div id="infodialog" class="larry-personal" style="display: none">
+    <div class="larry-personal-body clearfix">
+        <form class="layui-form col-lg-10" action="" method="post">
+            <div class="layui-form-item" id="prtNameDiv">
+                <label class="layui-form-label">父级菜单：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="parentName" name="parentName" autocomplete="off" class="layui-input layui-disabled" readonly="readonly">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">菜单名称：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="menuName" name="menuName" autocomplete="off" class="layui-input">
+                    <input type="hidden" id="menuId" name="menuId" />
+                    <input type="hidden" id="parentId" name="parentId" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">菜单链接：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="menuUrl" name="menuUrl" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">排序：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="menuSequence" name="menuSequence" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">菜单图标：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="menuIcon" name="menuIcon" value="" class="layui-input" lay-filter="menuIcon">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">备注：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="remark" name="remark" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <a class="layui-btn"  onclick="saveInfo();">提交</a>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    var table = null;
+    var treetable = null;
+    var dialogId;
+    var IconFonts;
+    layui.config({
+        base: '../../Admin/js/'
+    }).use(['table', 'treetable', 'IconFonts'], function () {
+        table = layui.table;
+        treetable = layui.treetable;
+        IconFonts = layui.IconFonts;
+
+        $.post('@Url.Action("GetMenuDataList", "Settings", new { area = "Admin" })', function (data) {
+            treetable.render({
+                elem: '#menuTreeGird',
+                data: data,
+                field: 'MenuName',
+                is_checkbox: false,
+                cols: [
+                    { field: 'MenuName', title: '菜单名称', width: '200px' }
+                    , { title: '菜单链接', width: '200px',
+                        template: function (item) {
+                            if (item.MenuUrl == null) {
+                                return '';
+                            } else {
+                                return item.MenuUrl;
+                            }
+
+                        }
+                    }
+                    , { title: '排序', field: 'MenuSequence', width: '80px', align: 'center' }
+                    , {
+                        title: '菜单图标', width: '80px', align: 'center',
+                        template: function (item) {
+                            return '<i class="fa ' + item.MenuIcon + '"></i>';
+                        }
+                    }
+                   // , { title: '备注', field: 'Remark', width: '160px' }
+                    , {
+                        title: '操作', width: '200px',
+                        template: function (item) {
+                            var tem = [];
+                            //if (item.pid == 0) {
+                                tem.push('<a class="layui-btn layui-btn-normal layui-btn-xs" lay-filter="add">添加子菜单</a>');
+                            //}
+                            tem.push('<a class="layui-btn layui-btn-normal layui-btn-xs" lay-filter="edit">编辑</a>');
+                            if (item.pid != 0) {
+                                tem.push('<a class="layui-btn layui-btn-danger layui-btn-xs" lay-filter="delete">删除</a>');
+                            }
+                            return tem.join(' ');
+                        }
+                    }
+                ]
+            });
+        },'json');
+
+        //监听操作
+        treetable.on('treetable(add)', function (data) {
+            addMenu(data.item.MenuId, data.item.MenuName);
+        });
+
+        treetable.on('treetable(edit)', function (data) {
+            editMenu(data.item);
+        });
+
+        treetable.on('treetable(delete)', function (data) {
+            delMenu(data.item.MenuId);
+        });
+
+        //图标选择器
+        IconFonts.render({
+            // 选择器，推荐使用input
+            elem: '#menuIcon', //选择器ID
+            // 数据类型：fontClass/layui_icon，
+            type: 'fontClass',
+            // 是否开启搜索：true/false
+            search: true,
+            // 是否开启分页
+            page: true,
+            // 每页显示数量，默认12
+            limit: 12,
+            // 点击回调
+            click: function (data) {
+                //console.log(data);
+            }
+        });
+
+        //$('.up-all').click(function() {
+        //    treetable.all('up');
+        //});
+
+        //$('.down-all').click(function() {
+        //    treetable.all('down');
+        //});
+    });
+</script>
+<script>
+    //添加
+    function addMenu(parentId, parentName) {
+        $("#prtNameDiv").show();
+        $("#menuId").val('');
+        $("#menuName").val('');
+        $("#parentId").val(parentId);
+        $('#parentName').val(parentName);
+        $("#menuUrl").val('');
+        $("#menuSequence").val('');
+        $("#remark").val('');
+        //$("#menuIcon").val('');
+        IconFonts.checkIcon("menuIcon", "fa-windows", "fontClass");
+        dialogId = layer.open({
+            type: 1,
+            title: '添加菜单',
+            maxmin: true,
+            area: ['90%', '90%'],
+            content: $('#infodialog')
+        });
+        //layer.full(dialogId);
+    }
+
+    //编辑
+    function editMenu(data) {
+        $("#prtNameDiv").hide();
+        $("#menuId").val(data.MenuId);
+        $("#menuName").val(data.MenuName);
+        $("#parentId").val('');
+        $('#parentName').val('');
+        $("#menuUrl").val(data.MenuUrl);
+        $("#menuSequence").val(data.MenuSequence);
+        $("#remark").val(data.Remark);
+        //$("#menuIcon").val(data.MenuIcon);
+        IconFonts.checkIcon("menuIcon", data.MenuIcon, "fontClass");
+        dialogId = layer.open({
+            type: 1,
+            title: '编辑菜单',
+            maxmin: true,
+            area: ['90%', '90%'],
+            content: $('#infodialog')
+        });
+        //layer.full(dialogId);
+    }
+
+    //提交
+    function saveInfo() {
+        var errstr = '';
+        var url = '';
+        var param = {};
+        var menuId = $("#menuId").val();
+        var menuName = $("#menuName").val();
+        if (menuName.length == 0) {
+            errstr += '菜单名称不能为空<br/>';
+        }
+        var parentId = $("#parentId").val();
+        var menuUrl = $("#menuUrl").val();
+        var menuSequence = $("#menuSequence").val();
+        if (!isInt(menuSequence)) {
+            errstr += '排序只能是整数<br/>';
+        }
+        var remark = $("#remark").val();
+        var menuIcon = $("#menuIcon").val();
+        if (menuId == '') { //新增
+            if (errstr != "") {
+                layer.msg(errstr, { icon: 8, time: 3000 });
+                return false;
+            }
+            url = '@Url.Action("AddMenu", "Settings", new {area = "Admin"})';
+            param = {
+                parentId: parentId,
+                menuName: menuName,
+                menuUrl: menuUrl,
+                menuSequence: menuSequence,
+                remark: remark,
+                menuIcon: menuIcon
+            };
+        } else {  //编辑
+            if (errstr != "") {
+                layer.msg(errstr, { icon: 8, time: 3000 });
+                return false;
+            }
+            url = '@Url.Action("EditMenu", "Settings", new {area = "Admin"})';
+            param = {
+                menuId: menuId,
+                menuName: menuName,
+                menuUrl: menuUrl,
+                menuSequence: menuSequence,
+                remark: remark,
+                menuIcon: menuIcon
+            };
+        }
+        //执行ajax请求
+        $.post(url, param, function (data) {
+            if (data.state == "true") {
+                layer.close(dialogId);
+                parent.layer.msg(data.content, { icon: 1, time: 2000 });
+                location.reload();
+            } else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+        }, "json");
+        return false;
+    }
+
+    //删除
+    function delMenu(menuId) {
+        if (menuId != '') {
+            layer.confirm('确认删除?', { icon: 3 }, function () {
+                $.post('@Url.Action("DeleteMenu", "Settings", new {area = "Admin"})', { menuId: menuId }, function (data) {
+                    if (data.state == "true") {
+                        parent.layer.msg(data.content, { icon: 1, time: 2000 });
+                        location.reload();
+                    } else {
+                        layer.msg(data.content, { icon: 2, time: 3000 });
+                    }
+                }, "json");
+            });
+        }
+    }
+</script>

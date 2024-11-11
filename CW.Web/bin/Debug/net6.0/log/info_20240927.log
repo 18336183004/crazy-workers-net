@@ -1,0 +1,10 @@
+2024-09-27 15:31:12,185 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7001
+2024-09-27 15:31:12,206 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-27 15:31:12,295 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-27 15:31:12,297 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-27 15:31:12,299 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-27 16:52:38,899 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7001
+2024-09-27 16:52:38,914 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-27 16:52:38,989 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-27 16:52:38,991 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-27 16:52:38,993 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\

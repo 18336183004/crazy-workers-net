@@ -1,0 +1,162 @@
+2024-09-11 14:03:34,106 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:03:34,128 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:03:34,189 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:03:34,191 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:03:34,193 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 14:12:47,545 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:12:47,560 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:12:47,645 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:12:47,651 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:12:47,655 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 14:13:22,229 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:13:22,247 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:13:22,356 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:13:22,360 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:13:22,364 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 14:14:38,284 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:14:38,297 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:14:38,359 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:14:38,361 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:14:38,363 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 14:21:32,288 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:21:32,302 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:21:32,365 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:21:32,368 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:21:32,370 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 14:22:35,844 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:22:35,859 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:22:35,994 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:22:35,996 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:22:35,997 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 14:24:38,123 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:24:38,138 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:24:38,212 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:24:38,214 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:24:38,216 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 14:39:27,990 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:39:28,005 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:39:28,069 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:39:28,071 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:39:28,072 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 14:41:23,731 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 14:41:23,751 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 14:41:23,820 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 14:41:23,823 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 14:41:23,825 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:00:19,506 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:00:19,519 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:00:19,580 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:00:19,582 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:00:19,583 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:00:22,348 [16] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CW.Api.IServices.ILoginService' while attempting to activate 'CW.Web.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-09-11 15:01:16,040 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:01:16,053 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:01:16,111 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:01:16,113 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:01:16,115 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:01:18,321 [6] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CW.Api.IServices.ILoginService' while attempting to activate 'CW.Web.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-09-11 15:28:31,801 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:28:31,824 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:28:31,894 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:28:31,896 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:28:31,898 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:28:33,818 [6] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CW.Web.IServices.ILoginService' while attempting to activate 'CW.Web.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-09-11 15:29:32,304 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:29:32,319 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:29:32,383 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:29:32,385 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:29:32,387 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:31:41,859 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:31:41,876 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:31:41,950 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:31:41,953 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:31:41,955 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:32:42,756 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:32:42,774 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:32:42,836 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:32:42,838 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:32:42,840 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:33:05,459 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:33:05,481 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:33:05,550 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:33:05,552 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:33:05,555 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:35:01,849 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:35:01,864 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:35:01,924 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:35:01,926 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:35:01,927 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:37:22,728 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:37:22,743 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:37:22,815 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:37:22,817 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:37:22,819 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:39:18,779 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:39:18,793 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:39:18,854 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:39:18,859 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:39:18,861 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:49:01,680 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:49:01,703 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:49:01,770 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:49:01,772 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:49:01,773 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\
+2024-09-11 15:49:58,194 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7038
+2024-09-11 15:49:58,223 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5111
+2024-09-11 15:49:58,333 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-09-11 15:49:58,346 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-09-11 15:49:58,348 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\crazy-workers-net.git\CW.Web\

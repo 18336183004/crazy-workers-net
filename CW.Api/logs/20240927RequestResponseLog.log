@@ -1,0 +1,408 @@
+--------------------------------
+2024/9/27 14:01:49|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:01:49|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"errcode\":40125,\"errmsg\":\"invalid appsecret, rid: 66f64a4d-05494b94-76eb4105\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:01:49.9454892+08:00"}
+--------------------------------
+2024/9/27 14:02:59|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:03:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"errcode\":40125,\"errmsg\":\"invalid appsecret, rid: 66f64a93-69c38518-530c9fb9\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:03:00.4028863+08:00"}
+--------------------------------
+2024/9/27 14:12:03|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:12:03|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"errcode\":40125,\"errmsg\":\"invalid appsecret, rid: 66f64cb2-0f0587ac-633020e6\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:12:03.240065+08:00"}
+--------------------------------
+2024/9/27 14:12:04|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:12:04|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"errcode\":40125,\"errmsg\":\"invalid appsecret, rid: 66f64cb3-6ae43a47-00201ffd\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:12:04.2124498+08:00"}
+--------------------------------
+2024/9/27 14:12:04|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:12:04|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"errcode\":40125,\"errmsg\":\"invalid appsecret, rid: 66f64cb4-1fc6d614-49b6e07e\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:12:04.968602+08:00"}
+--------------------------------
+2024/9/27 14:12:51|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:12:51|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"errcode\":40029,\"errmsg\":\"invalid code, rid: 66f64ce3-704dd0cc-26e48e20\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:12:51.6994903+08:00"}
+--------------------------------
+2024/9/27 14:18:54|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:18:55|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Length cannot be less than zero. (Parameter 'length')","Data":"at System.String.Substring(Int32 startIndex, Int32 length)\r\n   at CW.Api.Controllers.LoginController.UserInfo(String jsCode) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 50\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:18:54.9350002+08:00"}
+--------------------------------
+2024/9/27 14:19:04|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:19:04|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Length cannot be less than zero. (Parameter 'length')","Data":"at System.String.Substring(Int32 startIndex, Int32 length)\r\n   at CW.Api.Controllers.LoginController.UserInfo(String jsCode) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 50\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:19:04.9458218+08:00"}
+--------------------------------
+2024/9/27 14:19:22|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:19:22|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Length cannot be less than zero. (Parameter 'length')","Data":"at System.String.Substring(Int32 startIndex, Int32 length)\r\n   at CW.Api.Controllers.LoginController.UserInfo(String jsCode) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 50\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:19:22.5973955+08:00"}
+--------------------------------
+2024/9/27 14:19:36|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:19:36|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Length cannot be less than zero. (Parameter 'length')","Data":"at System.String.Substring(Int32 startIndex, Int32 length)\r\n   at CW.Api.Controllers.LoginController.UserInfo(String jsCode) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 50\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:19:36.9169079+08:00"}
+--------------------------------
+2024/9/27 14:19:58|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:20:15|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"Length cannot be less than zero. (Parameter 'length')","Data":"at System.String.Substring(Int32 startIndex, Int32 length)\r\n   at CW.Api.Controllers.LoginController.UserInfo(String jsCode) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 50\r\n   at lambda_method484(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:20:15.2418272+08:00"}
+--------------------------------
+2024/9/27 14:21:05|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:21:05|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"{\"errcode\":40029,\"errmsg\":\"invalid code, rid: 66f64ed1-5f9e3229-67be3845\"}","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:21:05.8671889+08:00"}
+--------------------------------
+2024/9/27 14:29:13|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:29:14|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:29:14.5407514+08:00"}
+--------------------------------
+2024/9/27 14:29:34|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:30:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:30:02.6139013+08:00"}
+--------------------------------
+2024/9/27 14:30:41|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0e3lx50w3DRwz33nNv2w3VcCHn2lx50q
+
+--------------------------------
+2024/9/27 14:32:26|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:32:26.3727326+08:00"}
+--------------------------------
+2024/9/27 14:34:57|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:34:58|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:34:58.15371+08:00"}
+--------------------------------
+2024/9/27 14:34:59|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:34:59|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:34:59.491835+08:00"}
+--------------------------------
+2024/9/27 14:35:00|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:00.4464549+08:00"}
+--------------------------------
+2024/9/27 14:35:00|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:01|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:01.1602636+08:00"}
+--------------------------------
+2024/9/27 14:35:01|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:01|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:01.6196447+08:00"}
+--------------------------------
+2024/9/27 14:35:01|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:02.002751+08:00"}
+--------------------------------
+2024/9/27 14:35:02|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:02.3237393+08:00"}
+--------------------------------
+2024/9/27 14:35:02|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:02|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:02.6698164+08:00"}
+--------------------------------
+2024/9/27 14:35:02|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:03|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:03.0115661+08:00"}
+--------------------------------
+2024/9/27 14:35:03|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:03|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:03.3874024+08:00"}
+--------------------------------
+2024/9/27 14:35:03|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:03|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:03.8668719+08:00"}
+--------------------------------
+2024/9/27 14:35:04|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:04|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:04.288553+08:00"}
+--------------------------------
+2024/9/27 14:35:04|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:04|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:04.6385682+08:00"}
+--------------------------------
+2024/9/27 14:35:04|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:05|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:05.0387464+08:00"}
+--------------------------------
+2024/9/27 14:35:05|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:35:06|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:35:06.1614433+08:00"}
+--------------------------------
+2024/9/27 14:36:07|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:36:08|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:36:08.2890029+08:00"}
+--------------------------------
+2024/9/27 14:44:13|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:44:13|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:44:13.4305572+08:00"}
+--------------------------------
+2024/9/27 14:44:15|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:44:15|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:44:15.7334688+08:00"}
+--------------------------------
+2024/9/27 14:44:16|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo?jsCode=0a38Go0w36uOz33DTx1w3gdLCe28Go0C
+
+--------------------------------
+2024/9/27 14:44:16|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":null,"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-27T14:44:16.5529311+08:00"}

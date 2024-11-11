@@ -1,0 +1,143 @@
+﻿@{
+    ViewBag.Title = "Console";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            @*<blockquote class="layui-elem-quote mylog-info-tit">
+                    你好：@WorkContext.UserName，祝你开心每一天。
+                </blockquote>*@
+            <div class="layui-row layui-col-space15" style="padding: 20px;background-color: #F2F2F2;">
+                <div class="layui-col-md12">
+                    <div class="layui-row layui-col-space15">
+                        <div class="layui-col-md12">
+                            <div class="layui-card">
+                                <div class="layui-card-header">
+                                    统计数据<a style="cursor: pointer;float: right" onclick="refreshData(1);"><i class="fa fa-refresh"></i>刷新</a>
+                                </div>
+                                <div class="layui-card-body">
+                                    <table class="layui-table" lay-even="" lay-skin="nob" id="baseTable">
+                                        <colgroup>
+                                            <col width="25%">
+                                            <col width="25%">
+                                            <col width="25%">
+                                            <col width="25%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>新增用户数</th>
+                                                <th>活跃用户数</th>
+                                                <th>流失用户数</th>
+                                                <th>-</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="layui-col-md3">
+                        <div class="layui-card">
+                            <div class="layui-card-header">系统日志<a style="cursor: pointer;float: right" onclick="refreshData(0);"><i class="fa fa-refresh"></i>刷新</a></div>
+                            <div class="layui-card-body">
+                                <table class="layui-table" lay-even="" lay-skin="nob" id="log">
+                                    <colgroup>
+                                        <col width="5%" />
+                                        <col />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>日志名称</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var dialogId = null;
+    $(function() {
+        //加载数据
+        getBaseTable();
+    });
+
+    //刷新数据
+    function refreshData(type) {
+        switch (type) {
+        case 0:
+            getLog();
+            break;
+        case 1:
+            getBaseTable();
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        }
+    }
+</script>
+<script>
+    //1、基础数据
+    function getBaseTable() {
+        $.post('/Admin/Home/BaseList', function (res) {
+            $('#baseTable').find('tbody').html('');
+            if (res.state == 'true') {
+                    $('#baseTable').find('tbody').html('<tr>' +
+                        '<td>' + res.data.newPlayerNum + '</td>' +
+                        '<td>' + res.data.activePlayerNum + '</td>' +
+                        '<td>' + res.data.lossPlayerNum + '</td>' +
+                    '<td></td></tr>');
+                layer.msg('刷新完成', { icon: 1, time: 2000 });
+            }
+     }, "json");
+    }
+
+    //6、系统日志
+    function getLog() {
+        $.post('@Url.Action("GetLogList", "Home", new {area = "Admin"})', function (res) {
+            $('#log').find('tbody').html('');
+            if (res.state == 'true') {
+                var data = res.data;
+                if (data.length <= 0) {
+                    $('#log').find('tbody').html('<tr><td></td><td>暂无任何记录</td></tr>');
+                    return;
+                }
+                for (var i = 0; i < data.length; i++) {
+                    $('#log').find('tbody').append('<tr><td>' + (i + 1) + '</td><td><a onclick="logInfo(\'' + data[i] + '\')" style="cursor:pointer">' + data[i] + '</a></td></tr>');
+                }
+            }
+       }, "json");
+    }
+
+    function logInfo(path) {
+        dialogId = layer.open({
+            type: 2,
+            title: '系统日志',
+            maxmin: true,
+            area: ['90%', '90%'],
+            content: '@Url.Action("ReadLog", "Home", new {area = "Admin"})?filepath=' + path
+        });
+    }
+</script>

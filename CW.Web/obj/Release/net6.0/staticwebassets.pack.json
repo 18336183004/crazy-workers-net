@@ -1,0 +1,1929 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\autocomplete.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\autocomplete.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\console.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\console.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\doc.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\doc.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\index.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\index.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\login.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\login.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\message.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\message.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\nprogress.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\nprogress.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\order.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\order.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\personal.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\personal.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\themes\\blue.1.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\themes\\blue.1.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\themes\\blue.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\themes\\blue.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\themes\\default.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\themes\\default.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\themes\\green.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\themes\\green.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\themes\\light.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\themes\\light.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\themes\\orange.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\themes\\orange.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\themes\\pink.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\themes\\pink.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\css\\themes\\red.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\themes\\red.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\image\\adminbg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\image\\adminbg.jpg"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\image\\lockscreenbg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\image\\lockscreenbg.jpg"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\image\\logo.png",
+      "PackagePath": "staticwebassets\\Admin\\image\\logo.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\image\\menu.png",
+      "PackagePath": "staticwebassets\\Admin\\image\\menu.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\image\\user.jpg",
+      "PackagePath": "staticwebassets\\Admin\\image\\user.jpg"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\image\\verifyimg.png",
+      "PackagePath": "staticwebassets\\Admin\\image\\verifyimg.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\app.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\app.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\autocomplete.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\autocomplete.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\drag-arrange.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\drag-arrange.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\iconFonts.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\iconFonts.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\index.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\index.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\loader.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\loader.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\login.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\login.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\message.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\message.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\navbar.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\navbar.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\nprogress.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\nprogress.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\onelevel.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\onelevel.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\pjax.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\pjax.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\selectM.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\selectM.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\selectN.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\selectN.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\tab.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\tab.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\tableSelect.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\tableSelect.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\treetable.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\treetable.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\Admin\\js\\utils.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\utils.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\bootstrap\\js\\npm.js",
+      "PackagePath": "staticwebassets\\common\\bootstrap\\js\\npm.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\close.png",
+      "PackagePath": "staticwebassets\\common\\close.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\font-awesome\\template.html",
+      "PackagePath": "staticwebassets\\common\\font-awesome\\template.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\notice.mp3",
+      "PackagePath": "staticwebassets\\common\\notice.mp3"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\notice2.mp3",
+      "PackagePath": "staticwebassets\\common\\notice2.mp3"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\common\\tags.css",
+      "PackagePath": "staticwebassets\\common\\tags.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\ImgCroppers\\css\\publish.css",
+      "PackagePath": "staticwebassets\\js\\ImgCroppers\\css\\publish.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\ImgCroppers\\index.html",
+      "PackagePath": "staticwebassets\\js\\ImgCroppers\\index.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\ImgCroppers\\js\\cropper\\cropper.css",
+      "PackagePath": "staticwebassets\\js\\ImgCroppers\\js\\cropper\\cropper.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\ImgCroppers\\js\\cropper\\cropper.js",
+      "PackagePath": "staticwebassets\\js\\ImgCroppers\\js\\cropper\\cropper.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\ImgCroppers\\js\\croppers.js",
+      "PackagePath": "staticwebassets\\js\\ImgCroppers\\js\\croppers.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\ImgCroppers\\js\\move.js",
+      "PackagePath": "staticwebassets\\js\\ImgCroppers\\js\\move.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\ImgCroppers\\js\\publishImg.js",
+      "PackagePath": "staticwebassets\\js\\ImgCroppers\\js\\publishImg.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\HuanXin\\Index.html",
+      "PackagePath": "staticwebassets\\js\\demo\\HuanXin\\Index.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\HuanXin\\Main.html",
+      "PackagePath": "staticwebassets\\js\\demo\\HuanXin\\Main.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\HuanXin\\js\\strophe-1.2.8.min.js",
+      "PackagePath": "staticwebassets\\js\\demo\\HuanXin\\js\\strophe-1.2.8.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\HuanXin\\js\\webim.config.js",
+      "PackagePath": "staticwebassets\\js\\demo\\HuanXin\\js\\webim.config.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\HuanXin\\js\\websdk-1.1.3.js",
+      "PackagePath": "staticwebassets\\js\\demo\\HuanXin\\js\\websdk-1.1.3.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\IM\\index.html",
+      "PackagePath": "staticwebassets\\js\\demo\\IM\\index.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\IM\\json\\getList.json",
+      "PackagePath": "staticwebassets\\js\\demo\\IM\\json\\getList.json"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\IM\\json\\getMembers.json",
+      "PackagePath": "staticwebassets\\js\\demo\\IM\\json\\getMembers.json"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\IM\\mobile.html",
+      "PackagePath": "staticwebassets\\js\\demo\\IM\\mobile.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\demo\\WS\\Index.html",
+      "PackagePath": "staticwebassets\\js\\demo\\WS\\Index.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\4.2.0.txt",
+      "PackagePath": "staticwebassets\\js\\echarts\\4.2.0.txt"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\echarts-gl.min.js",
+      "PackagePath": "staticwebassets\\js\\echarts\\echarts-gl.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\echarts.min.js",
+      "PackagePath": "staticwebassets\\js\\echarts\\echarts.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\themes\\dark.js",
+      "PackagePath": "staticwebassets\\js\\echarts\\themes\\dark.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\themes\\infographic.js",
+      "PackagePath": "staticwebassets\\js\\echarts\\themes\\infographic.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\themes\\macarons.js",
+      "PackagePath": "staticwebassets\\js\\echarts\\themes\\macarons.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\themes\\roma.js",
+      "PackagePath": "staticwebassets\\js\\echarts\\themes\\roma.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\themes\\shine.js",
+      "PackagePath": "staticwebassets\\js\\echarts\\themes\\shine.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\echarts\\themes\\vintage.js",
+      "PackagePath": "staticwebassets\\js\\echarts\\themes\\vintage.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\jquery-1.12.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.12.1.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\kindeditor-all-min.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\kindeditor-all-min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\kindeditor-all.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\kindeditor-all.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\kindeditor-min.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\kindeditor-min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\kindeditor.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\kindeditor.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\lang\\ar.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\lang\\ar.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\lang\\en.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\lang\\en.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\lang\\ko.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\lang\\ko.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\lang\\zh_CN.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\lang\\zh_CN.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\lang\\zh_TW.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\lang\\zh_TW.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\license.txt",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\license.txt"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\anchor\\anchor.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\anchor\\anchor.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\autoheight\\autoheight.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\autoheight\\autoheight.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\baidumap\\baidumap.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\baidumap\\baidumap.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\baidumap\\index.html",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\baidumap\\index.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\baidumap\\map.html",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\baidumap\\map.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\certificate\\certificate.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\certificate\\certificate.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\clearhtml\\clearhtml.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\clearhtml\\clearhtml.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\code\\code.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\code\\code.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\code\\prettify.css",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\code\\prettify.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\code\\prettify.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\code\\prettify.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\emoticons.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\emoticons.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\0.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\0.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\1.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\1.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\10.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\10.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\100.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\100.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\101.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\101.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\102.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\102.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\103.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\103.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\104.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\104.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\105.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\105.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\106.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\106.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\107.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\107.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\108.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\108.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\109.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\109.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\11.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\11.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\110.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\110.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\111.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\111.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\112.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\112.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\113.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\113.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\114.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\114.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\115.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\115.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\116.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\116.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\117.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\117.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\118.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\118.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\119.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\119.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\12.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\12.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\120.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\120.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\121.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\121.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\122.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\122.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\123.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\123.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\124.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\124.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\125.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\125.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\126.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\126.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\127.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\127.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\128.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\128.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\129.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\129.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\13.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\13.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\130.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\130.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\131.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\131.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\132.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\132.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\133.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\133.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\134.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\134.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\14.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\14.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\15.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\15.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\16.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\16.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\17.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\17.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\18.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\18.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\19.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\19.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\2.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\2.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\20.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\20.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\21.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\21.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\22.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\22.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\23.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\23.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\24.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\24.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\25.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\25.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\26.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\26.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\27.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\27.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\28.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\28.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\29.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\29.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\3.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\3.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\30.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\30.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\31.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\31.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\32.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\32.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\33.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\33.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\34.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\34.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\35.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\35.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\36.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\36.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\37.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\37.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\38.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\38.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\39.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\39.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\4.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\4.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\40.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\40.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\41.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\41.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\42.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\42.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\43.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\43.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\44.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\44.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\45.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\45.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\46.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\46.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\47.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\47.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\48.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\48.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\49.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\49.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\5.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\5.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\50.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\50.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\51.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\51.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\52.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\52.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\53.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\53.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\54.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\54.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\55.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\55.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\56.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\56.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\57.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\57.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\58.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\58.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\59.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\59.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\6.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\6.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\60.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\60.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\61.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\61.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\62.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\62.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\63.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\63.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\64.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\64.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\65.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\65.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\66.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\66.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\67.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\67.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\68.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\68.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\69.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\69.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\7.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\7.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\70.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\70.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\71.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\71.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\72.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\72.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\73.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\73.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\74.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\74.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\75.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\75.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\76.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\76.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\77.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\77.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\78.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\78.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\79.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\79.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\8.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\8.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\80.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\80.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\81.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\81.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\82.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\82.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\83.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\83.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\84.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\84.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\85.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\85.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\86.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\86.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\87.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\87.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\88.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\88.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\89.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\89.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\9.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\9.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\90.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\90.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\91.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\91.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\92.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\92.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\93.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\93.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\94.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\94.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\95.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\95.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\96.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\96.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\97.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\97.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\98.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\98.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\99.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\99.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\static.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\emoticons\\images\\static.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\filemanager\\filemanager.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\filemanager\\filemanager.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\file-16.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\file-16.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\file-64.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\file-64.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\folder-16.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\folder-16.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\folder-64.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\folder-64.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\go-up.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\filemanager\\images\\go-up.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\flash\\flash.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\flash\\flash.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\image\\image.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\image\\image.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\image\\images\\align_left.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\image\\images\\align_left.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\image\\images\\align_right.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\image\\images\\align_right.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\image\\images\\align_top.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\image\\images\\align_top.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\image\\images\\refresh.png",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\image\\images\\refresh.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\insertfile\\insertfile.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\insertfile\\insertfile.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\lineheight\\lineheight.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\lineheight\\lineheight.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\link\\link.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\link\\link.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\map\\map.html",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\map\\map.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\map\\map.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\map\\map.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\media\\media.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\media\\media.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\multiimage\\images\\image.png",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\multiimage\\images\\image.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\multiimage\\images\\select-files-en.png",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\multiimage\\images\\select-files-en.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\multiimage\\images\\select-files-zh_CN.png",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\multiimage\\images\\select-files-zh_CN.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\multiimage\\images\\swfupload.swf",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\multiimage\\images\\swfupload.swf"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\multiimage\\multiimage.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\multiimage\\multiimage.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\pagebreak\\pagebreak.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\pagebreak\\pagebreak.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\plainpaste\\plainpaste.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\plainpaste\\plainpaste.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\preview\\preview.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\preview\\preview.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\quickformat\\quickformat.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\quickformat\\quickformat.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\table\\table.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\table\\table.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\template\\html\\1.html",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\template\\html\\1.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\template\\html\\2.html",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\template\\html\\2.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\template\\html\\3.html",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\template\\html\\3.html"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\template\\template.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\template\\template.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\plugins\\wordpaste\\wordpaste.js",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\plugins\\wordpaste\\wordpaste.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\common\\anchor.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\common\\anchor.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\common\\blank.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\common\\blank.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\common\\flash.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\common\\flash.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\common\\loading.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\common\\loading.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\common\\media.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\common\\media.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\common\\rm.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\common\\rm.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\default\\background.png",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\default\\background.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\default\\default.css",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\default\\default.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\default\\default.png",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\default\\default.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\qq\\editor.gif",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\qq\\editor.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\qq\\qq.css",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\qq\\qq.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\kindeditor-4.1.10\\themes\\simple\\simple.css",
+      "PackagePath": "staticwebassets\\js\\kindeditor-4.1.10\\themes\\simple\\simple.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\layui.css",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\layui.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\layui.mobile.css",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\layui.mobile.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\code.css",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\code.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\laydate\\default\\icon.png",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\laydate\\default\\icon.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\laydate\\default\\laydate.css",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\laydate\\default\\laydate.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\layer\\default\\icon-ext.png",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\layer\\default\\icon-ext.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\layer\\default\\icon.png",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\layer\\default\\icon.png"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\layer\\default\\layer.css",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\layer\\default\\layer.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\layer\\default\\loading-0.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\layer\\default\\loading-0.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\layer\\default\\loading-1.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\layer\\default\\loading-1.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\css\\modules\\layer\\default\\loading-2.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\css\\modules\\layer\\default\\loading-2.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\excel_ext\\FileSaver.js",
+      "PackagePath": "staticwebassets\\js\\layui\\excel_ext\\FileSaver.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\excel_ext\\autocomplete.js",
+      "PackagePath": "staticwebassets\\js\\layui\\excel_ext\\autocomplete.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\excel_ext\\excel.js",
+      "PackagePath": "staticwebassets\\js\\layui\\excel_ext\\excel.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\excel_ext\\xlsx.js",
+      "PackagePath": "staticwebassets\\js\\layui\\excel_ext\\xlsx.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\font\\iconfont.eot",
+      "PackagePath": "staticwebassets\\js\\layui\\font\\iconfont.eot"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\font\\iconfont.svg",
+      "PackagePath": "staticwebassets\\js\\layui\\font\\iconfont.svg"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\font\\iconfont.ttf",
+      "PackagePath": "staticwebassets\\js\\layui\\font\\iconfont.ttf"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\font\\iconfont.woff",
+      "PackagePath": "staticwebassets\\js\\layui\\font\\iconfont.woff"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\font\\iconfont.woff2",
+      "PackagePath": "staticwebassets\\js\\layui\\font\\iconfont.woff2"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\0.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\0.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\1.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\1.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\10.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\10.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\11.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\11.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\12.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\12.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\13.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\13.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\14.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\14.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\15.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\15.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\16.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\16.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\17.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\17.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\18.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\18.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\19.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\19.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\2.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\2.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\20.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\20.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\21.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\21.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\22.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\22.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\23.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\23.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\24.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\24.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\25.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\25.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\26.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\26.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\27.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\27.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\28.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\28.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\29.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\29.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\3.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\3.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\30.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\30.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\31.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\31.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\32.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\32.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\33.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\33.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\34.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\34.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\35.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\35.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\36.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\36.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\37.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\37.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\38.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\38.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\39.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\39.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\4.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\4.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\40.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\40.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\41.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\41.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\42.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\42.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\43.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\43.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\44.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\44.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\45.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\45.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\46.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\46.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\47.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\47.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\48.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\48.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\49.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\49.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\5.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\5.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\50.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\50.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\51.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\51.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\52.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\52.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\53.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\53.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\54.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\54.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\55.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\55.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\56.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\56.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\57.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\57.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\58.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\58.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\59.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\59.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\6.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\6.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\60.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\60.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\61.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\61.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\62.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\62.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\63.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\63.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\64.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\64.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\65.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\65.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\66.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\66.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\67.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\67.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\68.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\68.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\69.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\69.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\7.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\7.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\70.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\70.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\71.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\71.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\8.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\8.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\images\\face\\9.gif",
+      "PackagePath": "staticwebassets\\js\\layui\\images\\face\\9.gif"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\carousel.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\carousel.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\code.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\code.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\colorpicker.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\colorpicker.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\element.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\element.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\flow.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\flow.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\form.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\form.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\jquery.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\laydate.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\laydate.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\layedit.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\layedit.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\layer.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\layer.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\laypage.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\laypage.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\laytpl.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\laytpl.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\mobile.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\mobile.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\rate.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\rate.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\slider.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\slider.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\table.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\table.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\transfer.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\transfer.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\tree.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\tree.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\upload.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\upload.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\lay\\modules\\util.js",
+      "PackagePath": "staticwebassets\\js\\layui\\lay\\modules\\util.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\layui.all.js",
+      "PackagePath": "staticwebassets\\js\\layui\\layui.all.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\layui.js",
+      "PackagePath": "staticwebassets\\js\\layui\\layui.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\layui\\v2.5.7",
+      "PackagePath": "staticwebassets\\js\\layui\\v2.5.7"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\mloading\\jquery.mloading.css",
+      "PackagePath": "staticwebassets\\js\\mloading\\jquery.mloading.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\mloading\\jquery.mloading.js",
+      "PackagePath": "staticwebassets\\js\\mloading\\jquery.mloading.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\mloading\\jquery.mloading.less",
+      "PackagePath": "staticwebassets\\js\\mloading\\jquery.mloading.less"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\pdfview\\pdfobject.js",
+      "PackagePath": "staticwebassets\\js\\pdfview\\pdfobject.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\pdfview\\readme.txt",
+      "PackagePath": "staticwebassets\\js\\pdfview\\readme.txt"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\js\\utils.js",
+      "PackagePath": "staticwebassets\\js\\utils.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\work\\crazy-workers-net.git\\CW.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.CW.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.CW.Web.props",
+      "PackagePath": "build\\CW.Web.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CW.Web.props",
+      "PackagePath": "buildMultiTargeting\\CW.Web.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.CW.Web.props",
+      "PackagePath": "buildTransitive\\CW.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

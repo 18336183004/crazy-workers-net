@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "AuthorityDetail";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<section class="layui-larry-box">
+    <div class="larry-personal">
+        <div class="layui-tab">
+            @*<blockquote class="layui-elem-quote mylog-info-tit">
+                    角色权限管理
+                </blockquote>
+                <div class="larry-separate"></div>*@
+            <div class="layui-tab-content larry-personal-body clearfix mylog-info-box">
+                <table id="menuTreeGird" class="layui-table layui-form"></table>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var table = null;
+    var treetable = null;
+    var dialogId;
+    layui.config({
+        base: '../../Admin/js/'
+    }).use(['table', 'treetable'], function () {
+        table = layui.table;
+        treetable = layui.treetable;
+
+        $.post('@Url.Action("GetAuthorityDataList", "Settings", new { area = "Admin" })', { roleId: '@ViewBag.roleId' }, function (data) {
+            treetable.render({
+                elem: '#menuTreeGird',
+                data: data,
+                field: 'MenuName',
+                is_checkbox: false,
+                cols: [
+                    { field: 'MenuName', title: '菜单名称', width: '150px' }
+                    , {
+                        title: '查看权限', width: '100px', align: 'center',
+                        template: function (item) {
+                            if (item.FunctionView == 1)
+                                return '<input type="checkbox" name="viewState" value="' + item.MenuId + '" lay-skin="switch" lay-text="是|否" lay-filter="viewState" checked="checked">';
+                            else
+                                return '<input type="checkbox" name="viewState" value="' + item.MenuId + '" lay-skin="switch" lay-text="是|否" lay-filter="viewState">';
+                        }
+                    }
+                    , {
+                        title: '编辑权限', width: '100px', align: 'center',
+                        template: function (item) {
+                            if (item.MenuUrl != '' && item.MenuUrl != null) {
+                                if (item.FunctionEdit == 1)
+                                    return '<input type="checkbox" name="editState" value="' + item.MenuId + '" lay-skin="switch" lay-text="是|否" lay-filter="editState" checked="checked">';
+                                else
+                                    return '<input type="checkbox" name="editState" value="' + item.MenuId + '" lay-skin="switch" lay-text="是|否" lay-filter="editState">';
+                            }
+                            return '';
+                        }
+                    }
+                ]
+            });
+            treetable.all('down');
+        },'json');
+
+        //监听操作
+        form.on('switch(viewState)', function (obj) {
+            var state = 0;
+            if (obj.elem.checked) {
+                state = 1;
+            }
+            setState(this.value, "view", state);
+        });
+
+        form.on('switch(editState)', function (obj) {
+            var state = 0;
+            if (obj.elem.checked) {
+                state = 1;
+            }
+            setState(this.value, "edit", state);
+        });
+    });
+
+    //设置权限
+    function setState(menuId, type, state) {
+        $.post('@Url.Action("UpdateAuthorityState", "Settings", new {area = "Admin"})', { roleId: '@ViewBag.roleId', menuId: menuId, type: type, state: state }, function (data) {
+            if (data.state == "true") {
+                layer.msg(data.content, { icon: 1, time: 2000 });
+                //location.reload();
+            } else {
+                layer.msg(data.content, { icon: 2, time: 3000 });
+            }
+        }, "json");
+    }
+</script>

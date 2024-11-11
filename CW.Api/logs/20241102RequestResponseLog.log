@@ -1,0 +1,242 @@
+--------------------------------
+2024/11/2 10:04:11|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/11/2 10:04:12|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"The JSON value could not be converted to System.String. Path: $.errcode | LineNumber: 0 | BytePositionInLine: 16.","Data":"at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)\r\n   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)\r\n   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)\r\n   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)\r\n   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)\r\n   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)\r\n   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, Encoding sourceEncoding, JsonSerializerOptions options, CancellationToken cancellationToken)\r\n   at CW.Common.WeChat.WeChatApiHelper.GetSessionKeyAsync(String jsCode) in D:\\work\\crazy-workers-net.git\\CW.Common\\WeChat\\WeChatApiHelper.cs:line 43\r\n   at CW.Api.Controllers.LoginController.UserInfo(WeChatModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 52\r\n   at lambda_method491(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:04:12.4150558+08:00"}
+--------------------------------
+2024/11/2 10:04:51|
+Request Data:
+QueryData:/api/tokenpass/Login/UserInfo
+BodyData:{
+  "Code": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/UserInfo
+
+--------------------------------
+2024/11/2 10:04:51|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"The JSON value could not be converted to System.String. Path: $.errcode | LineNumber: 0 | BytePositionInLine: 16.","Data":"at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)\r\n   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)\r\n   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)\r\n   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)\r\n   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)\r\n   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)\r\n   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, Encoding sourceEncoding, JsonSerializerOptions options, CancellationToken cancellationToken)\r\n   at CW.Common.WeChat.WeChatApiHelper.GetSessionKeyAsync(String jsCode) in D:\\work\\crazy-workers-net.git\\CW.Common\\WeChat\\WeChatApiHelper.cs:line 43\r\n   at CW.Api.Controllers.LoginController.UserInfo(WeChatModel model) in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\LoginController.cs:line 52\r\n   at lambda_method491(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:04:51.2833514+08:00"}
+--------------------------------
+2024/11/2 10:05:16|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/11/2 10:05:17|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDMgMTA6MDU6MTciLCJleHAiOjE3MzA1OTk1NzcsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.gUxyapivPcyrycITeHdyZ-a_T8Tss1ZrasGTSVJd9AE","Day":1},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:05:17.7236237+08:00"}
+--------------------------------
+2024/11/2 10:05:37|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:05:37|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:05:37.9652007+08:00"}
+--------------------------------
+2024/11/2 10:06:03|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:06:03|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:06:03.3555539+08:00"}
+--------------------------------
+2024/11/2 10:06:45|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:10:01|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/11/2 10:10:03|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDMgMTA6MTA6MDIiLCJleHAiOjE3MzA1OTk4NjIsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.adZQla9Rq58JpUcqHANzRVXhXYWzu23m9jreUr715_8","Day":0},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:10:03.036806+08:00"}
+--------------------------------
+2024/11/2 10:10:28|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:10:28|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:10:28.1141304+08:00"}
+--------------------------------
+2024/11/2 10:12:03|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:12:04|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:12:03.9171495+08:00"}
+--------------------------------
+2024/11/2 10:22:32|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/11/2 10:22:34|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDMgMTA6MjI6MzMiLCJleHAiOjE3MzA2MDA2MTMsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.FsSsj2Vm76TigzYdeJ8U16WBcwdJpLUN16cw3WJmcyU","Day":0},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:22:34.1259261+08:00"}
+--------------------------------
+2024/11/2 10:22:55|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:22:56|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:22:55.8796555+08:00"}
+--------------------------------
+2024/11/2 10:24:32|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:24:32|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:24:32.2476325+08:00"}
+--------------------------------
+2024/11/2 10:24:59|
+Request Data:
+QueryData:/api/tokenpass/Login/Login
+BodyData:{
+  "OpenId": "123456",
+  "InviterId": null
+}
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login
+
+--------------------------------
+2024/11/2 10:25:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"SsoToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiT3BlbklkIjoiMTIzNDU2IiwiQ2lwaGVyIjoiS1R1T2Z1cHVPUXpUWTA2UkdHMVZFQT09IiwiRXhwaXJlcyI6IjIwMjQtMTEtMDMgMTA6MjU6MDAiLCJleHAiOjE3MzA2MDA3NjAsImlzcyI6InJhbndlbiIsImF1ZCI6IkNXIn0.BC2SJylm_Tdbgkh5PkhVsVRUadEz-L9rnWHkvTshsVc","Day":0},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:25:00.9307892+08:00"}
+--------------------------------
+2024/11/2 10:25:21|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:25:22|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:25:21.850712+08:00"}
+--------------------------------
+2024/11/2 10:26:05|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:26:05|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":2,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150058_P7OcCYc9.png"}]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:26:05.210092+08:00"}
+--------------------------------
+2024/11/2 10:26:42|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:26:57|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":2,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150058_P7OcCYc9.png"}]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"},{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:26:42.2675894+08:00"}
+--------------------------------
+2024/11/2 10:28:12|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:28:13|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":1,"Picture":"图片","CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729149997_P3ZI6rsA.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:28:12.6720885+08:00"}
+--------------------------------
+2024/11/2 10:45:11|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:45:12|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"中文提示 : 多表查询存在别名不一致,请把GroupBy中的a改成u就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样\r\nEnglish Message : Join u needs to be the same as GroupBy a","Data":"at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)\r\n   at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)\r\n   at SqlSugar.QueryableProvider`1._GroupBy(Expression expression)\r\n   at SqlSugar.QueryableProvider`1.GroupBy(Expression`1 expression)\r\n   at CW.Api.Services.UserService.GetPositionLevelRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Services\\UserService.cs:line 808\r\n   at CW.Api.Controllers.UserController.GetPositionLevelRanking() in D:\\work\\crazy-workers-net.git\\CW.Api\\Controllers\\UserController.cs:line 142\r\n   at lambda_method495(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:45:12.9107879+08:00"}
+--------------------------------
+2024/11/2 10:54:38|
+Request Data:
+QueryData:/api/User/GetPositionLevelRanking
+BodyData:
+Operator:[1]-[123456]
+RequestPath:http://localhost:7000/api/User/GetPositionLevelRanking
+
+--------------------------------
+2024/11/2 10:54:40|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":[{"Id":14,"Name":"董事长","TotalNumber":0,"List":[]},{"Id":13,"Name":"CE0","TotalNumber":0,"List":[]},{"Id":12,"Name":"首席运营官","TotalNumber":0,"List":[]},{"Id":11,"Name":"执行总裁","TotalNumber":0,"List":[]},{"Id":10,"Name":"执行副总裁","TotalNumber":0,"List":[]},{"Id":9,"Name":"总经理","TotalNumber":0,"List":[]},{"Id":8,"Name":"副总经理","TotalNumber":0,"List":[]},{"Id":7,"Name":"部门经理","TotalNumber":0,"List":[]},{"Id":6,"Name":"总监","TotalNumber":0,"List":[]},{"Id":5,"Name":"主管","TotalNumber":0,"List":[]},{"Id":4,"Name":"小组长","TotalNumber":0,"List":[]},{"Id":3,"Name":"资深员工","TotalNumber":0,"List":[]},{"Id":2,"Name":"正式员工","TotalNumber":0,"List":[{"UserId":1,"Picture":"图片","CollectId":2,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150058_P7OcCYc9.png"}]},{"Id":1,"Name":"实习生","TotalNumber":6,"List":[{"UserId":2,"Picture":null,"CollectId":1,"CollectPicture":"https://shangbanwang.oss-cn-shenzhen.aliyuncs.com/images/2024/10/17/image_1729150039_H3bSL3KM.png"}]}],"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-11-02T10:54:39.1817915+08:00"}

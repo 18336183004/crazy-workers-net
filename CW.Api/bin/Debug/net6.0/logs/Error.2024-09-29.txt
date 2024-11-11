@@ -1,0 +1,39 @@
+2024-09-29 13:57:57.6092 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：Unable to cast object of type 'System.Object' to type 'CW.Common.JwtAuth.JwtSSOTokenModel'.
+【堆栈】：at CW.Api.Controllers.LoginController.Login(LoginModel model) in D:\work\crazy-workers-net.git\CW.Api\Controllers\LoginController.cs:line 70
+   at CW.Api.Controllers.LoginController.UserInfo(WeChatModel model) in D:\work\crazy-workers-net.git\CW.Api\Controllers\LoginController.cs:line 47
+   at lambda_method484(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted) 
+  ResourceInvoker.Next => GlobalExceptionsFilter.OnException => NLogHelper.ErrorLog
+2024-09-29 13:58:40.1612 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：Unable to cast object of type 'System.Object' to type 'CW.Common.JwtAuth.JwtSSOTokenModel'.
+【堆栈】：at CW.Api.Controllers.LoginController.Login(LoginModel model) in D:\work\crazy-workers-net.git\CW.Api\Controllers\LoginController.cs:line 70
+   at CW.Api.Controllers.LoginController.UserInfo(WeChatModel model) in D:\work\crazy-workers-net.git\CW.Api\Controllers\LoginController.cs:line 47
+   at lambda_method484(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted) 
+  ResourceInvoker.Next => GlobalExceptionsFilter.OnException => NLogHelper.ErrorLog
+2024-09-29 14:02:40.1033 CW.Common.Logs.NLogHelper.ErrorLog Error: 
+【描述】：Unable to cast object of type 'System.Object' to type 'CW.Common.JwtAuth.JwtSSOTokenModel'.
+【堆栈】：at CW.Api.Controllers.LoginController.Login(LoginModel model) in D:\work\crazy-workers-net.git\CW.Api\Controllers\LoginController.cs:line 70
+   at CW.Api.Controllers.LoginController.UserInfo(WeChatModel model) in D:\work\crazy-workers-net.git\CW.Api\Controllers\LoginController.cs:line 47
+   at lambda_method484(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted) 
+  ResourceInvoker.Next => GlobalExceptionsFilter.OnException => NLogHelper.ErrorLog

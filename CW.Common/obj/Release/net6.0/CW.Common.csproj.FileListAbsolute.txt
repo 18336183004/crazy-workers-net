@@ -1,0 +1,12 @@
+D:\work\crazy-workers-net.git\CW.Common\bin\Release\net6.0\CW.Common.deps.json
+D:\work\crazy-workers-net.git\CW.Common\bin\Release\net6.0\CW.Common.dll
+D:\work\crazy-workers-net.git\CW.Common\bin\Release\net6.0\CW.Common.pdb
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\CW.Common.csproj.AssemblyReference.cache
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\CW.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\CW.Common.AssemblyInfoInputs.cache
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\CW.Common.AssemblyInfo.cs
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\CW.Common.csproj.CoreCompileInputs.cache
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\CW.Common.dll
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\refint\CW.Common.dll
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\CW.Common.pdb
+D:\work\crazy-workers-net.git\CW.Common\obj\Release\net6.0\ref\CW.Common.dll

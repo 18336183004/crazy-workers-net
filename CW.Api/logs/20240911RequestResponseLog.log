@@ -1,0 +1,280 @@
+--------------------------------
+2024/9/11 10:32:37|
+Request Data:
+QueryData:/api/Login/Login?tel=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Login/Login?tel=123456
+
+--------------------------------
+2024/9/11 10:32:38|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T10:32:37.9835912+08:00"}
+--------------------------------
+2024/9/11 10:33:14|
+Request Data:
+QueryData:/api/Login/Login?tel=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/Login/Login?tel=123456
+
+--------------------------------
+2024/9/11 10:33:14|
+Response Data:
+{"Version":"1.0.0","Code":600,"Message":"无效令牌。","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T10:33:14.6613696+08:00"}
+--------------------------------
+2024/9/11 10:33:52|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?tel=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?tel=123456
+
+--------------------------------
+2024/9/11 10:36:38|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?tel=111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?tel=111111111
+
+--------------------------------
+2024/9/11 10:43:37|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?tel=123456
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?tel=123456
+
+--------------------------------
+2024/9/11 10:43:37|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"uid":"e34e0d8d-a868-4a10-a945-b9c6b5060a91","user_name":"123456","email":null,"wallet_address":null,"mobile":null,"password":null,"secretkey":null,"invite_code":null,"reg_time":null,"reg_type":null,"enable":1,"telegram_id":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T10:43:37.931765+08:00"}
+--------------------------------
+2024/9/11 15:42:56|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?tel=122
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?tel=122
+
+--------------------------------
+2024/9/11 15:42:58|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":{"uid":"ed49355a-02da-440e-b963-574a28d133b7","user_name":"122","email":null,"wallet_address":null,"mobile":null,"password":null,"secretkey":null,"invite_code":null,"reg_time":null,"reg_type":null,"enable":1,"telegram_id":null},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T15:42:57.9847039+08:00"}
+--------------------------------
+2024/9/11 17:28:46|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?tel=11111111111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?tel=11111111111111111
+
+--------------------------------
+2024/9/11 17:31:46|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?tel=11111111111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?tel=11111111111111111
+
+--------------------------------
+2024/9/11 17:33:14|
+Request Data:
+QueryData:/api/tokenpass/Login/Login?tel=11111111111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login?tel=11111111111111111
+
+--------------------------------
+2024/9/11 17:36:51|
+Request Data:
+QueryData:/api/tokenpass/Login/Login1?tel=11111111111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login1?tel=11111111111111111
+
+--------------------------------
+2024/9/11 17:38:03|
+Request Data:
+QueryData:/api/tokenpass/Login/Login1?tel=11111111111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login1?tel=11111111111111111
+
+--------------------------------
+2024/9/11 17:38:14|
+Request Data:
+QueryData:/api/tokenpass/Login/Login1?tel=11111111111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login1?tel=11111111111111111
+
+--------------------------------
+2024/9/11 17:42:33|
+Request Data:
+QueryData:/api/tokenpass/Login/Login1?tel=11111111111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login1?tel=11111111111111111
+
+--------------------------------
+2024/9/11 17:46:40|
+Request Data:
+QueryData:/api/tokenpass/Login/Login1?tel=11111111111111111
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login1?tel=11111111111111111
+
+--------------------------------
+2024/9/11 17:46:40|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"FU5Y95XNf2sxgW2xF5JFK7tFD8RYy/N39Pcb6pGRdsw=","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T17:46:40.3771225+08:00"}
+--------------------------------
+2024/9/11 17:47:52|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=FU5Y95XNf2sxgW2xF5JFK7tFD8RYy%2FN39Pcb6pGRdsw%3D
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=FU5Y95XNf2sxgW2xF5JFK7tFD8RYy%2FN39Pcb6pGRdsw%3D
+
+--------------------------------
+2024/9/11 17:47:52|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"11111111111111111","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T17:47:52.9082008+08:00"}
+--------------------------------
+2024/9/11 17:53:55|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 17:56:32|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:02:48|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:04:44|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:05:21|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:15:03|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:15:11|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"数据异常，请稍后再试!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T18:15:11.5281902+08:00"}
+--------------------------------
+2024/9/11 18:16:36|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:16:46|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"数据异常，请稍后再试!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T18:16:46.7394069+08:00"}
+--------------------------------
+2024/9/11 18:17:09|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:17:48|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"数据异常，请稍后再试!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T18:17:48.6080157+08:00"}
+--------------------------------
+2024/9/11 18:27:24|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:27:28|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"数据异常，请稍后再试!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T18:27:28.1463506+08:00"}
+--------------------------------
+2024/9/11 18:28:17|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=ayBMmP2L0aQeBzMiwWgSZ%2FPixvN9I7iHfFJmc4sdaQs%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:28:25|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"数据异常，请稍后再试!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T18:28:25.9281721+08:00"}
+--------------------------------
+2024/9/11 18:30:38|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=bfb2DO654%2F%2F2%2FNzoQjbrGcK6hARzg9hYEv0seXz7vC8%3D&iv=ranwen2020wxjndaelzekf884knywill
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=bfb2DO654%2F%2F2%2FNzoQjbrGcK6hARzg9hYEv0seXz7vC8%3D&iv=ranwen2020wxjndaelzekf884knywill
+
+--------------------------------
+2024/9/11 18:30:48|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"数据异常，请稍后再试!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T18:30:48.4743562+08:00"}
+--------------------------------
+2024/9/11 18:31:20|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=bfb2DO654%2F%2F2%2FNzoQjbrGcK6hARzg9hYEv0seXz7vC8%3D&iv=ranwen2020wxjndaelzekf884knywill
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=bfb2DO654%2F%2F2%2FNzoQjbrGcK6hARzg9hYEv0seXz7vC8%3D&iv=ranwen2020wxjndaelzekf884knywill
+
+--------------------------------
+2024/9/11 18:31:31|
+Response Data:
+{"Version":"1.0.0","Code":400,"Message":"数据异常，请稍后再试!","Data":{},"DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T18:31:31.4417833+08:00"}
+--------------------------------
+2024/9/11 18:32:00|
+Request Data:
+QueryData:/api/tokenpass/Login/Login2?tel=bfb2DO654%2F%2F2%2FNzoQjbrGcK6hARzg9hYEv0seXz7vC8%3D&iv=7629738920637328
+BodyData:
+Operator:
+RequestPath:http://localhost:7000/api/tokenpass/Login/Login2?tel=bfb2DO654%2F%2F2%2FNzoQjbrGcK6hARzg9hYEv0seXz7vC8%3D&iv=7629738920637328
+
+--------------------------------
+2024/9/11 18:32:00|
+Response Data:
+{"Version":"1.0.0","Code":200,"Message":"操作成功。","Data":"11111111111111111","DataCount":0,"PageCount":0,"Mac":"","Timestamp":"2024-09-11T18:32:00.4690496+08:00"}
